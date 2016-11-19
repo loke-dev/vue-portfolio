@@ -1,32 +1,20 @@
+<!-- Footer Start -->
+
 <footer>
-  <hr />
 
-  <h3 class="footer-heading">{{ site.title }}</h3>
+    {% include social-buttons.html %}
 
-  <div class="grid t-hackcss-sm-reversed-grid">
+    <p><br><br></p>
 
-    <div class="cell -5of12">
-      <div class="contact-list">
-        <p>
-          {{ site.your_name }},
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        </p>
-
-        {% for social in site.social %}
-          {% assign template = social.service|prepend:"icon-"|append:".html" %}
-          <span class="t-hackcss-social">
-            <i class="t-hackcss-icon">{% include {{ template }} %}</i>
-            <a href="{{ social.link }}">{{ social.username }}</a>
-          </span>
-        {% endfor %}
-      </div>
+    <div class="container text-center">
+        <p>Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
+        {% if site.keybase-in-footer %}
+        <p style="font-size: 16px;"><a href="https://keybase.io/{{site.keybase-username}}" target="_blank"><i
+                class="fa fa-key"></i> {{site.keybase-username}} on Keybase</a></p>
+        {% endif %}
     </div>
-
-    <div id="footer-spacer" class="cell -1of12"></div>
-
-    <div class="cell -6of12">
-      <!--<p>{{ site.description }}</p>-->
-    </div>
-  </div>
-
 </footer>
+
+<p><br><br><br><br><br><br></p>
+
+<!-- Footer End -->
