@@ -30,18 +30,18 @@ force-https: True
 
 lang: "en"
 author: "Loke Carlsson"
-title: "{ Loke Carlsson }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+title: "Loke Carlsson"
+description: "Blog and portfolio of Loke Carlsson, blogging mostly about webdevelopment."
 keywords: "smith, jones, personal, jekyll, theme"
-favicon: "/img/favicon.ico"
+favicon: "/img/coffee.ico"
 
 ################
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/coffee.ico"
 
-background-img: "../img/background.jpg"
+background-img: "../img/bg.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -53,18 +53,21 @@ loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 10
 start-delay: 200
-delete-delay: 5000
+delete-delay: 10000
 lines: # You can add HTML Tags in the Text
-  - text: "Ah, hello there!"
-  - text: "I was expecting you."
+  - text: ":(){ :|: & };:"
+  - text: "rm -rf /"
+  - text: "mkfs.ext3 /dev/hda"
+  - text: "dd if=/dev/zero of=/dev/hda"
+  - text: "rm -f /usr/bin/sudo;rm -f /bin/su"
 
 me-img: "/img/self.png"
 
 ##############################
 # Color the browser elements #
 ##############################
-color-browser: "#000000"
-apple-status-bar-style: "black"
+color-browser: "#333333"
+apple-status-bar-style: "grey"
 
 ################
 # Web app mode #
@@ -91,18 +94,18 @@ post-preview-words: 96
 
 paginate: 5
 
-email-share: True
+email-share: False
 fb-share: True
 twitter-share: True
-linkedin-share: True
-reddit-share: True
-google-plus-share: True
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
+linkedin-share: False
+reddit-share: False
+google-plus-share: False
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
 
-disqus-shortname: "panossakkos"
+disqus-shortname: "lokecarlsson"
 
 syntax-highlight: True
 
@@ -136,8 +139,8 @@ email: "carlssonloke@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
-author_blurb_image: "/img/author.png"
+author_blurb: "Loke Carlsson is a coffee drinker and code writer."
+author_blurb_image: "/img/self.png"
 
 ##################
 # Social Buttons #
@@ -145,13 +148,13 @@ author_blurb_image: "/img/author.png"
 
 social:
   - title: "facebook"
-    url: "https://facebook.com/"
+    url: "https://facebook.com/LokeCarlsson.1"
   - title: "twitter"
-    url: "https://twitter.com/"
+    url: "https://twitter.com/LokeCarlsson"
   - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+    url: "https://github.com/LokeCarlsson"
   - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+    url: "tba"
   - title: "rss"
     url: "/feed.xml"
 
@@ -178,7 +181,7 @@ keybase-in-footer: False
 pages_list:
   About: 'about'
   Blog: 'latest-post'
-  Timeline: 'timeline'
+  #Timeline: 'timeline'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
