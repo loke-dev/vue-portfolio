@@ -18,10 +18,6 @@
           <h4>
             <strong>{{ page.date | date_to_string }}</strong>
             <small>
-              . category:
-              <a class="category" href="{{site.baseurl}}/categories/{{page.category | downcase}}.html">
-                {{ page.category }}
-              </a>.
               <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
               <br />
               {% for tag in page.tags %}
@@ -32,23 +28,8 @@
 
           {{ page.content | markdownify }}
 
-          {% include share.html %}
-
-          {% if jekyll.environment == "production" %}
-            {% include comments.html %}
-          {% endif %}
-
 
           <hr />
-
-          {% if site.author_blurb %}
-          <div class="author row">
-            <img class="col-xs-4 col-sm-3 col-md-2" src="{{site.baseurl}}{{site.author_blurb_image}}" alt="Me" />
-            <p class="col-xs-8 col-sm-9 col-md-10">
-              {{ site.author_blurb }}
-            </p>
-          </div>
-          {% endif%}
         </div>
       </div>
     </section>

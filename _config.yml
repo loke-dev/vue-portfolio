@@ -12,7 +12,7 @@ url: "https://lokecarlsson.se"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+baseurl: /lokecarlsson
 
 # Google tracking id
 
@@ -22,7 +22,7 @@ google-tracking-id: ""
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
 
-force-https: True
+force-https: False
 
 #############
 # HTML Head #
@@ -41,7 +41,7 @@ favicon: "/img/coffee.ico"
 
 black-favicon: "/img/coffee.ico"
 
-background-img: "../img/bg.jpg"
+background-img: "../img/bg1.jpg"
 
 ##############################
 # Dynamic Text on the Header #
@@ -67,7 +67,7 @@ me-img: "/img/self.png"
 # Color the browser elements #
 ##############################
 color-browser: "#333333"
-apple-status-bar-style: "grey"
+apple-status-bar-style: "333333"
 
 ################
 # Web app mode #
@@ -88,15 +88,15 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-enable-gesture-navigation: True
+enable-gesture-navigation: False
 
 post-preview-words: 96
 
 paginate: 5
 
 email-share: False
-fb-share: True
-twitter-share: True
+fb-share: False
+twitter-share: False
 linkedin-share: False
 reddit-share: False
 google-plus-share: False
@@ -139,8 +139,8 @@ email: "carlssonloke@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Loke Carlsson is a coffee drinker and code writer."
-author_blurb_image: "/img/self.png"
+author_blurb: ""
+author_blurb_image: ""
 
 ##################
 # Social Buttons #
@@ -169,7 +169,7 @@ social:
 ##################
 
 keybase-username: LokeCarlsson
-keybase-in-social: False
+keybase-in-social: True
 keybase-in-footer: False
 
 ################################################################################
