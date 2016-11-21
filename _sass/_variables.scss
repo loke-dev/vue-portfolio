@@ -4,7 +4,7 @@
 $primary-color: #333333;
 
 // Anchor color
-$secondary-color: #5bbaff;
+$secondary-color: #72c2fc;
 
 // Font color
 $font-color: #fff;
@@ -17,5 +17,7 @@ $navbar-color: $font-color;
 $navbar-lg-collapse-background-color: $header-background-color;
 $navbar-lg-background: transparent;
 $navbar-sm-background-color: $navbar-lg-collapse-background-color;
+
+$link-color: darken($secondary-color, 20%);
 
 $social-buttons-color: $secondary-color;
