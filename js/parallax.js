@@ -1,3 +1,5 @@
+"Use Strict";
+
 $(document).ready(function() {
   var wHeight = $(window).height();
 
