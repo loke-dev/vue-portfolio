@@ -41,6 +41,7 @@ h1 {
   text-align: center;
   padding: 10em 1em;
   color: white; overflow: hidden;
+  margin: 20px;
 }
 .parallax h1 {
   font-size: 6em;
