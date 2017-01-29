@@ -46,10 +46,8 @@ function stopRecognition() {
 function switchRecognition() {
   if (recognition) {
 		$(".voice").removeClass("red");
-		$(".voice").addClass("green");
     stopRecognition();
   } else {
-		$(".voice").removeClass("green");
 		$(".voice").addClass("red");
     startRecognition();
   }
@@ -62,16 +60,13 @@ function setInput(text) {
 
 function updateRec() {
 	setClass(recognition);
-  $(".voice").text(recognition ? "Stop" : "Speak");
 }
 
 function setClass(state) {
 	if (state) {
-		$(".voice").removeClass("green");
 		$(".voice").addClass("red");
 	} else {
 		$(".voice").removeClass("red");
-		$(".voice").addClass("green");
 	}
 }
 
@@ -103,21 +98,27 @@ function send() {
 function setResponse(val) {
 	if (val.result) {
 		console.log(val);
-		$(".chat-thread").text();
+		$(".chatArea").text();
 
-    let ul = document.querySelector(".chat-thread");
+    let ul = document.querySelector(".chatArea");
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(val.result.fulfillment.speech));
     li.setAttribute("class", "botResponse");
     ul.appendChild(li);
+
+    let chatEle = document.querySelector(".chatArea");
+    chatEle.scrollTop = chatEle.scrollHeight;
 	}
 }
 
 
 function setUserMessage(value) {
-  let ul = document.querySelector(".chat-thread");
+  let ul = document.querySelector(".chatArea");
   let li = document.createElement("li");
   li.appendChild(document.createTextNode(value));
   li.setAttribute("class", "userMessage");
   ul.appendChild(li);
+
+  let chatEle = document.querySelector(".chatArea");
+  chatEle.scrollTop = chatEle.scrollHeight;
 }

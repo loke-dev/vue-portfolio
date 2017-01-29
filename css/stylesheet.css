@@ -1,7 +1,7 @@
-@import "http://fonts.googleapis.com/css?family=Noto+Sans";
+@import "http://fonts.googleapis.com/css?family=Roboto";
 
 * {
-  font-family: Noto Sans;
+  font-family: Roboto;
 }
 
 body {
@@ -12,10 +12,60 @@ ul {
   list-style-type: none;
 }
 
-.red {
-  background-color: red;
+.voice {
+  background-color: white;
+  border-color: black;
+  background-image: url("/images/voice.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  padding: 17px;
+  border-radius: 5px;
 }
 
-.green {
-  background-color: green;
+.input {
+  font-size: 18px;
+  border-color: black;
+  width: 550px;
+  height: 30px;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.inputArea {
+  margin-top: 30px;
+}
+
+.chatArea {
+  padding-left: 0px;
+  width: 580px;
+  height: 500px;
+  overflow-y: scroll;
+  border: #000 solid 2px;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.userMessage {
+  float: right;
+}
+
+.botResponse {
+  color: darkred;
+}
+
+.botResponse, .userMessage {
+  clear: both;
+  max-width: 300px;
+  min-height:1.5em;
+  padding: 8px;
+  border: #000 solid 2px;
+  border-radius: 5px;
+}
+
+
+.red {
+  background-color: red;
 }
