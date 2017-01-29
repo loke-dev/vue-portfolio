@@ -1,155 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Cantarell|Hind);
-
-html, body {
-  width: 100%;
-}
+@import "http://fonts.googleapis.com/css?family=Noto+Sans";
 
 * {
-  box-sizing: border-box;
-  font-family: 'Cantarell', sans-serif;
+  font-family: Noto Sans;
 }
 
 body {
-  padding: 0;
+  margin: 15px;
 }
 
-h1 {
-    font-family: 'Hind', sans-serif;
+ul {
+  list-style-type: none;
 }
 
-.deepshadow {
-  color: #ffffff;
-  letter-spacing: .1em;
-  text-shadow:
-    -1px -1px 2px #111,
-    2px 2px 1px #363636;
-  }
-
-.header {
-  position: relative;
-  text-align: center;
+.red {
+  background-color: red;
 }
 
-.header-content {
-  display: block;
-  position: relative;
-  z-index: 9999;
-}
-
-.parallax {
-  display: block;
-  text-align: center;
-  padding: 10em 1em;
-  color: white; overflow: hidden;
-  margin: 20px;
-}
-.parallax h1 {
-  font-size: 6em;
-  margin-top: 0;
-}
-
-.top {
-  background: url("../images/1.jpg") no-repeat center center;
-}
-
-.middle {
-  background: url("../images/2.jpg") no-repeat center center;
-}
-
-.bottom {
-  background: url("../images/3.jpg") no-repeat center center;
-}
-
-.spacer {
-  display: block;
-  color: #333;
-  font-family: arial, sans-serif;
-  padding: 3em 0;
-}
-
-.spacer h3 {
-  font-family: lobster, sans-serif;
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-.spacer p {
-  font-size: 15px;
-  line-height: 22px;
-  margin-bottom: 15px;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  width: 95%;
-}
-
-.centered {
-  text-align: center;
-  padding-bottom: 3.75em;
-}
-
-.cleft-wrapper {
-  position: relative;
-  top: -1.25rem;
-  margin-bottom: -1.25rem;
-  left: 0;
-  width: 100%;
-  height: 1.25rem;
-  overflow: hidden;
-}
-
-.cleft-left, .cleft-right {
-  width: 50%;
-  height: 1.25rem;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-}
-
-.cleft-left {
-  left: -1.5rem;
-}
-
-.cleft-right {
-  right: -1.5rem;
-}
-
-.cleft-left:before, .cleft-right:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.cleft-left:before {
-  right: -1.5rem;
-  border-width: 1.25rem 0 0 1.5rem;
-  border-color: transparent transparent transparent #fff;
-}
-
-.cleft-right:before {
-  left: -1.5rem;
-  border-width: 1.25rem 1.5rem 0 0;
-  border-color: transparent #fff transparent transparent;
-}
-
-.carrotBox {
-  position: relative;
-}
-
-.carrot {
-  display: block;
-  height: 0;
-  width: 0;
-  border-top: 1.25rem solid #fff;
-  border-right: 1.5rem solid transparent;
-  border-left: 1.5rem solid transparent;
-  position: absolute;
-  left: 50%;
-  margin-left: -1.5rem;
-  bottom: -1.25rem;
+.green {
+  background-color: green;
 }
