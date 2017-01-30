@@ -1,51 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Loke Carlsson</title>
-  <meta name="description" content="">
-  <meta name="author" content="Loke Carlsson">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type='text/javascript' src='js/record.js'></script>
-  <script type='text/javascript' src='js/bot.js'></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <link rel="icon" href="images/coffee.ico">
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-72659574-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</head>
-<body>
-
-<h1>Welcome!</h1>
-<h3>Ask me anything!</h3>
-<p>
-  Either write your question or press voice button and ask something!
-</p>
-
-  <div class= "inputArea">
-		<input class="input" type="text"> <button class="voice"></button>
-    <ul class="chatArea"></ul>
-	</div>
-
-  <p>
-    Example question you can ask:
-  </p>
-  <ul>
-    <li>What's your name?</li>
-    <li>Who created you?</li>
-    <li>How can I contact you?</li>
-    <li>What is your github?</li>
-    <li>Can I reach you by email?</li>
-    <li>Can I see your linkedin profile?</li>
-  </ul>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Loke Carlsson</title>
+    <meta name="description" content="">
+    <meta name="author" content="Loke Carlsson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/build.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type='text/javascript' src='js/bot.js'></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" href="images/coffee.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-72659574-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="dist/build.js"></script>
+  </body>
 </html>
