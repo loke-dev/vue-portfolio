@@ -1,13 +1,22 @@
-// The following line loads the standalone build of Vue instead of the runtime-only build,
-// so you don't have to do: import Vue from 'vue/dist/vue'
-// This is done with the browser options. For the config, see package.json
+// === DEFAULT / CUSTOM STYLE ===
+// WARNING! always comment out ONE of the two require() calls below.
+// 1. use next line to activate CUSTOM STYLE (./src/themes)
+// require(`./themes/app.${__THEME}.styl`)
+// 2. or, use next line to activate DEFAULT QUASAR STYLE
+require(`quasar/dist/quasar.${__THEME}.css`)
+// ==============================
+
 import Vue from 'vue'
-import App from './App.vue'
-import VueMdl from 'vue-mdl/dist/vue-mdl.min';
+import Quasar from 'quasar'
+import router from './router'
 
-Vue.use(VueMdl)
+Vue.use(Quasar) // Install Quasar Framework
 
-new Vue({ // eslint-disable-line no-new
-  el: '#app',
-  render: (h) => h(App)
+Quasar.start(() => {
+  /* eslint-disable no-new */
+  new Vue({
+    el: '#q-app',
+    router,
+    render: h => h(require('./App'))
+  })
 })

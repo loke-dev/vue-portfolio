@@ -1,24 +1,19 @@
-# lokecarlsson
+# Quasar App
 
-> A Vue.js project
+> A Quasar project
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+$ npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+$ quasar dev
 
 # build for production with minification
-npm run build
+$ quasar build
 
-# lint all *.js and *.vue files
-npm run lint
-
-# run unit tests
-npm test
+# lint code
+$ quasar lint
 ```
-
-For more information see the [docs for vueify](https://github.com/vuejs/vueify).
