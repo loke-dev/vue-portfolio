@@ -1,7 +1,10 @@
 <template>
   <div id='bot'>
     <p>
-      Bot!
+      Hello!
+    </p>
+    <p>
+      Here is about information going to be written! Soon...
     </p>
   </div>
 </template>
@@ -10,7 +13,6 @@
 export default {
   data () {
     return {
-
     }
   }
 }
