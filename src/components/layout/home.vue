@@ -20,7 +20,7 @@
     </q-tabs> -->
 
     <q-drawer swipe-only ref="leftDrawer">
-      <div class="toolbar blue">
+      <div class="toolbar">
         <q-toolbar-title :padding="1">
             Loke Carlsson
         </q-toolbar-title>
@@ -38,16 +38,16 @@
       </div>
     </q-drawer>
 
-    <router-view class="layout-view"></router-view>
+    <router-view style="padding: 10px;" class="layout-view"></router-view>
 
     <q-drawer right-side swipe-only ref="rightDrawer">
-      <div class="toolbar blue">
+      <div class="toolbar">
         <q-toolbar-title :padding="1">
             Example questions
         </q-toolbar-title>
       </div>
 
-      <p style="padding: 25px;" class="text-grey-7">
+      <p style="padding: 20px;" class="text-grey-7">
         <ul>
           <li>What's your name?</li>
           <li>Who created you?</li>

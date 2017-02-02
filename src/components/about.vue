@@ -1,8 +1,8 @@
 <template>
   <div id='bot'>
-    <p>
+    <h4>
       Hello!
-    </p>
+    </h4>
     <p>
       Here is about information going to be written! Soon...
     </p>
