@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import bot from './components/bot.vue'
+import bot from './components/bot/Chat.vue'
 /*
  * Root component
  */

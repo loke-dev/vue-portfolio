@@ -19,7 +19,8 @@
     "roboto-fontface": "^0.7.0",
     "velocity-animate": "^1.2.3",
     "vue": "2.1.10",
-    "vue-router": "^2.0.0"
+    "vue-router": "^2.0.0",
+    "vuex": "^2.1.1"
   },
   "devDependencies": {
     "api-ai-javascript": "^2.0.0-beta.14",

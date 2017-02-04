@@ -20,9 +20,13 @@
 
 <script>
 import { Toast } from 'quasar'
+import store from './store'
 export default {
+  store,
+  name: 'MessageBar',
   data () {
     return {
+      currentMessage: null
     }
   },
   methods: {
@@ -33,20 +37,12 @@ export default {
       })
     },
     send () {
-    //   const client = new ApiAiClient('${process.env.API_AI_TOKEN}', {streamClientClass: ApiAiStreamClient});
-    //   .textRequest('Hello!')
-    //   .then((response) => {
-    //     console.log(response);
-    //   })
-    // .catch((error) => {
-    //   console.log(error);
-    // })
       let vm = this
       var data = {
         query: 'messageText',
         lang: 'en',
         v: '20150910',
-        sessionId: 'somethingreallyrandom'
+        sessionId: store.state.sessionId
       }
       this.$http.get('/query', {params: data})
       .then(function (result) {
@@ -54,12 +50,19 @@ export default {
       })
     },
     receiveMessage (response) {
+      let responseMessage = response.result.speech
+      if (response.result.fulfillment &&
+          response.result.fulfillment.speech) {
+        responseMessage = response.result.fulfillment.speech
+      }
+      this.addMessageFromBot(responseMessage)
+      this.$emit('message-from-ai', response)
       console.log(response)
     },
     scrollToBottom () {
       setTimeout(() => {
         document.getElementById('messages-container-end')
-          .scrollIntoView()
+        .scrollIntoView()
       }, 1000)
     }
   }

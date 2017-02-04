@@ -2,6 +2,10 @@
 
 > A Quasar project
 
+## Requirements
+
+Copy and rename the file "prod.env.example.js" to "prod.env.js" and add your API key.
+
 ## Build Setup
 
 ``` bash
