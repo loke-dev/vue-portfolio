@@ -74,7 +74,6 @@
       </q-toolbar-title>
     </div> -->
 
-
   </q-layout>
 </template>
 

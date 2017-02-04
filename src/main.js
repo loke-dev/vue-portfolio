@@ -9,8 +9,18 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 import Vue from 'vue'
 import Quasar from 'quasar'
 import router from './router'
+import axios from 'axios'
 
-Vue.use(Quasar) // Install Quasar Framework
+// Install Quasar Framework
+Vue.use(Quasar)
+
+// axios setup:
+axios.defaults.baseURL = 'https://api.api.ai/api'
+axios.defaults.headers.common['Authorization'] = `Bearer ${process.env.API_AI_TOKEN}`
+axios.defaults.headers.post['Content-Type'] = 'application/json'
+Vue.prototype.$http = axios
+
+console.log('API token: ' + process.env.API_AI_TOKEN)
 
 Quasar.start(() => {
   /* eslint-disable no-new */

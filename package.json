@@ -10,6 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "babel-runtime": "^6.0.0",
     "fastclick": "^1.0.6",
     "material-design-icons": "^3.0.1",
@@ -21,6 +22,7 @@
     "vue-router": "^2.0.0"
   },
   "devDependencies": {
+    "api-ai-javascript": "^2.0.0-beta.14",
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.0.0",
     "babel-eslint": "^7.0.0",
