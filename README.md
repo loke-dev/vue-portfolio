@@ -1,7 +1,9 @@
 # LokeCarlsson
 
 > A Vue (with quasar) project
+
 > Built with Vue2, Vuex, Vue-router
+
 > Uses API.AI for the bot
 
 ## Requirements
