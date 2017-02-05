@@ -41,7 +41,7 @@
     <router-view style="padding: 10px;" class="layout-view"></router-view>
 
     <q-drawer right-side swipe-only ref="rightDrawer">
-      <div class="toolbar">
+      <div class="toolbar orange">
         <q-toolbar-title :padding="1">
             Example questions
         </q-toolbar-title>
@@ -86,4 +86,12 @@ export default {
 </script>
 
 <style>
+#bot {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#messages-container {
+  margin-top: 20px;
+}
 </style>

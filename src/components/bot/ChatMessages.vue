@@ -13,6 +13,7 @@
 <div id='messages-container-end' ></div>
 </div>
 </template>
+
 <script>
 import store from './store'
 export default {
@@ -34,14 +35,16 @@ export default {
 .received .message-box {
   display:flex;
 }
+.message {
+  max-width: 400px;
+}
 .received .message {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 15px;
-  background-color: white;
-  color: #535050;
-  word-break: break-all;
+  background-color: #ff9800;
+  color: white;
 }
 .sent .message-box {
   margin-left:auto;
@@ -51,9 +54,8 @@ export default {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 15px;
-  background-color: #8BDB3A;
-  color: #535050;
-  word-break: break-all;
+  background-color: #027be3;
+  color: white;
 }
 .author {
   fontSize: 14px;

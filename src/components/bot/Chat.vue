@@ -1,69 +1,43 @@
 <template>
   <div id='bot'>
-    <h4>
-      Ask me anything!
-    </h4>
-    <p>
+    <!-- <h5>
       Either write your question or press voice button and ask something!
+    </h5> -->
+
+    <message-bar
+      initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
+      v-on:message-sent='messageSent'
+      v-on:message-received='messageReceived'
+      v-on:message-from-ai='messageFromAI'>
+    </message-bar>
+
+    <p style="text-align: center;">
+      <messages ></messages>
     </p>
-
-    <button class="primary medium circular" @click="send()">
-      <i class="">mic</i>
-    </button>
-
-    <input class="full-width no-border" placeholder="Ask your question here.">
-
-    <hr>
 
   </div>
 </template>
 
 <script>
-import { Toast } from 'quasar'
-import store from './store'
+import MessageBar from '../bot/ChatBar'
+import Messages from '../bot/ChatMessages'
+import store from '../bot/store'
 export default {
   store,
-  name: 'MessageBar',
-  data () {
-    return {
-      currentMessage: null
-    }
+  name: 'Chat',
+  components: {
+    Messages,
+    MessageBar
   },
   methods: {
-    record () {
-      Toast.create({
-        html: 'Now recording!',
-        icon: 'mic'
-      })
+    messageFromAI (message) {
+      console.log(message)
     },
-    send () {
-      let vm = this
-      var data = {
-        query: 'messageText',
-        lang: 'en',
-        v: '20150910',
-        sessionId: store.state.sessionId
-      }
-      this.$http.get('/query', {params: data})
-      .then(function (result) {
-        vm.receiveMessage(result.data)
-      })
+    messageReceived (message) {
+      console.log(message)
     },
-    receiveMessage (response) {
-      let responseMessage = response.result.speech
-      if (response.result.fulfillment &&
-          response.result.fulfillment.speech) {
-        responseMessage = response.result.fulfillment.speech
-      }
-      this.addMessageFromBot(responseMessage)
-      this.$emit('message-from-ai', response)
-      console.log(response)
-    },
-    scrollToBottom () {
-      setTimeout(() => {
-        document.getElementById('messages-container-end')
-        .scrollIntoView()
-      }, 1000)
+    messageSent (message) {
+      console.log(message)
     }
   }
 }

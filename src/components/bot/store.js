@@ -1,5 +1,5 @@
-var Vue = require('vue')
-var Vuex = require('vuex')
+const Vue = require('vue')
+const Vuex = require('vuex')
 
 Vue.use(Vuex)
 

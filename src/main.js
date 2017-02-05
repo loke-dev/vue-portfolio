@@ -20,8 +20,6 @@ axios.defaults.headers.common['Authorization'] = `Bearer ${process.env.API_AI_TO
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 Vue.prototype.$http = axios
 
-console.log('API token: ' + process.env.API_AI_TOKEN)
-
 Quasar.start(() => {
   /* eslint-disable no-new */
   new Vue({
