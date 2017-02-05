@@ -1,7 +1,7 @@
 <template>
   <div id='bot'>
 
-    <div slot="header" class="toolbar top inverted platform-delimiter">
+    <div slot="header" class="toolbar top inverted ">
       <div class="auto flex justify-center within-iframe-hide">
           <message-bar
             initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
