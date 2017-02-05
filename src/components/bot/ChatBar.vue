@@ -2,7 +2,7 @@
   <form v-on:submit.prevent='messageAdded' >
   <input type="text" v-model='currentMessage'
     class='msg' value="" placeholder="Type your message here" >
-    <button disabled class="primary medium circular" @click="send(event)">
+    <button disabled class="primary medium circular" @click="send()">
       <i class="">mic</i>
     </button>
   </form>
