@@ -27,10 +27,13 @@ export default {
 </script>
 <style>
 .received {
-  padding-top:10px; padding-left:14px;
+  padding-top:10px;
+  padding-left:14px;
 }
 .sent {
-  padding-top: 10px; padding-right:14px;display:flex;
+  padding-top: 10px;
+  padding-right:14px;
+  display:flex;
 }
 .received .message-box {
   display:flex;

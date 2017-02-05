@@ -1,17 +1,20 @@
 <template>
   <div id='bot'>
-    <!-- <h5>
-      Either write your question or press voice button and ask something!
-    </h5> -->
 
-    <message-bar
-      initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
-      v-on:message-sent='messageSent'
-      v-on:message-received='messageReceived'
-      v-on:message-from-ai='messageFromAI'>
-    </message-bar>
+    <div slot="header" class="toolbar top inverted platform-delimiter">
+      <div class="auto flex justify-center within-iframe-hide">
+          <message-bar
+            initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
+            v-on:message-sent='messageSent'
+            v-on:message-received='messageReceived'
+            v-on:message-from-ai='messageFromAI'>
+          </message-bar>
+      </div>
+    </div>
 
-    <p style="text-align: center;">
+
+
+    <p>
       <messages ></messages>
     </p>
 

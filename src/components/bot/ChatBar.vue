@@ -1,9 +1,9 @@
 <template>
   <form v-on:submit.prevent='messageAdded' >
-  <input type="text" v-model='currentMessage'
+  <input pattern=".{2,}" required type="text" v-model='currentMessage'
     class='msg' value="" placeholder="Type your message here" >
-    <button disabled class="primary medium circular" @click="send()">
-      <i class="">mic</i>
+    <button class="primary medium circular">
+      <i class="">send</i>
     </button>
   </form>
 </template>
@@ -95,6 +95,7 @@ form {
   padding: 5px;
   justify-content: space-around;
   align-items: stretch;
+  
 }
 .msg {
   width:95%;
@@ -110,5 +111,6 @@ form {
 
 buttom, .primary {
   min-width: 56px;
+  margin-left: 10px;
 }
 </style>

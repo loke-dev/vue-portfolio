@@ -11,6 +11,7 @@ import AboutView from './components/info/About.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
