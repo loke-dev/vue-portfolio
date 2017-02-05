@@ -1,6 +1,8 @@
-# Quasar App
+# LokeCarlsson
 
-> A Quasar project
+> A Vue (with quasar) project
+> Built with Vue2, Vuex, Vue-router
+> Uses API.AI for the bot
 
 ## Requirements
 
@@ -21,3 +23,8 @@ $ quasar build
 # lint code
 $ quasar lint
 ```
+
+## Future implementations
+- Voice to Text
+- About page
+- Text to voice with mute option
