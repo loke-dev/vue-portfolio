@@ -30,3 +30,7 @@ $ quasar lint
 - Voice to Text
 - About page
 - Text to voice with mute option
+
+___
+
+_Please direct all complaints to /dev/null/_
