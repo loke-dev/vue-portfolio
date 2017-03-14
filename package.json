@@ -20,7 +20,8 @@
     "velocity-animate": "^1.2.3",
     "vue": "2.1.10",
     "vue-router": "^2.0.0",
-    "vuex": "^2.1.1"
+    "vuex": "^2.1.1",
+    "vuex-persistedstate": "^1.3.0"
   },
   "devDependencies": {
     "api-ai-javascript": "^2.0.0-beta.14",

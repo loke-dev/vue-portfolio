@@ -1,5 +1,6 @@
-const Vue = require('vue')
-const Vuex = require('vuex')
+import Vue from 'vue'
+import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
@@ -27,5 +28,8 @@ export default new Vuex.Store({
     },
     pop: state => state.messages.pop(),
     clear (state) { state.messages = [] }
-  }
+  },
+  plugins: [
+    createPersistedState()
+  ]
 })
