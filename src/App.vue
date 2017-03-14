@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import bot from './components/bot/Chat.vue'
+import home from './components/info/Home.vue'
 /*
  * Root component
  */
 export default {
-  name: 'bot',
+  name: 'home',
   components: {
-    bot
+    home
   }
 }
 </script>

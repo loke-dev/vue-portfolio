@@ -30,6 +30,12 @@
         <q-drawer-link icon="home" to="/" exact>
           Home
         </q-drawer-link>
+        <q-drawer-link icon="memory" to="/bot" exact>
+          Bot
+        </q-drawer-link>
+        <q-drawer-link icon="repeat" to="/deer" exact>
+          Endless deer
+        </q-drawer-link>
         <hr>
         <!-- <div class="list-label">Links</div> -->
         <q-drawer-link icon="account_box" to="/about">

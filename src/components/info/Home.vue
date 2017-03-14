@@ -1,11 +1,8 @@
 <template>
-  <div id='about'>
+  <div id='home'>
     <h4>
-      Hello!
+      Welcome!
     </h4>
-    <p>
-      Here is about information going to be written! Soon...
-    </p>
   </div>
 </template>
 
