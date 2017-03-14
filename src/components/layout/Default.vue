@@ -1,23 +1,23 @@
 <template>
   <q-layout>
     <div slot="header" class="toolbar">
-      <button class="" @click="$refs.leftDrawer.open()">
+      <button class="static" @click="$refs.leftDrawer.open()">
         <i>menu</i>
       </button>
       <q-toolbar-title :padding="1">
         Loke Carlsson
       </q-toolbar-title>
       <button @click="$refs.rightDrawer.open()">
-        <i>help</i>
+        <i>help_outline</i>
       </button>
     </div>
 
-    <!-- <q-tabs slot="navigation" class="justified">
+     <!--<q-tabs slot="navigation" class="justified">
       <q-tab icon="view_quilt" route="/showcase/layout" exact replace>About</q-tab>
       <q-tab icon="view_day" route="/showcase/layout/toolbar" replace>Toolbar</q-tab>
       <q-tab icon="view_day" route="/showcase/layout/tabs" replace>Tabs</q-tab>
       <q-tab icon="input" route="/showcase/layout/drawer" replace>Drawer</q-tab>
-    </q-tabs> -->
+    </q-tabs>-->
 
     <q-drawer swipe-only ref="leftDrawer">
       <div class="toolbar">
@@ -41,7 +41,7 @@
     <router-view style="padding: 10px;" class="layout-view"></router-view>
 
     <q-drawer right-side swipe-only ref="rightDrawer">
-      <div class="toolbar orange">
+      <div class="toolbar">
         <q-toolbar-title :padding="1">
             Example questions
         </q-toolbar-title>

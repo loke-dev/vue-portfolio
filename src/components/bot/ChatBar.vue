@@ -2,7 +2,7 @@
   <form v-on:submit.prevent='messageAdded' >
   <input pattern=".{2,}" required type="text" v-model='currentMessage'
     class='msg' value="" placeholder="Type your message here" >
-    <button class="primary medium circular">
+    <button class="light sendButton">
       <i class="">send</i>
     </button>
   </form>
@@ -95,7 +95,7 @@ form {
   padding: 5px;
   justify-content: space-around;
   align-items: stretch;
-  
+
 }
 .msg {
   width:95%;
@@ -109,7 +109,7 @@ form {
   text-align: center;
 }
 
-buttom, .primary {
+.sendButton {
   min-width: 56px;
   margin-left: 10px;
 }

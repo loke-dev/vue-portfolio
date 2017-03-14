@@ -46,8 +46,8 @@ export default {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 15px;
-  background-color: #ff9800;
-  color: white;
+  background-color: #FFE082;
+  color: black;
 }
 .sent .message-box {
   margin-left:auto;
@@ -57,8 +57,8 @@ export default {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 15px;
-  background-color: #027be3;
-  color: white;
+  background-color: #81D4FA;
+  color: black;
 }
 .author {
   fontSize: 14px;

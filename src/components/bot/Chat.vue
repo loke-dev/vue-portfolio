@@ -11,9 +11,7 @@
           </message-bar>
       </div>
     </div>
-
-
-
+    
     <p>
       <messages ></messages>
     </p>
