@@ -14,7 +14,7 @@ module.exports = {
   progressFormat: ' [:bar] ' + ':percent'.bold + ' (:msg)',
 
   // Default theme to build with ('ios' or 'mat')
-  defaultTheme: 'mat',
+  defaultTheme: 'ios',
 
   build: {
     env: require('./prod.env'),
@@ -32,7 +32,7 @@ module.exports = {
     env: require('./dev.env'),
     cssSourceMap: true,
     // auto open browser or not
-    openBrowser: true,
+    openBrowser: false,
     publicPath: '/',
     port: 8080,
     // Proxy your API if using any.
