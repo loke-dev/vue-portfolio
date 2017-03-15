@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/LokeCarlsson/lokecarlsson.png?label=ready&title=Ready)](https://waffle.io/LokeCarlsson/lokecarlsson)
 # LokeCarlsson
 
 > A Vue (with quasar) project
