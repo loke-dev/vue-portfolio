@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/LokeCarlsson/lokecarlsson.png?label=Backlog&title=Backlog)](https://waffle.io/LokeCarlsson/lokecarlsson)
+[![Stories in Ready](https://badge.waffle.io/LokeCarlsson/lokecarlsson.png?label=backlog&title=backlog)](https://waffle.io/LokeCarlsson/lokecarlsson)
 # LokeCarlsson
 
 > A Vue (with quasar) project
