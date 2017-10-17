@@ -25,8 +25,8 @@
              | || |           | |   | |
              | || |           | |   | |</pre>
 
-      <q-infinite-scroll :handler="refresher">
-        <pre v-for="(item, index) in items" class="">           | || |           | |   | |</pre>
+      <q-infinite-scroll :handler="loadMore">
+        <pre v-bind:item="item" v-bind:index="index" v-bind:key="item.id" v-for="(item, index) in items" class="">           | || |           | |   | |</pre>
       </q-infinite-scroll>
       <pre>           |_||_|           |_|   |_|
             /_//_/           /_/   /_/</pre>
@@ -42,7 +42,7 @@ export default {
     }
   },
   methods: {
-    refresher (index, done) {
+    loadMore (index, done) {
       setTimeout(() => {
         let items = []
         for (let i = 0; i < 7; i++) {

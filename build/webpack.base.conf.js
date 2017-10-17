@@ -11,6 +11,10 @@ var
     (env.dev && config.dev.cssSourceMap) ||
     (env.prod && config.build.productionSourceMap)
 
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
+
 module.exports = {
   entry: {
     app: './src/main.js'
@@ -22,10 +26,10 @@ module.exports = {
     chunkFilename: 'js/[id].[chunkhash].js'
   },
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['.js', '.vue', '.json'],
     modules: [
-      path.join(__dirname, '../src'),
-      'node_modules'
+      resolve('src'),
+      resolve('node_modules')
     ],
     alias: config.aliases
   },
@@ -36,7 +40,10 @@ module.exports = {
         test: /\.(vue|js)$/,
         loader: 'eslint-loader',
         include: projectRoot,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
       },
       {
         test: /\.js$/,
@@ -52,7 +59,13 @@ module.exports = {
           loaders: merge({js: 'babel-loader'}, cssUtils.styleLoaders({
             sourceMap: useCssSourceMap,
             extract: env.prod
-          }))
+          })),
+          transformToRequire: {
+            video: 'src',
+            source: 'src',
+            img: 'src',
+            image: 'xlink:href'
+          }
         }
       },
       {
@@ -78,9 +91,6 @@ module.exports = {
     ]
   },
   plugins: [
-    /* Uncomment if you wish to load only one Moment locale: */
-    // new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en/),
-
     new webpack.DefinePlugin({
       'process.env': config[env.prod ? 'build' : 'dev'].env,
       'DEV': env.dev,
@@ -91,9 +101,6 @@ module.exports = {
       minimize: env.prod,
       options: {
         context: path.resolve(__dirname, '../src'),
-        eslint: {
-          formatter: require('eslint-friendly-formatter')
-        },
         postcss: cssUtils.postcss
       }
     }),

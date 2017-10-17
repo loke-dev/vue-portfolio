@@ -2,6 +2,9 @@
 <div id='messages-container'>
 <div
   v-for='message in messages'
+  v-bind:item="message"
+  v-bind:index="message"
+  v-bind:key="message.id"
   :class='message.type'
   class='message-container' >
   <div class="message-box">
@@ -61,7 +64,7 @@ export default {
   color: black;
 }
 .author {
-  fontSize: 14px;
+  font-Size: 14px;
   padding-left: 10;
   padding-bottom: 5;
   color: #928585;

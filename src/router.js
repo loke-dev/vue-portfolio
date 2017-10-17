@@ -9,6 +9,7 @@ import DefaultLayout from './components/layout/Default.vue'
 import BotView from './components/bot/Chat.vue'
 import DeerView from './components/apps/Deer.vue'
 import AboutView from './components/info/About.vue'
+import PortfolioView from './components/info/Portfolio.vue'
 import HomeView from './components/info/Home.vue'
 
 Vue.use(VueRouter)
@@ -25,6 +26,12 @@ export default new VueRouter({
           component: HomeView,
           name: 'Home',
           description: 'Starting page'
+        },
+        {
+          path: '/portfolio',
+          component: PortfolioView,
+          name: 'Portfolio',
+          description: 'My projects'
         },
         {
           path: '/about',
