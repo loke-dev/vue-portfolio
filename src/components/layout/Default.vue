@@ -1,5 +1,5 @@
 <template>
-  <q-layout v-model="sides" ref="layout" view="hHl LpR lFr" :right-breakpoint="1100">
+  <q-layout v-model="sides" ref="layout" view="hHh LpR lFr" :right-breakpoint="1100">
     <!-- Header -->
     <q-toolbar slot="header">
       <q-btn flat @click="sides.left = !sides.left">
@@ -28,14 +28,14 @@
           <q-item-side icon="home"  />
           <q-item-main label="Home" sublabel="Go back to the start page" />
         </q-side-link>
-        <!-- <q-side-link item to="/bot" exact>
+        <q-side-link item to="/bot" exact>
           <q-item-side icon="memory" />
           <q-item-main label="Bot" sublabel="" />
         </q-side-link>
         <q-side-link item to="/deer" exact>
           <q-item-side icon="repeat" />
           <q-item-main label="Endless deer" sublabel="" />
-        </q-side-link> -->
+        </q-side-link>
         <q-side-link item to="/portfolio" exact>
           <q-item-side icon="laptop" />
           <q-item-main label="Portfolio" sublabel="My projects" />
@@ -98,7 +98,8 @@ import {
   QScrollArea,
   QList,
   QItem,
-  QItemTile
+  QItemTile,
+  QItemSeparator
 } from 'quasar'
 
 export default {
@@ -118,7 +119,8 @@ export default {
     QScrollArea,
     QList,
     QItem,
-    QItemTile
+    QItemTile,
+    QItemSeparator
   },
   data () {
     return {

@@ -29,8 +29,9 @@
         <a href="https://github.com/LokeCarlsson/Buyone"><q-btn color="primary">Github</q-btn></a>
       </q-card-actions>
     </q-card>
-    <h1>More to come...</h1>
 
+
+    <h1>More to come...</h1>
   </div>
 </template>
 
