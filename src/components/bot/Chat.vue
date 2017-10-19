@@ -1,7 +1,7 @@
 <template>
   <div id='bot'>
     <p>
-      <messages></messages>
+      <messages> </messages>
     </p>
   </div>
 </template>
