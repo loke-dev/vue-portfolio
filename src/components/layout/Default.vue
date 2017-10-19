@@ -75,7 +75,12 @@
     <!-- Footer -->
     <q-toolbar v-if="['Bot'].indexOf($route.name) > -1" slot="footer">
       <q-toolbar-title>
-        Layout Footer
+        <message-bar
+          initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
+          v-on:message-sent='messageSent'
+          v-on:message-received='messageReceived'
+          v-on:message-from-ai='messageFromAI'>
+        </message-bar>
       </q-toolbar-title>
     </q-toolbar>
   </q-layout>
@@ -102,6 +107,8 @@ import {
   QItemSeparator
 } from 'quasar'
 
+import MessageBar from '../bot/ChatBar'
+
 export default {
   components: {
     QLayout,
@@ -120,7 +127,9 @@ export default {
     QList,
     QItem,
     QItemTile,
-    QItemSeparator
+    QItemSeparator,
+    MessageBar
+
   },
   data () {
     return {
@@ -128,6 +137,17 @@ export default {
         left: true,
         right: false
       }
+    }
+  },
+  methods: {
+    messageFromAI (message) {
+      console.log(message)
+    },
+    messageReceived (message) {
+      console.log(message)
+    },
+    messageSent (message) {
+      console.log(message)
     }
   }
 }

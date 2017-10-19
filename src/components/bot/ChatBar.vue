@@ -2,17 +2,23 @@
   <form v-on:submit.prevent='messageAdded' >
   <input pattern=".{2,}" required type="text" v-model='currentMessage'
     class='msg' value="" placeholder="Type your message here" >
-    <button class="light sendButton">
-      <i class="">send</i>
-    </button>
+    <q-btn class="sendButton" outline icon="send" />
   </form>
 </template>
 
 <script>
 import store from './store'
+import {
+  QBtn,
+  QIcon
+} from 'quasar'
 export default {
   store,
   name: 'MessageBar',
+  components: {
+    QBtn,
+    QIcon
+  },
   props: {
     initialMessage: { type: String, default: null }
   },
@@ -32,7 +38,7 @@ export default {
       setTimeout(() => {
         document.getElementById('messages-container-end')
           .scrollIntoView()
-      }, 1000)
+      }, 1)
     },
     commitMessage (message, type) {
       store.commit('push', message)
