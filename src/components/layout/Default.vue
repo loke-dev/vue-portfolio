@@ -73,7 +73,7 @@
     <!-- sub-routes get injected here: -->
     <router-view />
     <!-- Footer -->
-    <q-toolbar slot="footer">
+    <q-toolbar v-if="['Bot'].indexOf($route.name) > -1" slot="footer">
       <q-toolbar-title>
         Layout Footer
       </q-toolbar-title>

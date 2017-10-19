@@ -1,24 +1,25 @@
 <template>
-<div id='messages-container'>
-<div
-  v-for='message in messages'
-  v-bind:item="message"
-  v-bind:index="message"
-  v-bind:key="message.id"
-  :class='message.type'
-  class='message-container' >
-  <div class="message-box">
+  <div id='messages-container'>
     <div
-      class='message'> {{message.text}} </div>
-    <div style="flex:1;min-width:20%" ></div>
+      v-for='message in messages'
+      v-bind:item="message"
+      v-bind:index="message"
+      v-bind:key="message.id"
+      :class='message.type'
+      class='message-container' >
+      <div class="message-box">
+        <div
+          class='message'> {{message.text}} </div>
+        <div style="flex:1;min-width:20%" ></div>
+      </div>
+    </div>
+    <div id='messages-container-end' ></div>
   </div>
-</div>
-<div id='messages-container-end' ></div>
-</div>
 </template>
 
 <script>
 import store from './store'
+
 export default {
   store,
   computed: {
