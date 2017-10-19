@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="layout-padding deer">
-      <pre>     /|       |\
+    <div class="layout-padding deer"><pre>/|       |\
   `__\\       //__'
      ||      ||
    \__`\     |'__/
@@ -11,31 +10,41 @@
        |@. .@|
        |     |
        ,\.-./ \
-       ;;`-'   `---__________-----.-.
-       ;;;                         \_\
-       ';;;                         |
-        ;    |                      ;
-         \   \     \        |      /
-          \_, \    /        \     |\
-            |';|  |,,,,,,,,/ \    \ \_
-            |  |  |           \   /   |
-            \  \  |           |  / \  |
-             | || |           | |   | |
-             | || |           | |   | |
-             | || |           | |   | |
-             | || |           | |   | |</pre>
+                ;;`-'   `---__________-----.-.
+                ;;;                         \_\
+                ';;;                         |
+                  ;    |                      ;
+                  \   \     \        |      /
+                    \_, \    /        \     |\
+                      |';|  |,,,,,,,,/ \    \ \_
+                      |  |  |           \   /   |
+                      \  \  |           |  / \  |
+                       | || |           | |   | |
+                       | || |           | |   | |
+                       | || |           | |   | |
+                       | || |           | |   | |</pre>
 
       <q-infinite-scroll :handler="loadMore">
-        <pre v-bind:item="item" v-bind:index="index" v-bind:key="item.id" v-for="(item, index) in items" class="">           | || |           | |   | |</pre>
+        <pre v-bind:item="item" v-bind:index="index" v-bind:key="item.id" v-for="(item, index) in items" class="">                     | || |           | |   | |</pre>
       </q-infinite-scroll>
-      <pre>           |_||_|           |_|   |_|
-            /_//_/           /_/   /_/</pre>
+      <pre>                     |_||_|           |_|   |_|
+                      /_//_/           /_/   /_/</pre>
     </div>
   </div>
 </template>
 
 <script>
+import {
+  QInfiniteScroll,
+  QChip,
+  QSpinnerDots
+} from 'quasar'
 export default {
+  components: {
+    QInfiniteScroll,
+    QChip,
+    QSpinnerDots
+  },
   data () {
     return {
       items: [{}, {}, {}, {}, {}]
@@ -50,7 +59,7 @@ export default {
         }
         this.items = this.items.concat(items)
         done()
-      }, 10)
+      }, 50)
     }
   }
 }
