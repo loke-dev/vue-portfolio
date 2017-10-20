@@ -11,9 +11,11 @@ require(`quasar/dist/quasar.${__THEME}.css`)
 // require(`quasar/dist/quasar.ie.${__THEME}.css`)
 
 import Vue from 'vue'
-import Quasar from 'quasar'
+import Quasar, { AddressbarColor } from 'quasar'
 import router from './router'
 import axios from 'axios'
+
+AddressbarColor.set('#027be3')
 
 Vue.config.productionTip = false
 Vue.use(Quasar) // Install Quasar Framework
