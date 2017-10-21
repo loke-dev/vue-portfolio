@@ -1,7 +1,7 @@
 <template>
   <div id='bot'>
     <p>
-      <messages> </messages>
+      <messages name="message"> </messages>
     </p>
   </div>
 </template>
@@ -9,6 +9,7 @@
 <script>
 import Messages from '../bot/ChatMessages'
 import store from '../bot/store'
+
 export default {
   store,
   name: 'Chat',
