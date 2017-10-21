@@ -1,26 +1,42 @@
 <template>
   <div id='messages-container'>
+    <q-transition
+      appear
+      group
+      enter="fadeInUp"
+      leave="fadeOut"
+    >
     <div
       v-for='message in messages'
-      v-bind:item="message"
-      v-bind:index="message"
-      v-bind:key="message.id"
+      :item="message"
+      :index="message"
+      :key="message"
       :class='message.type'
-      class='message-container' >
+      class='message-container' 
+    >
       <div class="message-box">
         <div
           class='message'> {{message.text}} </div>
         <div style="flex:1;min-width:20%" ></div>
       </div>
     </div>
+    </q-transition>
     <div id='messages-container-end' ></div>
   </div>
 </template>
 
 <script>
 import store from './store'
+import {
+  QItemSeparator,
+  QTransition
+} from 'quasar'
 
 export default {
+  components: {
+    QItemSeparator,
+    QTransition
+  },
   store,
   computed: {
     messages () {
