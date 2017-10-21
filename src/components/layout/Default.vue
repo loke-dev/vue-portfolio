@@ -30,11 +30,11 @@
         </q-side-link>
         <q-side-link item to="/bot" exact>
           <q-item-side icon="memory" />
-          <q-item-main label="Bot" sublabel="" />
+          <q-item-main label="Bot" sublabel="Chat with me!" />
         </q-side-link>
         <q-side-link item to="/deer" exact>
           <q-item-side icon="repeat" />
-          <q-item-main label="Endless deer" sublabel="" />
+          <q-item-main label="Endless deer" sublabel="How tall is it though?" />
         </q-side-link>
         <q-side-link item to="/portfolio" exact>
           <q-item-side icon="laptop" />
