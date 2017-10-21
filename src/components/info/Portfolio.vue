@@ -99,6 +99,21 @@
 
     <q-card key="card" inline>
       <q-card-media>
+        <img class="responsive" src="../../statics/lillafro.png">
+      </q-card-media>
+      <q-card-separator />
+      <q-card-title>
+        Lilla frö
+        <span slot="subtitle">Presentation website/landingpage</span>
+      </q-card-title>
+      <q-card-actions>
+        <a target="_blank" href="http://lillafrö.nu"><q-btn color="primary">Demo</q-btn></a>
+        <a target="_blank" href="https://github.com/LokeCarlsson/lillafro"><q-btn color="primary">Github</q-btn></a>
+      </q-card-actions>
+    </q-card>
+
+    <q-card key="card" inline>
+      <q-card-media>
         <img class="responsive" src="../../statics/carleudd.png">
       </q-card-media>
       <q-card-separator />
