@@ -1,15 +1,15 @@
 <template>
-  <q-layout v-model="sides" ref="layout" view="hHh LpR lFr" :right-breakpoint="1100">
+  <q-layout v-model="sides" ref="layout" view="hHh LpR lFf" :right-breakpoint="1100">
     <!-- Header -->
     <q-toolbar slot="header">
-      <q-btn flat @click="sides.left = !sides.left">
+      <q-btn flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
       <q-toolbar-title>
         Loke Carlsson
         <span slot="subtitle">Portfolio</span>
       </q-toolbar-title>
-      <q-btn flat @click="sides.right = !sides.right">
+      <q-btn v-if="['Bot'].indexOf($route.name) > -1" flat @click="$refs.layout.toggleRight()">
         <q-icon mat="help_outline" />
       </q-btn>
     </q-toolbar>
@@ -47,29 +47,19 @@
       </q-list>
     </div>
     <!-- Right Side Panel -->
-    <div swipe-only slot="right">
-      <q-list highlight>
-        <q-list-header>Recent chats</q-list-header>
-        <q-item>
-          <q-item-main>
-            <q-item-tile label>John Doe</q-item-tile>
-            <q-item-tile sublabel>Quasar enthusiast</q-item-tile>
-          </q-item-main>
-          <q-item-side right>
-            <q-item-tile icon="chat_bubble" color="green" />
-          </q-item-side>
-        </q-item>
-        <q-item>
-          <q-item-main label="John Doe" sublabel="Quasar enthusiast" />
-          <q-item-side right icon="chat_bubble" />
-        </q-item>
-        <q-item-separator />
-        <q-list-header>Previous chats</q-list-header>
-        <q-item>
-          <q-item-main label="Jack Doe" />
-        </q-item>
-      </q-list>
+    <div v-if="['Bot'].indexOf($route.name) > -1" slot="right" style="width: 100%; height: 100%">
+      <big style="top: 10px;">Example questions</big>
+      <div style="padding: 20px;">
+          <p>What's your name?</p>
+          <p>Who created you?</p>
+          <p>How can I contact you?</p>
+          <p>What is your github?</p>
+          <p>Can I reach you by email?</p>
+          <p>Can I see your linkedin profile?</p>
+          <p>How tall is barack obama?</p>
+      </div>
     </div>
+
     <!-- sub-routes get injected here: -->
     <router-view />
     <!-- Footer -->
@@ -153,13 +143,15 @@ export default {
 }
 </script>
 
-<style>
-#bot {
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#messages-container {
-  margin-top: 20px;
-}
+<style lang="stylus">
+#bot
+  max-width 750px
+  margin-left auto
+  margin-right auto
+
+#messages-container
+  margin-top 20px
+
+.layout-aside-right
+  top: 50px!important
 </style>
