@@ -24,7 +24,37 @@
       <q-card-separator />
       <q-card-title>
         Personal Web Desktop
-        <span slot="subtitle">A single page application designed to imitate macOS</span>
+        <span slot="subtitle">SPA macOS clone</span>
+      </q-card-title>
+      <q-card-actions>
+        <a disabled><q-btn color="primary">Demo</q-btn></a>
+        <a href="https://github.com/LokeCarlsson/PWD"><q-btn color="primary">Github</q-btn></a>
+      </q-card-actions>
+    </q-card>
+
+    <q-card inline>
+      <q-card-media>
+        <img class="responsive" src="../../statics/snippet.png">
+      </q-card-media>
+      <q-card-separator />
+      <q-card-title>
+        Snippets
+        <span slot="subtitle">Web application for snippet management</span>
+      </q-card-title>
+      <q-card-actions>
+        <a disabled><q-btn color="primary">Demo</q-btn></a>
+        <a href="https://github.com/LokeCarlsson/PWD"><q-btn color="primary">Github</q-btn></a>
+      </q-card-actions>
+    </q-card>
+
+    <q-card inline>
+      <q-card-media>
+        <img class="responsive" src="../../statics/quiz.png">
+      </q-card-media>
+      <q-card-separator />
+      <q-card-title>
+        QuizMaster
+        <span slot="subtitle">Javascript quiz working with API's</span>
       </q-card-title>
       <q-card-actions>
         <a disabled><q-btn color="primary">Demo</q-btn></a>
@@ -54,7 +84,7 @@
       <q-card-separator />
       <q-card-title>
         Carleudd
-        <span slot="subtitle">Simple website built with HTML5 and CSS3</span>
+        <span class="desc" slot="subtitle">Simple website built with HTML5 and CSS3</span>
       </q-card-title>
       <q-card-actions>
         <a disabled><q-btn color="primary">Demo</q-btn></a>
@@ -95,6 +125,7 @@ export default {
 <style lang="stylus">
 .q-card
   max-width 300px
+  margin 20px
   
 a
   margin-left 5px
