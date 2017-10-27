@@ -63,7 +63,7 @@
       </q-card-title>
       <q-card-actions>
         <a disabled><q-btn color="primary">Demo</q-btn></a>
-        <a target="_blank" href="https://github.com/LokeCarlsson/PWD"><q-btn color="primary">Github</q-btn></a>
+        <a target="_blank" href="https://github.com/LokeCarlsson/Snippets"><q-btn color="primary">Github</q-btn></a>
       </q-card-actions>
     </q-card>
 
