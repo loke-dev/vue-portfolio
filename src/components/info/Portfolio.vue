@@ -123,7 +123,7 @@
       </q-card-title>
       <q-card-actions>
         <a target="_blank" href="http://carleudd.lokecarlsson.se"><q-btn color="primary">Demo</q-btn></a>
-        <a target="_blank" href="https://github.com/LokeCarlsson/lokecarlsson.github.io"><q-btn color="primary">Github</q-btn></a>
+        <a target="_blank" href="https://github.com/LokeCarlsson/carleudd"><q-btn color="primary">Github</q-btn></a>
       </q-card-actions>
     </q-card>
 
