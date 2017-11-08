@@ -83,11 +83,11 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-$brand-twitter = #1da1f2
-$brand-facebook = #3b5998
-$brand-google-plus = #dd4b39
-$brand-github = #000
-$brand-linkedin = #0077B5
+$twitter = #1da1f2
+$facebook = #3b5998
+$google-plus = #dd4b39
+$github = #000
+$linkedin = #0077B5
   
 .chips
   margin: 2%;
@@ -116,27 +116,27 @@ li
     border-radius: 100%
   &.social-twitter 
     a 
-      background-color: $brand-twitter
+      background-color: $twitter
       &:hover 
-        background-color: darken($brand-twitter, 20%)
+        background-color: darken($twitter, 20%)
   &.social-facebook 
     a 
-      background-color: $brand-facebook
+      background-color: $facebook
       &:hover 
-        background-color: darken($brand-facebook, 20%)
+        background-color: darken($facebook, 20%)
   &.social-google-plus 
     a 
-      background-color: $brand-google-plus
+      background-color: $google-plus
       &:hover 
-        background-color: darken($brand-google-plus, 20%)
+        background-color: darken($google-plus, 20%)
   &.social-github 
     a 
-      background-color: $brand-github
+      background-color: $github
       &:hover 
-        background-color: lighten($brand-github, 20%)
+        background-color: lighten($github, 20%)
   &.social-linkedin 
     a 
-      background-color: $brand-linkedin
+      background-color: $linkedin
       &:hover
-        background-color: darken($brand-linkedin, 20%)
+        background-color: darken($linkedin, 20%)
 </style>
