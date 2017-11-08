@@ -82,7 +82,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 $brand-twitter = #1da1f2
 $brand-facebook = #3b5998
 $brand-google-plus = #dd4b39
