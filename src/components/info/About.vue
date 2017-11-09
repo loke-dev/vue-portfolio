@@ -10,6 +10,7 @@
     <q-card>
       <q-card-title>Skills and interests</q-card-title>
       <q-card-main>
+        <q-chip class="chips" color="primary">Linux</q-chip>
         <q-chip class="chips" color="primary">Javascript</q-chip>
         <q-chip class="chips" color="primary">CSS3</q-chip>
         <q-chip class="chips" color="primary">HTML5</q-chip>
@@ -20,7 +21,13 @@
         <q-chip class="chips" color="primary">React</q-chip>
         <q-chip class="chips" color="primary">Git</q-chip>
         <q-chip class="chips" color="primary">Sass</q-chip>
+        <q-chip class="chips" color="primary">Stylus</q-chip>
         <q-chip class="chips" color="primary">Babel</q-chip>
+        <q-chip class="chips" color="primary">Webpack</q-chip>
+        <q-chip class="chips" color="primary">C#</q-chip>
+        <q-chip class="chips" color="primary">PHP</q-chip>
+        <q-chip class="chips" color="primary">Java</q-chip>
+        <q-chip class="chips" color="primary">Magento</q-chip>
       </q-card-main>
     </q-card>
 
