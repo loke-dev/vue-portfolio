@@ -143,7 +143,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 #bot
   max-width 750px
   margin-left auto
