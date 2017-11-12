@@ -1,24 +1,35 @@
 <template>
   <div id='about'>
+
+    <img src="~statics/loke.png" class="responsive">
     <h4>
-      Picture here!
+      Greetings!
     </h4>
     <p>
-      Here is about information going to be written! Soon...
+      I'm Loke, a webdeveloper from Kalmar.
+    </p>
+    <p>
+      I have had since I was a kid interest for computeres and creating stuff and this have led me to the world wide web as a developer!
+    </p>
+    <p>
+      Currently I studying on my third year at <a href="https://lnu.se/">Linneaus University</a> in Kalmar, Sweden. 
+      <br>
+      I have completed the two year <a href="https://lnu.se/program/webbprogrammerare/kalmar-ht/">Webdeveloper Programme</a>
+      and now studying for my bachelor's degree in <a href="https://lnu.se/program/pabyggnadsutbildning-inom-datavetenskap-kandidatexamen/">Computer Science</a>.
     </p>
 
-    <q-card>
+    <q-card inline style="margin-top: 30px; margin-bottom: 30px;">
       <q-card-title>Skills and interests</q-card-title>
       <q-card-main>
-        <q-chip class="chips" color="primary">Linux</q-chip>
-        <q-chip class="chips" color="primary">Javascript</q-chip>
-        <q-chip class="chips" color="primary">CSS3</q-chip>
         <q-chip class="chips" color="primary">HTML5</q-chip>
+        <q-chip class="chips" color="primary">CSS3</q-chip>
+        <q-chip class="chips" color="primary">Javascript</q-chip>
         <q-chip class="chips" color="primary">Node</q-chip>
         <q-chip class="chips" color="primary">MongoDB</q-chip>
         <q-chip class="chips" color="primary">MySQL</q-chip>
         <q-chip class="chips" color="primary">Vue</q-chip>
         <q-chip class="chips" color="primary">React</q-chip>
+        <q-chip class="chips" color="primary">Linux</q-chip>
         <q-chip class="chips" color="primary">Git</q-chip>
         <q-chip class="chips" color="primary">Sass</q-chip>
         <q-chip class="chips" color="primary">Stylus</q-chip>
@@ -30,8 +41,6 @@
         <q-chip class="chips" color="primary">Magento</q-chip>
       </q-card-main>
     </q-card>
-
-    
 
     <div class="socialMediaSection">
       <ul class="list-social">
@@ -96,8 +105,12 @@ $google-plus = #dd4b39
 $github = #000
 $linkedin = #0077B5
   
+img
+  max-width: 250px
+  border-radius: 50%
+
 .chips
-  margin: 2%;
+  margin: 2%
 
 .socialMediaSection
   padding-top: 20px
@@ -105,8 +118,9 @@ $linkedin = #0077B5
 .socialmedia-item
   display: inline-block
 
-.socialmedia-item:not(:last-child)
-  margin-right: 10px
+.socialmedia-item
+  margin-right: 25px
+  margin-top: 5px
 
 ul.list-social
   margin-bottom: 0
