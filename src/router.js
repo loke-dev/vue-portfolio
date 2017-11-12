@@ -7,10 +7,10 @@ import PaymentRequiredView from './components/error/402.vue'
 import DefaultLayout from './components/layout/Default.vue'
 
 import BotView from './components/bot/Chat.vue'
-import DeerView from './components/apps/Deer.vue'
 import AboutView from './components/info/About.vue'
 import PortfolioView from './components/info/Portfolio.vue'
 import HomeView from './components/info/Home.vue'
+import DeerView from './components/apps/Deer.vue'
 
 Vue.use(VueRouter)
 
@@ -45,8 +45,8 @@ export default new VueRouter({
         {
           path: '/deer',
           component: DeerView,
-          name: 'Deer',
-          description: 'Endless deer'
+          name: 'deer',
+          description: 'Foreverscrolling deer'
         },
         {
           path: '/bot',
