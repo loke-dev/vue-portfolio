@@ -3,8 +3,8 @@
     <q-transition
       appear
       group
-      enter="bounceInUp"
-      leave="bounceOutDown"
+      enter="slideInUp"
+      leave="SlideInDown"
     >
 
     <q-card key="card" inline>
