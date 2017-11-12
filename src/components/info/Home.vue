@@ -1,8 +1,6 @@
 <template>
   <div id='home'>
-    <h4>
-      Welcome!
-    </h4>
+    <img src="https://digitalsynopsis.com/wp-content/uploads/2015/03/web-designer-developer-jokes-humour-funny-19.jpg" class="responsive">
   </div>
 </template>
 
@@ -15,5 +13,5 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="stylus">
 </style>
