@@ -7,7 +7,7 @@
       </q-btn>
       <q-toolbar-title>
         Loke Carlsson
-        <span slot="subtitle">Portfolio</span>
+        <span slot="subtitle">WebDeveloper</span>
       </q-toolbar-title>
       <q-btn v-if="['Bot'].indexOf($route.name) > -1" flat @click="$refs.layout.toggleRight()">
         <q-icon mat="help_outline" />
@@ -23,21 +23,12 @@
     <!-- Left Side Panel -->
     <div slot="left">
       <q-list name="List" no-border link inset-separator>
-        <q-list-header>Essential Links</q-list-header>
         <q-side-link item to="/" exact>
-          <q-item-side icon="home"  />
+          <q-item-side icon="home" />
           <q-item-main label="Home" sublabel="Go back to the start page" />
         </q-side-link>
-        <q-side-link item to="/bot" exact>
-          <q-item-side icon="memory" />
-          <q-item-main label="Bot" sublabel="Chat with me!" />
-        </q-side-link>
-        <q-side-link item to="/deer" exact>
-          <q-item-side icon="repeat" />
-          <q-item-main label="Endless deer" sublabel="How tall is it though?" />
-        </q-side-link>
         <q-side-link item to="/portfolio" exact>
-          <q-item-side icon="laptop" />
+          <q-item-side icon="developer board" />
           <q-item-main label="Portfolio" sublabel="My projects" />
         </q-side-link>
         <q-side-link item to="/about" exact>
@@ -45,9 +36,23 @@
           <q-item-main label="About" sublabel="Read about Loke" />
         </q-side-link>
       </q-list>
+      <q-list>
+        <q-collapsible icon="insert emoticon" label="Fun stuff" sublabel="Games and other various fun stuff">
+          <div>
+            <q-side-link item to="/bot" exact>
+              <q-item-side icon="memory" />
+              <q-item-main label="Bot" sublabel="Chat with me!" />
+            </q-side-link>
+            <q-side-link item to="/deer" exact>
+              <q-item-side icon="repeat" />
+              <q-item-main label="Forever Deer"  />
+            </q-side-link>
+          </div>
+        </q-collapsible>
+      </q-list>
     </div>
     <!-- Right Side Panel -->
-    <div v-if="['Bot'].indexOf($route.name) > -1" slot="right" style="width: 100%; height: 100%">
+    <div v-show="['Bot'].indexOf($route.name) > -1" slot="right" style="width: 100%; height: 100%">
       <big style="top: 10px;">Example questions</big>
       <div style="padding: 20px;">
           <p>What's your name?</p>
@@ -94,7 +99,8 @@ import {
   QList,
   QItem,
   QItemTile,
-  QItemSeparator
+  QItemSeparator,
+  QCollapsible
 } from 'quasar'
 
 import MessageBar from '../bot/ChatBar'
@@ -118,8 +124,8 @@ export default {
     QItem,
     QItemTile,
     QItemSeparator,
-    MessageBar
-
+    MessageBar,
+    QCollapsible
   },
   data () {
     return {
