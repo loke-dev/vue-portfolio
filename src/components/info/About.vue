@@ -86,6 +86,11 @@
               <i class="fa fa-linkedin"></i>
             </a>
           </li>
+          <li class="socialmedia-item social-paypal">
+            <a href="https://www.paypal.me/lokecarlsson/">
+              <i class="fa fa-paypal"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -120,11 +125,12 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-$twitter = #1da1f2
-$facebook = #3b5998
-$google-plus = #dd4b39
-$github = #000
-$linkedin = #0077B5
+twitter = #1da1f2
+facebook = #3b5998
+google-plus = #dd4b39
+github = #000
+linkedin = #0077B5
+paypal = #003087
   
 img
   max-width: 250px
@@ -157,28 +163,33 @@ li
     color: white
     border-radius: 100%
   &.social-twitter 
-    a 
-      background-color: $twitter
+    a
+      background-color: twitter
       &:hover 
-        background-color: darken($twitter, 20%)
+        background-color: darken(twitter, 20%)
   &.social-facebook 
-    a 
-      background-color: $facebook
+    a
+      background-color: facebook
       &:hover 
-        background-color: darken($facebook, 20%)
+        background-color: darken(facebook, 20%)
   &.social-google-plus 
-    a 
-      background-color: $google-plus
+    a
+      background-color: google-plus
       &:hover 
-        background-color: darken($google-plus, 20%)
+        background-color: darken(google-plus, 20%)
   &.social-github 
-    a 
-      background-color: $github
+    a
+      background-color: github
       &:hover 
-        background-color: lighten($github, 20%)
+        background-color: lighten(github, 20%)
   &.social-linkedin 
-    a 
-      background-color: $linkedin
+    a
+      background-color: linkedin
       &:hover
-        background-color: darken($linkedin, 20%)
+        background-color: darken(linkedin, 20%)
+  &.social-paypal
+    a
+      background-color: paypal
+      &:hover
+        background-color: darken(paypal, 20%)
 </style>
