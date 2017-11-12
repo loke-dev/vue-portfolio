@@ -6,7 +6,7 @@
     <div>
       <div class="error-card card bg-white column items-center justify-center">
         <q-icon name="error_outline" class="text-grey-5" />
-        <p class="caption text-center">Oops. Nothing here...</p>
+        <p class="caption text-center">Payment required!</p>
         <p class="text-center group">
           <q-btn v-if="canGoBack" name="goBack" @click="goBack" color="primary" icon="keyboard_arrow_left">
             Go back
