@@ -5,18 +5,16 @@
     </div>
     <div>
       <div class="error-card card bg-white column items-center justify-center">
-        <i class="text-grey-5">error_outline</i>
-        <p class="caption text-center">Payment required</p>
+        <q-icon name="error_outline" class="text-grey-5" />
+        <p class="caption text-center">Oops. Nothing here...</p>
         <p class="text-center group">
-          <button v-if="canGoBack" class="grey push small" @click="goBack">
-            <i class="on-left">keyboard_arrow_left</i>
+          <q-btn v-if="canGoBack" name="goBack" @click="goBack" color="primary" icon="keyboard_arrow_left">
             Go back
-          </button>
+          </q-btn>
           <router-link to="/">
-            <button class="grey push small">
+            <q-btn icon="home">
               Go home
-              <i class="on-right">home</i>
-            </button>
+            </q-btn>
           </router-link>
         </p>
       </div>
@@ -25,7 +23,26 @@
 </template>
 
 <script>
+import {
+  QBtn,
+  QChip,
+  QCard,
+  QCardMain,
+  QCardTitle,
+  QCardSeparator,
+  QIcon
+} from 'quasar'
+
 export default {
+  components: {
+    QBtn,
+    QChip,
+    QCard,
+    QCardMain,
+    QCardTitle,
+    QCardSeparator,
+    QIcon
+  },
   data () {
     return {
       canGoBack: window.history.length > 1
@@ -39,7 +56,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 .error-page
   .error-code
     height 50vh
