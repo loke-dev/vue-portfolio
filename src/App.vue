@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 @import '~variables'
 
 main
