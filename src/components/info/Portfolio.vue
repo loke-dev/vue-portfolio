@@ -160,7 +160,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style scoped lang="stylus">
 .q-card
   max-width 300px
   min-height 434px
