@@ -1,34 +1,30 @@
 <template>
   <div>
-    <div class="layout-padding deer"><pre>/|       |\
-  `__\\       //__'
-     ||      ||
-   \__`\     |'__/
-     `_\\   //_'
-     _.,:---;,._
-     \_:     :_/
-       |@. .@|
-       |     |
-       ,\.-./ \
-                ;;`-'   `---__________-----.-.
-                ;;;                         \_\
-                ';;;                         |
-                  ;    |                      ;
-                  \   \     \        |      /
-                    \_, \    /        \     |\
-                      |';|  |,,,,,,,,/ \    \ \_
-                      |  |  |           \   /   |
-                      \  \  |           |  / \  |
-                       | || |           | |   | |
-                       | || |           | |   | |
-                       | || |           | |   | |
-                       | || |           | |   | |</pre>
+    <div class="deer"><pre>    /|       |\
+   `__\\       //__'
+      ||      ||
+    \__`\     |'__/
+      `_\\   //_'
+      _.,:---;,._
+      \_:     :_/
+        |@. .@|
+        |     |
+        ,\.-./ \
+        ;;`-'   `---__________-----.-.
+        ;;;                         \_\
+        ';;;                         |
+          ;    |                      ;
+          \   \     \        |      /
+            \_, \    /        \     |\
+              |';|  |,,,,,,,,/ \    \ \_
+              |  |  |           \   /   |
+              \  \  |           |  / \  |</pre>
 
       <q-infinite-scroll :handler="loadMore">
-        <pre v-bind:item="item" v-bind:index="index" v-bind:key="item.id" v-for="(item, index) in items" class="">                     | || |           | |   | |</pre>
+        <pre v-bind:item="item" v-bind:index="index" v-bind:key="item.id" v-for="(item, index) in items" class="">             | || |           | |   | |</pre>
       </q-infinite-scroll>
-      <pre>                     |_||_|           |_|   |_|
-                      /_//_/           /_/   /_/</pre>
+      <pre>             |_||_|           |_|   |_|
+               /_//_/           /_/   /_/</pre>
     </div>
   </div>
 </template>
@@ -59,18 +55,18 @@ export default {
         }
         this.items = this.items.concat(items)
         done()
-      }, 50)
+      }, 100)
     }
   }
 }
 </script>
 
-<style>
-pre {
-  margin: 0;
-}
-.deer {
-  width: 400px;
-  margin: 0 auto 0 auto;
-}
+<style scoped lang="stylus">
+pre
+  margin: 0
+.deer
+  min-width: 0px
+  margin: 0 auto 0 auto
+  margin-left: 10%
+  text-align: left
 </style>
