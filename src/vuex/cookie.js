@@ -2,20 +2,13 @@ import producers from '../assets/producers'
 
 const state = {
   producers: producers,
-  cookies: 0,
-  cps: () => {
-    let cookieCount = 0
-    for (let producer of state.producers) {
-      cookieCount += producer.cookiePerSeconds * producer.purchased
-    }
-    return cookieCount
-  }
+  cookies: 1,
+  cps: 0
 }
 
 const mutations = {
   BUY_PRODUCER (state, { producerId }) {
     state.producers = state.producers.map(producer => {
-      console.log(producer)
       if (producer.id === producerId) {
         producer.purchased++
         state.cookies -= producer.price
@@ -25,11 +18,18 @@ const mutations = {
       return producer
     })
   },
-  CLICK_COOKIE (state) {
-    state.cookies++
+  CLICK_COOKIE (state, { cookies }) {
+    state.cookies += cookies
   },
   ADD_COOKIES (state, { cookies }) {
     state.cookies += cookies
+  },
+  COUNT_COOKIES (state) {
+    let cookieCount = 1
+    for (let producer of state.producers) {
+      cookieCount += producer.cookiePerSeconds * producer.purchased
+    }
+    state.cps = cookieCount
   }
 }
 
