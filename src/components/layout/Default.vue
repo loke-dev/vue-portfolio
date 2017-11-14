@@ -9,6 +9,9 @@
         Loke Carlsson
         <span slot="subtitle">WebDeveloper</span>
       </q-toolbar-title>
+      <q-btn v-show="['Bot'].indexOf($route.name) > -1" flat @click="$refs.layout.toggleRight()">
+        <q-icon mat="help_outline" />
+      </q-btn>
     </q-toolbar>
     <!-- Navigation -->
     <!-- <q-tabs slot="navigation">
@@ -52,10 +55,32 @@
         </q-collapsible>
       </q-list>
     </div>
-    
+    <!-- Right Side Panel -->
+    <div v-show="['Bot'].indexOf($route.name) > -1" slot="right" style="width: 100%; height: 100%">
+      <big style="top: 10px;">Example questions</big>
+      <div style="padding: 20px;">
+          <p>What's your name?</p>
+          <p>Who created you?</p>
+          <p>How can I contact you?</p>
+          <p>What is your github?</p>
+          <p>Can I reach you by email?</p>
+          <p>Can I see your linkedin profile?</p>
+          <p>How tall is barack obama?</p>
+      </div>
+    </div>
     <!-- sub-routes get injected here: -->
     <router-view />
-    
+    <!-- Footer -->
+    <q-toolbar v-show="['Bot'].indexOf($route.name) > -1" slot="footer">
+      <q-toolbar-title>
+        <message-bar
+          initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
+          v-on:message-sent='messageSent'
+          v-on:message-received='messageReceived'
+          v-on:message-from-ai='messageFromAI'>
+        </message-bar>
+      </q-toolbar-title>
+    </q-toolbar>
   </q-layout>
 </template>
 
