@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+// Error pages
 import NotFoundView from './components/error/404.vue'
 import PaymentRequiredView from './components/error/402.vue'
 
+// Layouts
 import DefaultLayout from './components/layout/Default.vue'
+import BotLayout from './components/layout/Bot.vue'
+import CookieLayout from './components/layout/Cookie.vue'
 
+// Components
 import BotView from './components/bot/Chat.vue'
 import AboutView from './components/info/About.vue'
 import PortfolioView from './components/info/Portfolio.vue'
@@ -48,6 +53,18 @@ export default new VueRouter({
           name: 'deer',
           description: 'Foreverscrolling deer'
         },
+        {
+          path: '/cookie',
+          component: CookieLayout,
+          name: 'Cookie',
+          description: 'Cookie clicker'
+        }
+      ]
+    },
+    {
+      path: '',
+      component: BotLayout,
+      children: [
         {
           path: '/bot',
           component: BotView,
