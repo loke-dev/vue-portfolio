@@ -19,9 +19,6 @@
           <a target="_blank" href="http://gitgud.nu/"><q-btn color="primary">Demo</q-btn></a>
           <a target="_blank" href="https://github.com/LokeCarlsson/Gitgud"><q-btn color="primary">Github</q-btn></a>
         </q-card-actions>
-        <q-inner-loading :visible="visible">
-          <q-spinner-gears size="50px" color="primary"></q-spinner-gears>
-        </q-inner-loading>
       </q-card>
       
       <q-card key="card" inline>
@@ -140,9 +137,7 @@ import {
   QCardActions,
   QBtn,
   QCardSeparator,
-  QTransition,
-  QInnerLoading,
-  QSpinnerGears
+  QTransition
 } from 'quasar'
 
 export default {
@@ -153,9 +148,7 @@ export default {
     QCardActions,
     QBtn,
     QCardSeparator,
-    QTransition,
-    QInnerLoading,
-    QSpinnerGears
+    QTransition
   },
   data () {
     return {
