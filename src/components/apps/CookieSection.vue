@@ -78,8 +78,8 @@ export default {
 
 .cookie
   width: 500px
-  padding-top: 60px
-  padding-bottom: 30px
+  padding-top: 65px
+  padding-bottom: 35px
   cursor: pointer
   transition: all 0.5s
   -webkit-user-drag: none
