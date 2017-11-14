@@ -15,7 +15,7 @@
         I'm Loke, a webdeveloper from Kalmar.
       </p>
       <p>
-        I have had since I was a kid interest for computeres and creating stuff and this have led me to the world wide web as a developer!
+        I have had since I was a kid interest for computers and creating stuff and this have led me to the world wide web as a developer!
       </p>
       <p>
         Currently I studying on my third year at <a href="https://lnu.se/">Linneaus University</a> in Kalmar, Sweden. 
