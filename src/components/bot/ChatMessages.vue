@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import store from './store'
+import store from '../../vuex/store'
 import {
   QItemSeparator,
   QTransition
@@ -40,7 +40,7 @@ export default {
   store,
   computed: {
     messages () {
-      return store.state.messages
+      return store.state.bot.messages
     }
   }
 }

@@ -8,10 +8,8 @@
 
 <script>
 import Messages from '../bot/ChatMessages'
-import store from '../bot/store'
 
 export default {
-  store,
   components: {
     Messages
   }

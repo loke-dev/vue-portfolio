@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import store from './store'
+import store from '../../vuex/store'
 import {
   QBtn,
   QIcon
@@ -29,7 +29,7 @@ export default {
   },
   mounted () {
     let vm = this
-    if (vm.$store.state.messages.length <= 0) {
+    if (vm.$store.state.bot.messages.length <= 0) {
       vm.addMessageFromBot(this.initialMessage)
     }
   },
@@ -41,7 +41,7 @@ export default {
       }, 1)
     },
     commitMessage (message, type) {
-      store.commit('push', message)
+      store.commit('PUSH', message)
       this.scrollToBottom()
       this.$emit(`message-${type}`, message)
     },
