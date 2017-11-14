@@ -9,9 +9,6 @@
         Loke Carlsson
         <span slot="subtitle">WebDeveloper</span>
       </q-toolbar-title>
-      <q-btn v-if="['Bot'].indexOf($route.name) > -1" flat @click="$refs.layout.toggleRight()">
-        <q-icon mat="help_outline" />
-      </q-btn>
     </q-toolbar>
     <!-- Navigation -->
     <!-- <q-tabs slot="navigation">
@@ -37,7 +34,7 @@
         </q-side-link>
       </q-list>
       <q-list>
-        <q-collapsible icon="insert emoticon" label="Fun stuff" sublabel="Games and other various fun stuff">
+        <q-collapsible icon="insert emoticon" label="Stuff" sublabel="Fun and games">
           <div>
             <q-side-link item to="/bot" exact>
               <q-item-side icon="memory" />
@@ -45,39 +42,20 @@
             </q-side-link>
             <q-side-link item to="/deer" exact>
               <q-item-side icon="repeat" />
-              <q-item-main label="Forever Deer"  />
+              <q-item-main label="Forever Deer" sublabel="How tall is it?" />
+            </q-side-link>
+            <q-side-link item to="/cookie" exact>
+              <q-item-side icon="blur circular" />
+              <q-item-main label="Cookie Clicker" sublabel="Get all them cookies!" />
             </q-side-link>
           </div>
         </q-collapsible>
       </q-list>
     </div>
-    <!-- Right Side Panel -->
-    <div v-show="['Bot'].indexOf($route.name) > -1" slot="right" style="width: 100%; height: 100%">
-      <big style="top: 10px;">Example questions</big>
-      <div style="padding: 20px;">
-          <p>What's your name?</p>
-          <p>Who created you?</p>
-          <p>How can I contact you?</p>
-          <p>What is your github?</p>
-          <p>Can I reach you by email?</p>
-          <p>Can I see your linkedin profile?</p>
-          <p>How tall is barack obama?</p>
-      </div>
-    </div>
-
+    
     <!-- sub-routes get injected here: -->
     <router-view />
-    <!-- Footer -->
-    <q-toolbar v-if="['Bot'].indexOf($route.name) > -1" slot="footer">
-      <q-toolbar-title>
-        <message-bar
-          initial-message='Welcome, you can ask me anything! You can find some example questions if you press the button in the top right corner'
-          v-on:message-sent='messageSent'
-          v-on:message-received='messageReceived'
-          v-on:message-from-ai='messageFromAI'>
-        </message-bar>
-      </q-toolbar-title>
-    </q-toolbar>
+    
   </q-layout>
 </template>
 
@@ -102,7 +80,6 @@ import {
   QItemSeparator,
   QCollapsible
 } from 'quasar'
-
 import MessageBar from '../bot/ChatBar'
 
 export default {
@@ -131,7 +108,8 @@ export default {
     return {
       sides: {
         left: true,
-        right: false
+        right: false,
+        delayMs: 1000
       }
     }
   },
