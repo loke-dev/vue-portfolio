@@ -1,8 +1,8 @@
 <template>
   <form v-on:submit.prevent='messageAdded' >
   <input pattern=".{2,}" required type="text" v-model='currentMessage'
-    class='msg' value="" placeholder="Type your message here" >
-    <q-btn class="sendButton" outline icon="send" />
+    class='msg' value="" placeholder="Write anything!" >
+    <q-btn class="sendButton" outline> Send </q-btn>
   </form>
 </template>
 
@@ -94,29 +94,26 @@ export default {
   }
 }
 </script>
-<style scoped>
-form {
-  display: flex;
-  width: 100%;
-  padding: 5px;
-  justify-content: space-around;
-  align-items: stretch;
+<style scoped lang="stylus">
+form
+  display: flex
+  width: 100%
+  padding: 5px
+  justify-content: space-around
+  align-items: stretch
 
-}
-.msg {
-  width:95%;
-  line-height: 38px;
-  font-size: 17px;
-  padding-left:10px;
-}
-.msg-send {
-  width: 40px;
-  line-height: 3;
-  text-align: center;
-}
+.msg
+  width:95%
+  line-height: 38px
+  font-size: 17px
+  padding-left:10px
 
-.sendButton {
-  min-width: 56px;
-  margin-left: 10px;
-}
+.msg-send
+  width: 40px
+  line-height: 3
+  text-align: center
+
+.sendButton
+  margin-left: 10px
+
 </style>
