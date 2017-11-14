@@ -128,7 +128,7 @@ export default {
 twitter = #1da1f2
 facebook = #3b5998
 google-plus = #dd4b39
-github = #000
+github = #24292e
 linkedin = #0077B5
 paypal = #003087
   
