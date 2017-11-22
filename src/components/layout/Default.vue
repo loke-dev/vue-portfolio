@@ -1,13 +1,12 @@
 <template>
   <q-layout v-model="sides" ref="layout" view="hHh LpR lFf" :right-breakpoint="1100">
     <!-- Header -->
-    <q-toolbar slot="header">
+    <q-toolbar slot="header" color="primary">
       <q-btn flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
       <q-toolbar-title>
-        Loke Carlsson
-        <span slot="subtitle">WebDeveloper</span>
+        <img src="../../statics/header_small.png" />
       </q-toolbar-title>
       <q-btn v-show="['Bot'].indexOf($route.name) > -1" flat @click="$refs.layout.toggleRight()">
         <q-icon mat="help_outline" />
@@ -163,4 +162,14 @@ export default {
 
 .layout-aside-right
   top: 50px!important
+
+img
+  max-width: 100%
+  min-width: 200px
+  max-height: 28px
+  margin: 12px
+  -webkit-user-drag: none
+  -khtml-user-drag: none
+  -moz-user-drag: none
+  -o-user-drag: none
 </style>

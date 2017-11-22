@@ -1,6 +1,6 @@
 <template>
   <div id='home'>
-    <img src="https://digitalsynopsis.com/wp-content/uploads/2015/03/web-designer-developer-jokes-humour-funny-19.jpg" class="responsive">
+    <img src="../../statics/LokeCarlsson2.jpg" class="responsive">
   </div>
 </template>
 
