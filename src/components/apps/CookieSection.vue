@@ -1,7 +1,7 @@
 <template>
   <div>
     <q-chip avatar="../../statics/svg/cookie.svg" color="primary">
-      {{ cookies.toLocaleString('sv-SE', { maximumFractionDigits: 0 }) }}
+      {{ cps.toLocaleString('sv-SE', { maximumFractionDigits: 0 }) }}
     </q-chip>
     <q-chip color="green">
       {{ cps }}/s
@@ -16,29 +16,34 @@
 </template>
 
 <script>
-import Store from '../../vuex/store'
+import { mapGetters, mapActions } from 'vuex'
 import animate from '../../assets/animate'
 import { popUp } from '../../assets/ui'
 import { QTransition, QChip } from 'quasar'
 export default {
   components: {
-    Store,
     QTransition,
     QChip
   },
   computed: {
-    cookies: () => Store.state.cookie.cookies,
-    cps: () => Store.state.cookie.cps
+    ...mapGetters({
+      producers: 'cookie/producers',
+      cps: 'cookie/cps'
+    })
   },
   methods: {
+    ...mapActions({
+      buyProducer: 'cookie/buyProducer',
+      addCookies: 'cookie/addCookies'
+    }),
     clickCookie (e) {
       e.preventDefault()
       this.showPopup(e)
-      Store.commit('ADD_COOKIES', { cookies: Math.ceil(Store.state.cookie.cps / 5) })
+      this.addCookies(Math.ceil(this.cps / 5))
       animate(this.$refs.cookie, 'scale-up', 100)
     },
     showPopup (e) {
-      popUp('+' + Math.ceil(Store.state.cookie.cps / 5), '32px', 'fadeOutUp', e)
+      popUp('+' + Math.ceil(this.cps / 5), '32px', 'fadeOutUp', e)
     }
   }
 }

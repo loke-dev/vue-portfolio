@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Store from '../../vuex/store'
+import Store from '../../store'
 import Shop from './Shop'
 export default {
   components: {

@@ -14,7 +14,7 @@
 <script>
 import CookieSection from '../apps/CookieSection'
 import ShopSection from '../apps/ShopSection'
-import Store from '../../vuex/store'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   components: {
@@ -27,19 +27,23 @@ export default {
     }
   },
   computed: {
-    producers: function () {
-      return Store.state.cookie.producers
-    }
-  },
-  mounted () {
-    this.farmProducers()
-  },
-  methods: {
-    farmProducers () {
-      setInterval(() => {
-        Store.commit('ADD_COOKIES', { cookies: Store.state.cookie.cps })
-        Store.commit('COUNT_COOKIES')
-      }, this.delayMs)
+    ...mapGetters([
+      `producers`,
+      `cps`
+    ]),
+    mounted () {
+      this.farmProducers()
+    },
+    methods: {
+      ...mapActions([
+        `buyProducer`,
+        `addCookies`
+      ]),
+      farmProducers () {
+        setInterval(() => {
+          this.addCookies(this.cps)
+        }, this.delayMs)
+      }
     }
   }
 }

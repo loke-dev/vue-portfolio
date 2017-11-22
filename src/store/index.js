@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import createPersistedState from 'vuex-persistedstate'
 
-import bot from './bot'
-import cookie from './cookie'
+import bot from './modules/bot'
+import cookie from './modules/cookie'
 
 Vue.use(Vuex)
 

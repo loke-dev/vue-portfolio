@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import store from '../../vuex/store'
+import store from '../../store'
 import {
   QBtn,
   QIcon
