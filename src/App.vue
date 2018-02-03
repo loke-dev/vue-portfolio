@@ -1,35 +1,48 @@
 <template>
-  <!-- Don't drop "q-app" class -->
-  <div id="q-app">
-    <header></header>
-    <main>
-      <router-view></router-view>
-    </main>
+  <div id="app" v-cloak>
+    <hero></hero>
+    <about></about>
+    <do></do>
+    <projects></projects>
+    <skills></skills>
+    <fork></fork>
+    <contact></contact>
+    <copyright></copyright>
+    <repo-modal></repo-modal>
   </div>
 </template>
 
 <script>
-import home from './components/info/Home.vue'
-/*
- * Root component
- */
+import Hero from './components/Hero';
+import About from './components/About';
+import Do from './components/Do';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Fork from './components/Fork';
+import Copyright from './components/Copyright';
+import RepoModal from './components/Projects/RepoModal';
+
 export default {
-  name: 'home',
+  name: 'app',
   components: {
-    home
-  }
-}
+    Hero,
+    About,
+    Do,
+    Projects,
+    Skills,
+    Fork,
+    Contact,
+    Copyright,
+    RepoModal,
+  },
+};
 </script>
 
-<style scoped lang="stylus">
-@import '~variables'
-
-main
-  text-align center
-  margin-top 40px
-
-header
-  margin 0
-  height 10px
-  background-color $primary
+<style lang="scss">
+#app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 </style>

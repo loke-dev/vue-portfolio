@@ -1,37 +1,21 @@
-[![Stories in Ready](https://badge.waffle.io/LokeCarlsson/lokecarlsson.png?label=backlog&title=backlog)](https://waffle.io/LokeCarlsson/lokecarlsson)
-# LokeCarlsson
+# vue-portfolio
 
-> A Vue (with quasar) project
-
-> Built with Vue2, Vuex, Vue-router
-
-> Uses API.AI for the bot
-
-## Requirements
-
-Copy and rename the file "prod.env.example.js" to "prod.env.js" and add your API key.
+> A Vue.js Portfolio
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install
+npm install
 
 # serve with hot reload at localhost:8080
-$ quasar dev
+npm run dev
 
 # build for production with minification
-$ quasar build
+npm run build
 
-# lint code
-$ quasar lint
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-## Future implementations
-- Voice to Text
-- About page
-- Text to voice with mute option
-
-___
-
-_Please direct all complaints to /dev/null/_
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -1,114 +1,64 @@
-var
-  path = require('path'),
-  webpack = require('webpack'),
-  config = require('../config'),
-  cssUtils = require('./css-utils'),
-  env = require('./env-utils'),
-  merge = require('webpack-merge'),
-  projectRoot = path.resolve(__dirname, '../'),
-  ProgressBarPlugin = require('progress-bar-webpack-plugin'),
-  useCssSourceMap =
-    (env.dev && config.dev.cssSourceMap) ||
-    (env.prod && config.build.productionSourceMap)
+const path = require('path');
+const utils = require('./utils');
+const config = require('../config');
+const vueLoaderConfig = require('./vue-loader.conf');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
+
+function resolve(dir) {
+  return path.join(__dirname, '..', dir);
 }
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/main.js',
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    publicPath: config[env.prod ? 'build' : 'dev'].publicPath,
-    filename: 'js/[name].js',
-    chunkFilename: 'js/[id].[chunkhash].js'
+    path: config.build.assetsRoot,
+    filename: '[name].js',
+    publicPath: process.env.NODE_ENV === 'production'
+      ? config.build.assetsPublicPath
+      : config.dev.assetsPublicPath,
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
-    modules: [
-      resolve('src'),
-      resolve('node_modules')
-    ],
-    alias: config.aliases
+    alias: {
+      vue$: 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+      vars: resolve('src/assets/styles/variables.scss'),
+    },
   },
   module: {
     rules: [
-      { // eslint
-        enforce: 'pre',
-        test: /\.(vue|js)$/,
-        loader: 'eslint-loader',
-        include: projectRoot,
-        exclude: /node_modules/,
-        options: {
-          formatter: require('eslint-friendly-formatter')
-        }
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: vueLoaderConfig,
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: projectRoot,
-        exclude: /node_modules/
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          postcss: cssUtils.postcss,
-          loaders: merge({js: 'babel-loader'}, cssUtils.styleLoaders({
-            sourceMap: useCssSourceMap,
-            extract: env.prod
-          })),
-          transformToRequire: {
-            video: 'src',
-            source: 'src',
-            img: 'src',
-            image: 'xlink:href'
-          }
-        }
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
+        include: [resolve('src'), resolve('test')],
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: 'img/[name].[hash:7].[ext]'
-        }
+          name: utils.assetsPath('img/[name].[hash:7].[ext]'),
+        },
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: 'fonts/[name].[hash:7].[ext]'
-        }
-      }
-    ]
+          name: utils.assetsPath('fonts/[name].[hash:7].[ext]'),
+        },
+      },
+    ],
   },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env': config[env.prod ? 'build' : 'dev'].env,
-      'DEV': env.dev,
-      'PROD': env.prod,
-      '__THEME': '"' + env.platform.theme + '"'
-    }),
-    new webpack.LoaderOptionsPlugin({
-      minimize: env.prod,
-      options: {
-        context: path.resolve(__dirname, '../src'),
-        postcss: cssUtils.postcss
-      }
-    }),
-    new ProgressBarPlugin({
-      format: config.progressFormat
-    })
+    new FaviconsWebpackPlugin(resolve('src/assets/img/fav.png')),
   ],
-  performance: {
-    hints: false
-  }
-}
+};

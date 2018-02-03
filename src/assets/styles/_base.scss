@@ -1,0 +1,46 @@
+@import './variables';
+
+:root {
+  --separator-color: $secondary;
+}
+
+body {
+  &.modal-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.button {
+  &.grow {
+    transition: transform 0.15s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.footer {
+  background-color: $black-ter;
+  color: $white-ter;
+
+  a {
+    color: $grey-light;
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: $white-ter;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .section {
+    padding: 6em 4em;
+
+    & > .container {
+      max-width: $widescreen;
+    }
+  }
+}
