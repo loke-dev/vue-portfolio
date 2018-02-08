@@ -11,6 +11,7 @@
       <div class="columns">
         <div class="column do-col"
           v-for="panel in panels"
+          :key="panel.id"
           :class="`is-${12 / panels.length}`">
           <div class="panel">
             <div class="panel-block">
@@ -41,15 +42,15 @@ export default {
         }, {
           icon: 'fa-code',
           title: 'Developer',
-          text: 'My strengths lie in the front-end development. I have extensive experience with the full stack. Most recently, I have focused on creating progressive web applications build using React and Vue.',
+          text: 'My strengths lie in the front-end development. Though I have extensive experience with the full stack, most recently I have focused on creating progressive web applications using React and Vue.',
         }, {
           icon: 'fa-pencil',
           title: 'Designer',
-          text: 'My interest in graphic design lead me to become a software engineer. Excellent design is essential in crafting elegant and viable solutions.',
+          text: 'My interest in graphic design has led me to focus on front-end which let me be more expressive with design and UX. Excellent design is essential in crafting elegant and functional applications.',
         }, {
           icon: 'fa-rocket',
           title: 'Technology',
-          text: 'I am passionate about technology and how it .',
+          text: 'I am passionate about technology both hardware but also the new facinating area of blockchain and cryptocurrencies.',
         },
       ],
     };
