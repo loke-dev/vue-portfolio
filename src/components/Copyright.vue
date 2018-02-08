@@ -3,12 +3,13 @@
     <div class="container">
       <div class="content has-text-centered">
         <p>
-          © 2018 Loke Carlsson, made with ❤️ and ☕️.
+          © 2018 Loke Carlsson, made with lots of ❤️ and steeming hot ☕️.
         </p>
         <p>
           <a class="icon"
             v-for="item in social"
             :href="item.link"
+            :key="item.id"
             target="_blank"
             rel="noopener">
             <b-icon :icon="item.icon"></b-icon>
