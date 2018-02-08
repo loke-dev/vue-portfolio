@@ -4,8 +4,7 @@
       class="project"
       v-for="(project, index) in projects"
       :key="index">
-      <Card :data-image="project.projectImage"
-      @click="showDetails">
+      <Card :data-image="project.projectImage">
         <h1 slot="header">{{ project.name }}</h1>
         <p slot="content">{{ project.description }}</p>
       </Card>
