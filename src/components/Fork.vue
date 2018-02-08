@@ -3,10 +3,10 @@
       <div class="hero is-dark">
         <div class="hero-body has-text-centered">
           <h2 class="title is-3">
-            Want to Vue the code for this portfolio?
+            Check out the code behind this site!
           </h2>
           <separator color="white"></separator>
-          <h5 class="subtitle is-5">Fork this project on GitHub.</h5>
+          <h5 class="subtitle is-5">Fork it on GitHub.</h5>
           <div class="columns is-centered is-vcentered">
             <div class="reveal column is-narrow techs">
               <a href="https://vuejs.org/" target="_blank" rel="noopener">
