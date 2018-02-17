@@ -15,7 +15,7 @@ $colors: (
 );
 
 // Links
-$link: $primary;
+$link: saturate($primary, 80%);
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
