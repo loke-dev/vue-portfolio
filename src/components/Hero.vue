@@ -49,7 +49,7 @@ export default {
   },
   mounted() {
     sr.reveal('#hero .hero-body > .container *', 200);
-    sr.reveal('#hero .hero-foot', 250);
+    sr.reveal('#hero .hero-foot', 200);
 
     window.addEventListener('scroll', this.navHandler.bind(this));
   },
