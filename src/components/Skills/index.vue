@@ -16,7 +16,7 @@
               rel="noopener"
               :href="skill.url"
               :title="skill.name">
-              <img :src="skill.image" :alt="skill.name">
+              <img src="skill.image" :alt="skill.name">
             </a>
           </div>
         </div>
