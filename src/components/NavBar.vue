@@ -3,7 +3,6 @@
     <div class="container">
       <div class="nav-left">
         <a class="nav-item"
-          href="#"
           v-scroll-to="'#hero'">
           <span class="logo-text">{{ logo }}</span>
         </a>
@@ -20,7 +19,6 @@
         <a v-for="item in menuItems"
           v-bind:key=item.id
           class="nav-item"
-          href="#"
           @click.prevent="goTo(item)">
           {{ item.title }}
         </a>
