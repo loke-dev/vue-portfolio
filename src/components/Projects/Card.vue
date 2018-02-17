@@ -60,7 +60,7 @@ export default {
     },
     cardBgImage() {
       return {
-        backgroundImage: `url(${cl.url(this.dataImage)})`
+        backgroundImage: `url(${this.dataImage})`
       }
     }
   },
@@ -129,24 +129,24 @@ h1+p, p+p {
       transition:
         0.6s $hoverEasing,
         box-shadow 2s $hoverEasing;
-      box-shadow:
-        rgba($secondary, 0.2) 0 0 40px 5px,
-        rgba($secondary, 1) 0 0 0 1px,
-        rgba(black, 0.66) 0 30px 60px 0,
-        inset #333 0 0 0 5px,
+      // box-shadow:
+      //   rgba($secondary, 0.2) 0 0 40px 5px,
+      //   rgba($secondary, 1) 0 0 0 1px,
+      //   rgba(black, 0.66) 0 30px 60px 0,
+      //   inset #333 0 0 0 5px,
     }
   }
 }
 
 .card {
   position: relative;
-  width: 240px;
-  height: 320px;
+  width: 300px;
+  height: 300px;
   background-color: #333;
   overflow: hidden;
   border-radius: 3px;
   box-shadow:
-    rgba(black, 0.66) 0 30px 60px 0,
+    rgba(black, 0.55) 0 10px 30px 0,
     inset #333 0 0 0 5px;
   transition: 1s $returnEasing;
 }
@@ -163,7 +163,7 @@ h1+p, p+p {
   background-size: cover;
   transition:
     1s $returnEasing,
-    opacity 5s 1s $returnEasing;
+    opacity 2s 1s $returnEasing;
   pointer-events: none;
 }
 
@@ -203,6 +203,6 @@ h1+p, p+p {
 
 .card-info h1 {
   font-size: 36px;
-  text-shadow: rgba(black, 0.5) 0 10px 10px;
+  text-shadow: rgba(black, 0.5) 0 5px 10px;
 }
 </style>
