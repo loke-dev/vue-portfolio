@@ -92,7 +92,7 @@ export default {
   }
 
   .header-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.95)),url('../assets/img/header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.90)),url('../assets/img/header.jpg');
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
