@@ -3,11 +3,11 @@
     <img alt="build badge" src="https://img.shields.io/badge/build-never built-lightgrey.svg?style=flat-square" />
     <img alt="version badge" src="https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square" />
   <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/l/vue.svg" alt="License"></a>
-
 </p>
+<p align="center">
 
 ![alt text](https://raw.githubusercontent.com/LokeCarlsson/lokecarlsson/master/src/assets/img/logo.png)
-
+</p>
 <p align="center">A Vue.js Portfolio</p>
 
 <p align="center"><a href="https://vuejs.org" target="_blank"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
