@@ -2,10 +2,10 @@
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <p>
+        <p class="reveal">
           © 2018 Loke Carlsson, made with lots of ❤️ and steeming hot ☕️.
         </p>
-        <p>
+        <p class="reveal">
           <a class="icon"
             v-for="item in social"
             :href="item.link"
@@ -23,6 +23,9 @@
 <script>
 export default {
   name: 'copyright',
+  mounted() {
+    sr.reveal('.footer .reveal', 250);
+  },
   data() {
     return {
       social: [
