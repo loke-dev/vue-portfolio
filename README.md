@@ -1,8 +1,16 @@
-# LokeCarlsson
+<p align="center">
+  <img alt="popping badge" src="https://img.shields.io/hackage-deps/v/lens.svg" />
+    <img alt="build badge" src="https://img.shields.io/badge/build-never built-lightgrey.svg?style=flat-square" />
+    <img alt="version badge" src="https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square" />
+  <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/l/vue.svg" alt="License"></a>
+
+</p>
 
 ![alt text](https://raw.githubusercontent.com/LokeCarlsson/lokecarlsson/master/src/assets/img/logo.png)
 
-My Vue.js portfolio
+<p align="center">A Vue.js Portfolio</p>
+
+<p align="center"><a href="https://vuejs.org" target="_blank"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
 ## Getting Started
 
@@ -13,14 +21,13 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ``` bash
-Give examples
+Node
+Yarn
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
 
 ``` bash
 # Install dependencies
@@ -33,47 +40,22 @@ yarn dev
 yarn build
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Coming soon..
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Coming soon..
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Vue.js](https://vuejs.org/) - Javascript Framework
+* [Buefy.io](https://buefy.github.io/#/) - CSS Framework
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/LokeCarlsson/lokecarlsson/blob/master/CONTRIBUTING) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -81,7 +63,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Loke Carlsson**
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -91,6 +73,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Beer raised to anyone who's code was used
