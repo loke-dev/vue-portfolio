@@ -1,42 +1,44 @@
+import * as images from '../../assets/img/skills';
+
 export default [
   {
     name: 'HTML5',
-    image: '../../assets/img/skills/html5.png',
+    image: images.HTML5,
     url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
   },
   {
     name: 'CSS3',
-    image: '../../assets/img/skills/css3.png',
+    image: images.CSS3,
     url: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3',
   },
   {
     name: 'JavaScript',
-    image: '../../assets/img/skills/javascript.png',
+    image: images.JavaScript,
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   {
     name: 'NodeJS',
-    image: '../../assets/img/skills/nodejs.png',
+    image: images.NodeJS,
     url: 'https://nodejs.org/en/',
   },
   {
     name: 'Vue',
-    image: '../../assets/img/skills/vue.png',
+    image: images.Vue,
     url: 'https://vuejs.org/',
   },
   {
     name: 'React',
-    image: '../../assets/img/skills/react.png',
+    image: images.React,
     url: 'https://facebook.github.io/react/',
   },
   {
     name: 'Git',
-    image: '../../assets/img/skills/git.png',
+    image: images.Git,
     url: 'https://git-scm.com/',
   },
   {
     name: 'Sass',
-    image: '../../assets/img/skills/sass.png',
+    image: images.Sass,
     url: 'http://sass-lang.com/',
   },
 ];
