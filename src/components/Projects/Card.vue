@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <div class="card-image ">
+    <div class="card-image">
       <figure class="image is-1by1">
-        <img :src="this.dataProject.projectImage" alt="Project image">
+        <img :src="this.dataProject.projectImage ? this.dataProject.projectImage : 'http://lorempixel.com/500/500/abstract/'" alt="Project image">
       </figure>
     </div>
     <div class="card-content">
@@ -18,15 +18,17 @@
         {{this.dataProject.description}}
         <br>
       </div>
-      <a class="button">
-        <span class="icon">
-          <i class="fa fa-github"></i>
-        </span>
-        <span>GitHub</span>
-      </a>
-      <a class="button is-primary" :disabled="!this.dataProject.url">
-        <span>Demo</span>
-      </a>
+      <div class="bottom">
+        <a class="button" target="_blank" :href="this.dataProject.repo" :disabled="!this.dataProject.repo">
+          <span class="icon">
+            <i class="fa fa-github"></i>
+          </span>
+          <span>GitHub</span>
+        </a>
+        <a class="button is-primary" target="_blank" :href="this.dataProject.url" :disabled="!this.dataProject.url">
+          <span>Demo</span>
+        </a>
+      </div>      
     </div>
   </div>
 </template>
@@ -42,6 +44,20 @@ export default {
   .tag {
     margin-right: 5px;
     margin-bottom: 5px;
+  }
+
+  .card {
+        height: 100%;
+
+  }
+
+  .content {
+    padding-bottom: 30px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 20px;
   }
 
   .title {
