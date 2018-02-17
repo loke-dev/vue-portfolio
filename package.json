@@ -1,8 +1,8 @@
 {
-  "name": "vue-portfolio",
-  "version": "1.0.0",
-  "description": "A Vue.js Portfolio",
-  "author": "Sam <samrose3@gmail.com>",
+  "name": "lokecarlsson",
+  "version": "2.0.0",
+  "description": "My Vue.js Portfolio",
+  "author": "Loke <carlssonloke@gmail.com>",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/prod-server.js",
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "buefy": "^0.3.2",
-    "cloudinary-core": "^2.3.0",
     "core-js": "^2.4.1",
     "moment": "^2.18.1",
     "scrollreveal": "^3.3.5",
@@ -68,10 +67,5 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  }
 }
