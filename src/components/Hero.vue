@@ -17,7 +17,7 @@
       </div>
       <div class="hero-foot">
         <div class="container has-text-centered">
-          <a href="#" v-scroll-to="'#about'">
+          <a v-scroll-to="'#about'">
             <i class="fa fa-chevron-down scroll-down"></i>
           </a>
         </div>
@@ -48,8 +48,8 @@ export default {
     },
   },
   mounted() {
-    sr.reveal('#hero .hero-body > .container *', 100);
-    sr.reveal('#hero .hero-foot', 150);
+    sr.reveal('#hero .hero-body > .container *', 200);
+    sr.reveal('#hero .hero-foot', 250);
 
     window.addEventListener('scroll', this.navHandler.bind(this));
   },
