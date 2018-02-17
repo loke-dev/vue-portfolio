@@ -26,7 +26,7 @@
             <a class="button grow"
               target="_blank"
               rel="noopener"
-              href="https://github.com/samrose3/vue-portfolio">
+              href="https://github.com/LokeCarlsson/lokecarlsson">
               <span>Fork</span>
               <b-icon icon="code-fork" size="is-small" />
             </a>
