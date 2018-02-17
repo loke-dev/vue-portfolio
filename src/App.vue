@@ -8,7 +8,6 @@
     <fork></fork>
     <contact></contact>
     <copyright></copyright>
-    <repo-modal></repo-modal>
   </div>
 </template>
 
@@ -21,7 +20,6 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Fork from './components/Fork';
 import Copyright from './components/Copyright';
-import RepoModal from './components/Projects/RepoModal';
 
 export default {
   name: 'app',
@@ -34,7 +32,6 @@ export default {
     Fork,
     Contact,
     Copyright,
-    RepoModal,
   },
 };
 </script>
