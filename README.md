@@ -5,12 +5,12 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# Install dependencies
 yarn
 
-# serve with hot reload at localhost:8080
+# Serve with hot reload at localhost:8080
 yarn dev
 
-# build for production with minification
+# Build for production
 yarn build
 ```
