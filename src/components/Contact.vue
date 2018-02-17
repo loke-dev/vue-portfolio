@@ -3,8 +3,8 @@
     <div class="container has-text-centered">
       <h2 class="title is-2">Contact</h2>
       <separator></separator>
-      <h5 class="subtitle is-5">
-        Looking for exiting development opportunties and greets 👋
+      <h5 class="subtitle reveal is-5">
+        Looking for exiting development opportunties and friendly greets 👋
       </h5>
       <div class="block reveal">
         <a class="button grow is-dark"
@@ -26,7 +26,7 @@ export default {
     };
   },
   mounted() {
-    sr.reveal('#contact .block', 100);
+    sr.reveal('#contact .reveal', 250);
   },
 };
 </script>
