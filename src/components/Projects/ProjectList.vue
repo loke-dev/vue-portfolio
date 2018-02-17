@@ -4,10 +4,12 @@
       class="project"
       v-for="(project, index) in projects"
       :key="index">
+      <a :href="project.repo">
       <Card :data-image="project.projectImage">
         <h1 slot="header">{{ project.name }}</h1>
         <p slot="content">{{ project.description }}</p>
       </Card>
+      </a>
     </div>
   </div>
 </template>
