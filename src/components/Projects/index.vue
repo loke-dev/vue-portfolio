@@ -6,7 +6,7 @@
     </div>
     <div class="cardContainer columns">
       <div
-        class="project tile column is-3"
+        class="project column is-one-quarter"
         v-for="(project, index) in projects"
         :key="index">
         <Card class="reveal" :data-project="project">
@@ -26,7 +26,7 @@ export default {
     Card,
   },
   mounted() {
-    sr.reveal('#projects .reveal', 200);
+    sr.reveal('#projects .reveal', 150);
   },
   data() {
     return {
@@ -39,6 +39,10 @@ export default {
 <style lang="scss" scoped>
 @import '~vars';
 @import '~bulma/sass/utilities/mixins';
+
+.project {
+    min-width: 308px;
+}
 
 .project-list {
   padding: 1.5rem 0;
