@@ -9,18 +9,7 @@ export default [
     projectImage: images.gitgud,
     tags: ['Vue', 'Vuex', 'Quasar', 'Express', 'Passport', 'Mongoose', 'Socket.io'],
     description: `
-      Gitgud is a Github Dashboard built with Vue frontend and Express API.
-    `,
-  },
-  {
-    name: 'Buyone',
-    year: '2015',
-    url: null,
-    repo: 'https://github.com/LokeCarlsson/Buyone',
-    projectImage: images.buyone,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
-    description: `
-      Buyone is a e-commerce website build as a boilerplate project.
+      Gitgud is a Github Dashboard built as a SPA frontend and API backend.
     `,
   },
   {
@@ -29,64 +18,75 @@ export default [
     url: 'https://xn--lillafr-g1a.nu/',
     repo: 'https://github.com/LokeCarlsson/lillafro',
     projectImage: images.lillafro,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
+    tags: ['HTML', 'CSS', 'Javascript', 'SEO'],
     description: `
-      Buyone is a e-commerce website build as a boilerplate project.
-    `,
-  },
-  {
-    name: 'Jekyll portfolio',
-    year: '2015',
-    url: 'https://about.gitlab.com/features/#ee-premium',
-    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
-    projectImage: images.jekyll,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
-    description: `
-      Buyone is a e-commerce website build as a boilerplate project.
+      Lilla Frö is a landingpage made for promotion of the author's book.
     `,
   },
   {
     name: 'PWD',
     year: '2015',
-    url: 'https://about.gitlab.com/features/#ee-premium',
-    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    url: 'http://pwd.lokecarlsson.se/',
+    repo: 'https://github.com/LokeCarlsson/PWD',
     projectImage: images.pwd,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
+    tags: ['HTML', 'CSS', 'Javascript', 'SPA'],
     description: `
-      Buyone is a e-commerce website build as a boilerplate project.
-    `,
-  },
-  {
-    name: 'Snippet',
-    year: '2015',
-    url: 'https://about.gitlab.com/features/#ee-premium',
-    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
-    projectImage: images.snippet,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
-    description: `
-      Buyone is a e-commerce website build as a boilerplate project.
+      Personal Web Desktop, a macOS clone made in vanilla JS.
     `,
   },
   {
     name: 'Carleudd',
     year: '2015',
-    url: 'https://about.gitlab.com/features/#ee-premium',
-    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    url: 'https://carleudd.lokecarlsson.se',
+    repo: 'https://github.com/LokeCarlsson/carleudd',
     projectImage: images.carleudd,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate', 'lol', 'hej'],
+    tags: ['HTML', 'CSS'],
+    description: `
+      Carleudd is a static site with the aim of being as fast and accessible as possible, with almost perfect score on Google Lighthouse.
+    `,
+  },
+  {
+    name: 'Jekyll portfolio',
+    year: '2015',
+    url: 'https://lokecarlsson.github.io',
+    repo: 'https://github.com/LokeCarlsson/lokecarlsson.github.io',
+    projectImage: images.jekyll,
+    tags: ['Ruby', 'Jekyll', 'Sass', 'GH-pages', 'Disqus', 'Open Graph'],
+    description: `
+      This is a portfolio/Blog made in Jekyll for Github Pages.
+    `,
+  },
+  {
+    name: 'Snippet',
+    year: '2016',
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/Snippets',
+    projectImage: images.snippet,
+    tags: ['Node', 'Express', 'Mongoose', 'MongoDB', 'Socket.io', 'Handlebars'],
+    description: `
+      A web application where you can create code snippets. Focus on CRUD and security.
+    `,
+  },
+  {
+    name: 'Buyone',
+    year: '2015',
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/Buyone',
+    projectImage: images.buyone,
+    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate', 'Scrum'],
     description: `
       Buyone is a e-commerce website build as a boilerplate project.
     `,
   },
   {
-    name: 'Quiz',
+    name: 'QuizMaster',
     year: '2015',
-    url: 'https://about.gitlab.com/features/#ee-premium',
-    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/QuizMaster',
     projectImage: images.quiz,
-    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
+    tags: ['HTML', 'CSS', 'Javascript'],
     description: `
-      Buyone is a e-commerce website build as a boilerplate project.
+      QuizMaster is a web application that fetches questions from a server and asks the user questions.
     `,
   },
 
