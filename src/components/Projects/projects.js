@@ -1,75 +1,48 @@
+import * as images from '../../assets/img/projects';
+
 export default [
-  /* Career */
   {
-    name: 'GitLab EE',
-    org: 'GitLab',
-    orgLink: 'https://about.gitlab.com',
-    orgImage: 'http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg',
-    date: new Date(2017, 3, 28),
+    name: 'Buyone',
+    date: new Date(2015),
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/Buyone',
+    projectImage: images.buyone,
+    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
+    description: `
+      Buyone is a e-commerce website build as a boilerplate project.
+    `,
+  },
+  {
+    name: 'Carleudd',
+    date: new Date(2015),
     url: 'https://about.gitlab.com/features/#ee-premium',
-    repoUrl: 'https://gitlab.com/gitlab-org/gitlab-ee',
-    imageSrc: 'gitlab-ee-repo.png',
-    projectImage: 'gitlab-ee.png',
-    tags: ['ruby', 'rails', 'html', 'css', 'js', 'vue', 'jquery'],
+    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    projectImage: images.carleudd,
+    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
     description: `
-      GitLab is an online Git repository manager with a wiki, issue tracking, CI and CD. It is a great.
+      Buyone is a e-commerce website build as a boilerplate project.
     `,
   },
   {
-    name: 'GitLab CE',
-    org: 'GitLab',
-    orgLink: 'https://about.gitlab.com',
-    orgImage: 'http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg',
-    date: new Date(2017, 4, 12),
-    url: 'https://about.gitlab.com/features/#ce',
-    repoUrl: 'https://gitlab.com/gitlab-org/gitlab-ce',
-    imageSrc: 'gitlab-ce-repo.png',
-    projectImage: 'gitlab-ce.png',
-    tags: ['ruby', 'rails', 'html', 'css', 'js', 'vue'],
+    name: 'Gitgud',
+    date: new Date(2015),
+    url: 'https://about.gitlab.com/features/#ee-premium',
+    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    projectImage: images.gitgud,
+    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
     description: `
-      GitLab is an online control over your repositories or projects and allows you to decide whether they are public or private for free.
+      Buyone is a e-commerce website build as a boilerplate project.
     `,
   },
   {
-    name: 'PDFLab',
-    org: 'GitLab',
-    orgLink: 'https://about.gitlab.com',
-    orgImage: 'http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg',
-    date: new Date(2017, 4, 11),
-    url: 'https://gitlab.com/samrose3/pdflab/blob/master/README.md',
-    repoUrl: 'https://gitlab.com/samrose3/pdflab',
-    imageSrc: 'pdflab-repo.png',
-    projectImage: 'pdflab.png',
-    tags: ['html', 'js', 'vue'],
+    name: 'Buyone',
+    date: new Date(2015),
+    url: 'https://about.gitlab.com/features/#ee-premium',
+    repo: 'https://gitlab.com/gitlab-org/gitlab-ee',
+    projectImage: images.buyone,
+    tags: ['PHP', 'E-commerce', 'Magento', 'Boilerplate'],
     description: `
-      PDFLab is a Vue component that makes it easy to render PDF files. It's as simple as passing in the URL of ✨
-    `,
-  },
-  {
-    name: 'www-gitlab-com',
-    org: 'GitLab',
-    orgLink: 'https://about.gitlab.com',
-    orgImage: 'http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg',
-    date: new Date(2017, 3, 28),
-    url: 'https://about.gitlab.com',
-    repoUrl: 'https://gitlab.com/gitlab-com/www-gitlab-com',
-    imageSrc: 'www-gitlab-com.png',
-    projectImage: 'gitlab-com.png',
-    tags: ['ruby', 'middleman', 'html', 'css', 'js', 'jquery'],
-    description: 'The landing and infomation site for GitLab.',
-  },
-  {
-    name: 'RESolution',
-    org: 'Cadre5',
-    orgLink: 'https://www.cadre5.com',
-    orgImage: 'http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg',
-    date: new Date(2016, 11, 7),
-    url: 'http://web.ornl.gov/RES/',
-    imageSrc: 'res-repo.png',
-    projectImage: 'res.jpg',
-    tags: ['c#', 'html', 'css', 'js', 'angularjs'],
-    description: `
-      Project involved highly customize UI and responsive design, requiring extensive knowledge of.
+      Buyone is a e-commerce website build as a boilerplate project.
     `,
   },
 ];
