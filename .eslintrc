@@ -25,7 +25,6 @@
     }]
   },
   "globals": {
-    "sr": true,
-    "cl": true
+    "sr": true
   }
 }
