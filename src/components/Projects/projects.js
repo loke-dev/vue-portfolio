@@ -111,4 +111,15 @@ export default [
       A Java project to give different machine learning algorithms a go, such as SVM and Naive Bayes. 
     `,
   },
+  {
+    name: 'SearchEngine',
+    year: '2017',
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/SearchEngine',
+    projectImage: images.searchengine,
+    tags: ['Java', 'Spring', 'Vue', 'Vuetify'],
+    description: `
+      A Java search engine with a Vue frontend that let's the user search for Wikipedia articles based on search queries. 
+    `,
+  },
 ];
