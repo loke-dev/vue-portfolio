@@ -89,5 +89,26 @@ export default [
       QuizMaster is a web application that fetches questions from a server and asks the user questions.
     `,
   },
-
+  {
+    name: 'BlogAPI',
+    year: '2017',
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/BlogAPI',
+    projectImage: images.palceholder,
+    tags: ['Node', 'Express', 'Mongoose', 'Passport', 'JWT'],
+    description: `
+      BlogAPI is an REST API written in Node.js with a MongoDB database to provide a backend for a blog site. Embracing HATEOAS and other best practices. 
+    `,
+  },
+  {
+    name: 'MachineLearning',
+    year: '2017',
+    url: null,
+    repo: 'https://github.com/LokeCarlsson/MachineLearning',
+    projectImage: images.palceholder,
+    tags: ['Java', 'Weka'],
+    description: `
+      A Java project to give different machine learning algorithms a go, such as SVM and Naive Bayes. 
+    `,
+  },
 ];
