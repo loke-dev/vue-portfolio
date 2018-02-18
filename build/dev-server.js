@@ -1,3 +1,4 @@
+/* eslint-disable */
 require('./check-versions')();
 
 const config = require('../config');

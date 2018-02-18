@@ -1,3 +1,4 @@
+/* eslint-disable */
 const chalk = require('chalk');
 const semver = require('semver');
 const packageConfig = require('../package.json');
@@ -8,13 +9,11 @@ function exec(cmd) {
   return childProcess.execSync(cmd).toString().trim();
 }
 
-const versionRequirements = [
-  {
-    name: 'node',
-    currentVersion: semver.clean(process.version),
-    versionRequirement: packageConfig.engines.node,
-  },
-];
+const versionRequirements = [{
+  name: 'node',
+  currentVersion: semver.clean(process.version),
+  versionRequirement: packageConfig.engines.node,
+}];
 
 if (shell.which('npm')) {
   versionRequirements.push({
