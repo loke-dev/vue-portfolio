@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-image">
       <figure class="image is-1by1">
-        <img :src="this.dataProject.projectImage ? this.dataProject.projectImage : 'http://lorempixel.com/500/500/abstract/'" alt="Project image">
+        <img :src="this.dataProject.projectImage" alt="Project image">
       </figure>
     </div>
     <div class="card-content">
