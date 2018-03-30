@@ -3,7 +3,7 @@
     <div class="container">
       <div class="content has-text-centered">
         <p class="reveal">
-          © 2018 Loke Carlsson, made with lots of ❤️ and steeming hot ☕️.
+          © 2018 Loke Carlsson, made with lots of ❤️ and steaming hot ☕️.
         </p>
         <p class="reveal">
           <a class="icon"
