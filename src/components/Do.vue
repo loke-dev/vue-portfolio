@@ -47,11 +47,7 @@ export default {
           icon: 'fa-pencil',
           title: 'Designer',
           text: 'My interest in graphic design has led me to focus on front-end which let me be more expressive with design and UX. Excellent design is essential in crafting elegant and functional applications.',
-        }, {
-          icon: 'fa-rocket',
-          title: 'Technology',
-          text: 'I am passionate about technology both hardware but also the new facinating area of blockchain and cryptocurrencies.',
-        },
+        }
       ],
     };
   },
