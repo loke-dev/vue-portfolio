@@ -23,24 +23,22 @@ Yarn
 
 ### Installing
 
-
-
 ``` bash
 # Install dependencies
 yarn
 
 # Serve with hot reload at localhost:8080
 yarn dev
+```
 
+## Deployment
+
+``` bash
 # Build for production
 yarn build
 ```
 
 ## Running the tests
-
-Coming soon..
-
-## Deployment
 
 Coming soon..
 
