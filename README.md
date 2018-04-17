@@ -23,24 +23,22 @@ Yarn
 
 ### Installing
 
-
-
 ``` bash
 # Install dependencies
 yarn
 
 # Serve with hot reload at localhost:8080
 yarn dev
+```
 
+## Deployment
+
+``` bash
 # Build for production
 yarn build
 ```
 
 ## Running the tests
-
-Coming soon..
-
-## Deployment
 
 Coming soon..
 
@@ -63,7 +61,7 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
