@@ -31,15 +31,15 @@ export default {
       social: [
         {
           icon: 'facebook',
-          link: 'https://www.facebook.com/lokecarlsson1',
+          link: 'https://www.facebook.com/carlssonloke',
         },
         {
           icon: 'linkedin',
-          link: 'https://linkedin.com/in/loke-carlsson',
+          link: 'https://linkedin.com/in/lokecarlsson',
         },
         {
           icon: 'twitter',
-          link: 'https://twitter.com/loke_carlsson',
+          link: 'https://twitter.com/carlssonloke',
         },
         {
           icon: 'google-plus',
