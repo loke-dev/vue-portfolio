@@ -9,6 +9,10 @@
     "test": {
       "presets": ["env", "stage-2"],
       "plugins": [ "istanbul" ]
+    },
+    "production": {
+      "presets": ["env", "stage-2"],
+      "plugins": [ "istanbul" ]
     }
   }
 }
