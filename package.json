@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/prod-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "buefy": "^0.3.2",
