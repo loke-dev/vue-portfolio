@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       title: 'Portfolio',
-      subtitle: 'Building the web, one line of code at a time.',
+      subtitle: 'Building the web, one line of code at a time. HEJ FANNY!',
       isPrimary: true,
     };
   },
