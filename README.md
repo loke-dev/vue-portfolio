@@ -25,7 +25,7 @@ Yarn
 
 ``` bash
 # Install dependencies
-yarn
+yarn install
 
 # Serve with hot reload at localhost:8080
 yarn dev
