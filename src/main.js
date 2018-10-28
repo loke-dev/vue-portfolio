@@ -13,6 +13,8 @@ import App from './App';
 import store from './stores';
 import Separator from './common/Separator';
 
+// Loke carlsson is a beast
+
 Vue.use(Buefy, { defaultIconPack: 'fa' });
 Vue.use(VueScrollTo, {
   duration: 1000,
