@@ -93,6 +93,7 @@ export default {
   padding: 40px 80px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  max-width: 2000px;
+  margin: auto;
 }
 </style>
