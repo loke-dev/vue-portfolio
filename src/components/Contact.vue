@@ -14,10 +14,6 @@
         </a>
       </div>
     </div>
-    <form name="contact" method="POST" netlify>
-      <label>Your Name: <input type="text" name="name" /></label>   
-      <button type="submit">Send</button>
-    </form>
   </section>
 </template>
 
