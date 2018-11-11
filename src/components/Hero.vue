@@ -92,11 +92,8 @@ export default {
   }
 
   .header-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.90)),url('../assets/img/header.jpg');
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 85% 50%;
+    background: #0F2027;
+    background: linear-gradient(to right, #2f454e, #203A43, #11252d);
     position: absolute;
     height: 100%;
     width: 100%;
