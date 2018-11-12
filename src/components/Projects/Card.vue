@@ -2,7 +2,10 @@
   <div class="card">
     <div class="card-image">
       <figure class="image is-1by1">
-        <img :src="this.dataProject.projectImage" alt="Project image">
+        <clazy-load :src="this.dataProject.projectImage">
+          <img :src="this.dataProject.projectImage" alt="Project image">
+          <div class="preloader" slot="placeholder" />
+        </clazy-load>
       </figure>
     </div>
     <div class="card-content">
@@ -34,9 +37,14 @@
 </template>
 
 <script>
+import { VueClazyLoad } from 'vue-clazy-load'
+
 export default {
   name: 'card',
   props: ['dataProject'],
+  components: {
+    VueClazyLoad,
+  },
 }
 </script>
 

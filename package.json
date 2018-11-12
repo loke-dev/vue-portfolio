@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/prod-server.js",
-    "build": "node build/build.js",
-    "postinstall": "npm run build"
+    "build": "node build/build.js"
   },
   "dependencies": {
     "buefy": "^0.3.2",
@@ -15,6 +14,7 @@
     "moment": "^2.18.1",
     "scrollreveal": "^3.3.5",
     "vue": "^2.3.4",
+    "vue-clazy-load": "^0.4.2",
     "vue-scrollto": "^2.6.8",
     "vuex": "^2.3.1"
   },

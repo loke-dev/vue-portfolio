@@ -16,7 +16,11 @@
               rel="noopener"
               :href="skill.url"
               :title="skill.name">
-              <img :src="skill.image" :alt="skill.name">
+              <clazy-load :src="skill.image">
+                <img :src="skill.image" :alt="skill.name">
+                <div class="preloader" slot="placeholder" />
+              </clazy-load>
+              
             </a>
           </div>
         </div>
@@ -26,6 +30,8 @@
 </template>
 
 <script>
+import { VueClazyLoad } from 'vue-clazy-load'
+
 import skills from './skills';
 
 export default {
@@ -37,6 +43,9 @@ export default {
   },
   mounted() {
     sr.reveal('.skill', 50);
+  },
+  components: {
+    VueClazyLoad,
   },
 };
 </script>
