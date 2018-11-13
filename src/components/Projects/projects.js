@@ -81,7 +81,7 @@ export default [
   {
     name: 'QuizMaster',
     year: '2015',
-    url: null,
+    url: 'https://quiz.lokecarlsson.se',
     repo: 'https://github.com/LokeCarlsson/QuizMaster',
     projectImage: images.quiz,
     tags: ['HTML', 'CSS', 'Javascript'],
