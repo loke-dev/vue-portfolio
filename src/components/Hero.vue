@@ -3,7 +3,7 @@
     <div class="hero header-image"
       :class="{ 'is-primary': isPrimary }">
       <div class="hero-head">
-        <nav-bar></nav-bar>
+        <nav-bar />
       </div>
       <div class="hero-body">
         
