@@ -1,4 +1,3 @@
-// see http://vuejs-templates.github.io/webpack for documentation.
 const path = require('path');
 const prodEnv = require('./prod.env');
 const devEnv = require('./dev.env');
