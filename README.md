@@ -1,6 +1,6 @@
 <p align="center">
   <img alt="popping badge" src="https://img.shields.io/hackage-deps/v/lens.svg" />
-  <img alt="build badge" src="https://img.shields.io/badge/build-never built-lightgrey.svg?style=flat-square" />
+  <img alt="version badge" src="https://img.shields.io/badge/version-2.1.0-lightgrey.svg?style=flat-square" />
   <img alt="version badge" src="https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square" />
   <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
 </p>
