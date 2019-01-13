@@ -15,6 +15,6 @@ project_fg_color: ''
 ---
 I am bork, very bork.
 
-Bork bork.
+**Bork bork.**
 
-![](/uploads/mike-dorner-173502-unsplash.jpg)
+![](/uploads/sGJoIJd.png)
