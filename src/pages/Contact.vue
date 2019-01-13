@@ -1,22 +1,20 @@
 <template>
   <Layout>
     <div class="container">
-
       <div class="contact-header">
-        <h1 class="contact-title">Say hi!</h1>
-        <p>Leave me a note with any questions you might have, I'll get back to you as soon as possible.</p>
+        <h1 class="contact-title">Say hello!</h1>
+        <p>Looking for exiting development opportunties and friendly greets! 👋</p>
       </div>
 
-      <form class="contact-form" name="contact">
-
+      <form name="contact" method="post" data-netlify="true">
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
-            <input type="text" name="name" />
+            <input type="text" name="name">
           </div>
           <div>
             <label for="email" class="label">Your email</label>
-            <input type="email" name="email" />
+            <input type="email" name="email">
           </div>
         </div>
 
@@ -25,16 +23,14 @@
           <textarea name="message"></textarea>
         </div>
 
-        <button class="button">Submit form</button>
-
+        <button type="submit" class="button">Submit form</button>
       </form>
-
     </div>
   </Layout>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style scoped>
@@ -58,10 +54,12 @@ export default {}
 .sender-info > div:last-of-type {
   margin: 0;
 }
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--color-contrast-1);
 }
-input,textarea {
+input,
+textarea {
   background: transparent;
   border: 1px solid var(--color-base-1);
   outline: none;
