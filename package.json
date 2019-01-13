@@ -1,6 +1,5 @@
 {
-  "name": "itsnwa.com",
-  "private": true,
+  "name": "lokecarlsson",
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
