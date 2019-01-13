@@ -4,7 +4,7 @@
   <img alt="version badge" src="https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square" />
   <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
 </p>
-<p align="center"><a href="https://lokecarlsson.se"><img alt="logo" src="https://raw.githubusercontent.com/LokeCarlsson/lokecarlsson/master/src/assets/img/logo.png" /></a></p>
+<p align="center"><a href="https://lokecarlsson.se"><img alt="logo" src="https://user-images.githubusercontent.com/14079937/51091134-77887980-1786-11e9-9b49-173fca1762d2.png" /></a></p>
 <p align="center">A Vue.js Portfolio</p>
 <p align="center"><a href="https://vuejs.org" target="_blank"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
