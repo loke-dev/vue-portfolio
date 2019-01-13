@@ -5,8 +5,6 @@ title: Bork
 category: Identity
 thumbnail: "/uploads/sGJoIJd.png"
 categories:
-- Bork
-- Dog
 - Good
 - Boye
 project_bg_color: ''
