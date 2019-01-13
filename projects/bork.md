@@ -5,8 +5,6 @@ title: Bork
 category: Identity
 thumbnail: "/uploads/sGJoIJd.png"
 categories:
-- Bork
-- Dog
 - Good
 - Boye
 project_bg_color: ''
@@ -17,4 +15,4 @@ I am bork, very bork.
 
 **Bork bork.**
 
-![](/uploads/sGJoIJd.png)
+![bork](/uploads/sGJoIJd.png "Bork")
