@@ -1,5 +1,5 @@
 <p align="center">
-  <h3 align="center">lokecarlsson</h3>
+  <h1 align="center">lokecarlsson</h1>
   <p align="center">A personal portfolio/blog<p>
 </p>
 
