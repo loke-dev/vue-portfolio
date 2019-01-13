@@ -1,7 +1,6 @@
 <p align="center">
   <img alt="popping badge" src="https://img.shields.io/hackage-deps/v/lens.svg" />
-  <img alt="build badge" src="https://img.shields.io/badge/build-3.0-green.svg?style=flat-square" />
-  <img alt="version badge" src="https://img.shields.io/badge/version-2.0.0-blue.svg?style=flat-square" />
+  <img alt="version badge" src="https://img.shields.io/badge/version-3.0.0-blue.svg?style=flat-square" />
   <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
 </p>
 <p align="center"><a href="https://lokecarlsson.se"><img alt="logo" src="https://user-images.githubusercontent.com/14079937/51091134-77887980-1786-11e9-9b49-173fca1762d2.png" /></a></p>
