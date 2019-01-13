@@ -1,67 +1,41 @@
 <p align="center">
-  <img alt="popping badge" src="https://img.shields.io/hackage-deps/v/lens.svg" />
-  <img alt="version badge" src="https://img.shields.io/badge/version-2.1.0-blue.svg?style=flat-square" />
-  <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
+  <img src="https://file-xidfrcjkaq.now.sh/" height="240">
+  <h3 align="center">Gridsome x Forestry</h3>
+  <p align="center">A starter-kit by Nichlas W. Andersen<p>
 </p>
-<p align="center"><a href="https://lokecarlsson.se"><img alt="logo" src="https://raw.githubusercontent.com/LokeCarlsson/lokecarlsson/master/src/assets/img/logo.png" /></a></p>
-<p align="center">A Vue.js Portfolio</p>
-<p align="center"><a href="https://vuejs.org" target="_blank"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Development
 
-### Prerequisites
+```bash
+# install Gridsome globally
+npm install --global @gridsome/cli
 
-What things you need to install the software and how to install them
+# cd into the project directory
+cd gridsome-forestry-starter
 
-``` bash
-Node
-Yarn
+# Start local dev server
+gridsome develop
 ```
 
-### Installing
 
-``` bash
-# Install dependencies
-yarn install
+## Forestry (Content Management)
 
-# Serve with hot reload at localhost:8080
-yarn dev
-```
+This project has been pre-configured to work with Forestry, just import your repository ✨  
+Any changes you make will be commited back to the repo, and deployed if you're using Netlify.
 
-## Deployment
+ 
+<p align="center">
+  <a href="https://app.forestry.io/quick-start?repo=itsnwa/gridsome-forestry-starter&amp;provider=github&amp;engine=vuepress" rel="nofollow"><img src="https://camo.githubusercontent.com/2455e97e4e989374a355fb0bea7ad364f2561c92/68747470733a2f2f6173736574732e666f7265737472792e696f2f696d706f72742d746f2d666f7265737472794b2e737667" alt="Import this project into Forestry" data-canonical-src="https://assets.forestry.io/import-to-forestryK.svg" style="max-width:100%;"></a>
+</p>
 
-``` bash
-# Build for production
-yarn build
-```
 
-## Running the tests
+## Deploy with Netlify
 
-Coming soon..
+Import your site in Netlify
 
-## Built With
+1. Create a new site in Netlify and import your repository.
+2. Set the build command to: `gridsome build`
+3. Set the publish directory to: `dist`
 
-* [Vue.js](https://vuejs.org/) - Javascript Framework
-* [Buefy.io](https://buefy.github.io/#/) - CSS Framework
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/LokeCarlsson/lokecarlsson/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-I use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/LokeCarlsson/lokecarlsson/tags). 
-
-## Authors
-
-* **Loke Carlsson**
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Beer raised to anyone who's code was used
+That's it, now your site gets deployed automatically on `git push` or when saving documents from Forestry.

@@ -1,0 +1,35 @@
+---
+label: Theme configuration
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: site_name
+  label: Site name
+- type: textarea
+  name: site_description
+  label: Site description
+- type: textarea
+  name: hero_title
+  label: Hero title
+  config:
+    wysiwyg: true
+    schema:
+      format: html
+- type: textarea
+  name: hero_subtitle
+  label: Hero subtitle
+  config:
+    wysiwyg: true
+    schema:
+      format: html
+- name: footer
+  label: Footer text
+  type: text
+  hidden: false
+  default: ''
+- type: boolean
+  name: dark_mode
+  label: Dark mode
+pages:
+- data/theme.json
