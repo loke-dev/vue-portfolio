@@ -1,12 +1,12 @@
 ---
 date: 2019-01-03 23:00:00 +0000
-title: macOS development environment
-author: Nichlas W. Andersen
-excerpt: Get up and running with a fresh macOS Mojave install
+title: Test post 1
+author: Loke Carlsson
+excerpt: test post number 1
 
 ---
-### Install Homebrew
+### Install
 
-    $ brew brew brew
+    $ yarn add lokiiiiiiiii
 
 Enjoy your new system! 🎉

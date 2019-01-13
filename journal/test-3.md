@@ -1,7 +1,7 @@
 ---
 date: 2019-01-03 23:00:00 +0000
 title: Gridsome with Forestry CMS starter-kit
-author: Nichlas W. Andersen
+author: Loke Carlsson
 excerpt: Get up and running with a fresh macOS Mojave install
 
 ---

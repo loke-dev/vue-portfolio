@@ -2,12 +2,11 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Nichlas W. Andersen",
-  siteUrl: `https://www.itsnwa.com`,
-  titleTemplate: "%s - NWA",
-  siteDescription: "Creative technologist",
-  plugins: [
-    {
+  siteName: "Loke Carlsson",
+  siteUrl: `https://www.lokecarlsson.se`,
+  titleTemplate: "%s - Portfolio & Blog",
+  siteDescription: "Web developer",
+  plugins: [{
       use: "@gridsome/source-filesystem",
       options: {
         path: "projects/**/*.md",

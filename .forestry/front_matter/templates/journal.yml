@@ -25,10 +25,10 @@ fields:
     source:
       type: simple
       section: authors
-      file: data/authors/nichlas-w-andersen.json
+      file: data/authors/loke-carlsson.json
     required: true
     options:
-    - Nichlas W. Andersen
+    - Loke Carlsson
   label: Author
   default: ''
 pages:
