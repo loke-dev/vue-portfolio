@@ -6,7 +6,7 @@
         <p>Looking for exiting development opportunties and friendly greets! 👋</p>
       </div>
 
-      <form name="contact" action="/success" method="post" data-netlify="true">
+      <form name="contact" action="/pages/success" method="post" data-netlify="true">
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
