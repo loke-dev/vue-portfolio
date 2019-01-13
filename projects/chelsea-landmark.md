@@ -17,4 +17,4 @@ I am bork, very bork.
 
 **Bork bork.**
 
-![](/uploads/sGJoIJd.png)
+![bork](/uploads/sGJoIJd.png "Bork")
