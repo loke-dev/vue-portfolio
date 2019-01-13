@@ -33,3 +33,4 @@ fields:
   default: ''
 pages:
 - journal/macos-development-environment.md
+- journal/test-loke.md
