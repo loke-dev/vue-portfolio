@@ -31,6 +31,5 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
-- projects/sunk.md
 - projects/3d-graff.md
 - projects/ios-concept.md
