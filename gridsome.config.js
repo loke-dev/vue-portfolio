@@ -8,6 +8,12 @@ module.exports = {
   siteDescription: 'Web developer',
   plugins: [
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-72659574-1',
+      }
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'projects/**/*.md',
