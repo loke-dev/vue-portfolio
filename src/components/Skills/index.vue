@@ -3,7 +3,6 @@
     <div class="container">
       <div class="block has-text-centered">
         <h2 class="title is-2">Skills</h2>
-        <separator></separator>
         <h5 class="subtitle is-5">Technologies I work in most frequently.</h5>
       </div>
       <div class="skills columns is-multiline is-mobile">
@@ -16,11 +15,8 @@
               rel="noopener"
               :href="skill.url"
               :title="skill.name">
-              <clazy-load :src="skill.image">
                 <img :src="skill.image" :alt="skill.name">
                 <div class="preloader" slot="placeholder" />
-              </clazy-load>
-              
             </a>
           </div>
         </div>
@@ -30,7 +26,6 @@
 </template>
 
 <script>
-import { VueClazyLoad } from 'vue-clazy-load'
 
 import skills from './skills';
 
@@ -41,37 +36,22 @@ export default {
       skills,
     };
   },
-  mounted() {
-    sr.reveal('.skill', 50);
-  },
   components: {
-    VueClazyLoad,
   },
 };
 </script>
 
-<style>
+<style lang="sass" scoped>
+  .skills
+    display: grid
 
-  /* .skills {
-    max-width: $desktop;
-    margin: auto;
-  }
+  .columns
 
-  .columns {
-    justify-content: center;
-  }
+  .skill img
+    padding: 0.5em
+    transition: all 0.15s ease-in
 
-  .skill img {
-    padding: 0.5em;
-    margin: 0 auto;
-    max-width: 50%;
-    opacity: 0.6;
-    transition: all 0.15s ease-in;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.1);
+    &:hover 
+      transform: scale(1.1)
       cursor: pointer
-    }
-  } */
 </style>
