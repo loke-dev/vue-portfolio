@@ -30,6 +30,3 @@ fields:
   config:
     color_format: Hex
   label: Foreground color
-pages:
-- projects/3d-graff.md
-- projects/ios-concept.md
