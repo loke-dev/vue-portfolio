@@ -2,38 +2,39 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Loke Carlsson",
-  siteUrl: `https://www.lokecarlsson.se`,
-  titleTemplate: "%s - Portfolio & Blog",
-  siteDescription: "Web developer",
-  plugins: [{
-      use: "@gridsome/source-filesystem",
+  siteName: 'Loke Carlsson',
+  siteUrl: 'https://www.lokecarlsson.se',
+  titleTemplate: '%s - Portfolio & Blog',
+  siteDescription: 'Web developer',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
       options: {
-        path: "projects/**/*.md",
-        typeName: "ProjectPost",
+        path: 'projects/**/*.md',
+        typeName: 'ProjectPost',
         resolveAbsolutePaths: true,
         remark: {
-          externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
-        }
-      }
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+        },
+      },
     },
     {
-      use: "@gridsome/source-filesystem",
+      use: '@gridsome/source-filesystem',
       options: {
-        path: "journal/**/*.md",
-        typeName: "JournalPost",
+        path: 'journal/**/*.md',
+        typeName: 'JournalPost',
         resolveAbsolutePaths: true,
         remark: {
-          externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
-        }
-      }
-    }
+          externalLinksTarget: '_blank',
+          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+        },
+      },
+    },
   ],
   transformers: {
     remark: {
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+      plugins: ['@gridsome/remark-prismjs'],
+    },
+  },
 };
