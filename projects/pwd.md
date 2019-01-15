@@ -1,7 +1,7 @@
 ---
 thumbnail: "/uploads/pwd.png"
 title: PWD
-date: 2019-01-14 23:00:00 +0000
+date: 2015-12-30 23:00:00 +0000
 categories:
 - SPA
 - PWD
@@ -10,7 +10,7 @@ categories:
 - CSS
 - HTML
 project_bg_color: ''
-project_fg_color: "#4A90E2"
+project_fg_color: "#224D87"
 
 ---
 ![](/uploads/pwd.png)
