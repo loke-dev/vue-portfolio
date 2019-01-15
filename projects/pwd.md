@@ -9,8 +9,8 @@ categories:
 - Javascript
 - CSS
 - HTML
-project_bg_color: "#4A90E2"
-project_fg_color: ''
+project_bg_color: 
+project_fg_color: "#4A90E2"
 
 ---
 My PWD application
