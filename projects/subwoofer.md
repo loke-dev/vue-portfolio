@@ -1,6 +1,6 @@
 ---
 thumbnail: "/uploads/29a5ej.jpg"
-title: Porta400
+title: subwoofer
 date: 2019-01-03 23:00:00 +0000
 categories:
 - sub
