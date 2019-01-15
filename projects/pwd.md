@@ -10,7 +10,7 @@ categories:
 - CSS
 - HTML
 project_bg_color: ''
-project_fg_color: "#4A90E2"
+project_fg_color: "#224D87"
 
 ---
 ![](/uploads/pwd.png)
