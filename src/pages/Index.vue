@@ -3,6 +3,7 @@
     <div class="container">
       <Hero />
       <ProjectsGrid :projects="$page.projects.edges" />
+      <skills />
     </div>
     <LatestJournals :journals="$page.journals.edges" />
   </Layout>
@@ -36,11 +37,13 @@ query Posts {
 
 <script>
 import Hero from "@/components/Hero"
+import Skills from "@/components/Skills"
 import ProjectsGrid from "@/components/ProjectsGrid"
 import LatestJournals from "@/components/LatestJournals"
 
 export default {
   components: {
+    Skills,
     Hero,
     ProjectsGrid,
     LatestJournals

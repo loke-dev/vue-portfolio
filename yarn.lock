@@ -7817,6 +7817,10 @@ vue-analytics@^5.16.1:
   version "5.16.1"
   resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.16.1.tgz#2fa909a245e1cee9993a69f0b72caf1dd6126c10"
 
+vue-clazy-load@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/vue-clazy-load/-/vue-clazy-load-0.4.2.tgz#8a83c8bc3bae291cedbde72baa52fdbf8938c766"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.1.tgz#b2d3d95402a811602380783ea4f566eb875569a2"

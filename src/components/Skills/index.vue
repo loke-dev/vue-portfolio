@@ -50,10 +50,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-  @import '~vars';
+<style>
 
-  .skills {
+  /* .skills {
     max-width: $desktop;
     margin: auto;
   }
@@ -74,5 +73,5 @@ export default {
       transform: scale(1.1);
       cursor: pointer
     }
-  }
+  } */
 </style>
