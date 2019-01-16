@@ -6,7 +6,7 @@ categories:
 - html
 - css
 project_bg_color: ''
-project_fg_color: "#FFD500"
+project_fg_color: "#000000"
 
 ---
 ![](/uploads/carleudd.png)
