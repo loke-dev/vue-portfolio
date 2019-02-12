@@ -8,5 +8,6 @@ excerpt: test post number 1
 ### Install
 
     $ yarn add loki
+    $ yarn add loki-wrapper
 
 Enjoy your new system! 🙃 🎉
