@@ -10,4 +10,4 @@ excerpt: test post number 1
     $ yarn add loki
     $ yarn add loki-wrapper
 
-Enjoy your new system! 🙃 🎉
+Enjoy your new life! 🙃 🎉
