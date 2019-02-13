@@ -47,10 +47,8 @@ export default {
     padding: 0.5em
     margin: 0 auto
     max-width: 110px
-    opacity: 0.6
     transition: all 0.15s ease-in
     &:hover
-      opacity: 1
       transform: scale(1.1)
       cursor: pointer
 </style>
