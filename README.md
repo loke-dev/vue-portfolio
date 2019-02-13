@@ -1,4 +1,5 @@
 <p align="center">
+  <img alt="popping badge" src="https://api.netlify.com/api/v1/badges/a40e2623-3ac0-49ef-8b24-9e988c6d56a9/deploy-status" />
   <img alt="popping badge" src="https://img.shields.io/hackage-deps/v/lens.svg" />
   <img alt="version badge" src="https://img.shields.io/badge/version-3.0.0-blue.svg?style=flat-square" />
   <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
@@ -36,6 +37,10 @@ yarn dev
 # Build for production
 yarn build
 ```
+
+## Publishing
+
+Is done automatically with Netlify.
 
 ## Running the tests
 
