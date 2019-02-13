@@ -42,16 +42,17 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  .skills
-    display: grid
-
   .columns
+    justify-content: center
 
   .skill img
     padding: 0.5em
+    margin: 0 auto
+    max-width: 40%
+    opacity: 0.6
     transition: all 0.15s ease-in
-
-    &:hover 
+    &:hover
+      opacity: 1
       transform: scale(1.1)
       cursor: pointer
 </style>
