@@ -6,7 +6,7 @@
         <p>Looking for exiting development opportunties and friendly greets! 👋</p>
       </div>
 
-      <form name="contact" action="/success/" method="post" data-netlify="true">
+      <form name="contact" method="post" netlify>
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
@@ -18,12 +18,12 @@
           </div>
         </div>
 
-        <div class="message">
+        <div class="message-wrapper">
           <label for="message" class="label">Message</label>
           <textarea name="message"></textarea>
         </div>
 
-        <button type="submit" class="button">Submit form</button>
+        <button type="submit" class="submit-button">Submit form</button>
       </form>
     </div>
   </Layout>
@@ -73,7 +73,7 @@ textarea {
   resize: none;
   height: 140px;
 }
-.button {
+.submit-button {
   color: var(--color-base);
   background: var(--color-contrast);
   outline: none;
@@ -87,10 +87,10 @@ textarea {
   font-size: 500;
   letter-spacing: 0.035em;
 }
-.button:hover {
+.submit-button:hover {
   opacity: 0.6;
 }
-.button:focus {
+.submit-button:focus {
   border: 1px solid var(--color-base-1);
 }
 </style>
