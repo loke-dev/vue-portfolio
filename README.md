@@ -39,7 +39,7 @@ yarn build
 
 ## Running the tests
 
-Coming soon..
+Soon..
 
 ## Built With
 
