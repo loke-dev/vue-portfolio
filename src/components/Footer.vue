@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <span class="" v-html="settings.footer" />
-        <span>hej</span>
+        <span>icons here</span>
     </footer>
 </template>
 
