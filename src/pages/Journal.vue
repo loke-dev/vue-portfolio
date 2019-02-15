@@ -51,7 +51,6 @@ export default {
 .journal-hero {
   padding: 4rem 0;
   text-align: center;
-  color: var(--color-base-1);
 }
 .journal-header {
   font-size: 3rem;
