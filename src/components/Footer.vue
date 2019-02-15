@@ -1,8 +1,7 @@
 <template>
     <footer class="footer">
-        <div class="container">
-            <span v-html="settings.footer" />
-        </div>
+        <span class="" v-html="settings.footer" />
+        <span>hej</span>
     </footer>
 </template>
 
@@ -16,10 +15,14 @@ export default {
 }
 </script>
 
-<style scoped>
-.footer {
-    font-size: 0.8rem;
-    padding: 6rem 0;
-    margin-top: 75px;
-}
+<style lang="sass" scoped>
+.footer
+    font-size: 0.8rem
+    padding: 4rem
+    margin: 75px 0 0
+    background-color: var(--color-base-1)
+
+.footer-content
+
+.footer-content > span
 </style>
