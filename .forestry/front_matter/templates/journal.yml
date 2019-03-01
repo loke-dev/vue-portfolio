@@ -32,6 +32,7 @@ fields:
   label: Author
   default: ''
 pages:
-- journal/macos-development-environment.md
-- journal/test-loke.md
+- journal/123123123123.md
 - journal/lorem-ipsum.md
+- journal/test-loke.md
+- journal/macos-development-environment.md
