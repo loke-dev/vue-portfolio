@@ -31,6 +31,6 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
-- projects/pwd.md
-- projects/carleudd.md
 - projects/gitgud.md
+- projects/carleudd.md
+- projects/pwd.md
