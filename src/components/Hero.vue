@@ -17,35 +17,36 @@ export default {
 
 <style>
 .hero {
-    text-align: center;
-    width: 700px;
-    margin: 0 auto;
-    padding: 4rem 0 8rem 0;
-    position: relative;
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  padding: 4rem 0 8rem 0;
+  position: relative;
+  justify-content: inherit!important;
+  height: 100vh;
 }
 
 .hero-title {
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 0;
-    margin: 0 0 2rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 2rem 0;
 }
 .hero-title p,
 .hero-subtitle p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .hero-subtitle {
-    font-size: 1.15em;
-    font-weight: 400;
-    line-height: 1.68;
-    padding: 0;
-    margin: 0;
-    opacity: 0.6;
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: 1.68;
+  padding-top: 50px;
+  opacity: 0.6;
 }
 .hero-image {
   padding-bottom: 30px;
-  max-width: 784px;
+  max-width: 700px;
   margin: 0 auto;
 }
 </style>
