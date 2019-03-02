@@ -1,15 +1,11 @@
 <template>
   <footer class="footer">
     <span class="copyright" v-html="settings.footer"/>
-    <div>
-      <font-awesome class="icon"
-        v-for="item in social"
-        :href="item.link"
-        :key="item.id"
-        :icon="['fab', `${item.icon}`]"
-        target="_blank"
-        rel="noopener" />
-      </div>
+    <div class="social-icons">
+      <a v-for="item in social" :key="item.id" :href="item.link" target="_blank" rel="noopener">
+        <font-awesome class="icon" :icon="['fab', `${item.icon}`]"/>
+      </a>
+    </div>
   </footer>
 </template>
 
@@ -52,9 +48,14 @@ export default {
   background-color: var(--color-base-1)
 
 .copyright
+  font-size: 15px
   padding-bottom: 20px
+
+.social-icons
+  display: flex
 
 .icon
   font-size: 50px
+  color: inherit
 
 </style>
