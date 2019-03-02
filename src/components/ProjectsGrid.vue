@@ -1,11 +1,17 @@
 <template>
+<div>
+  <div class="block has-text-centered">
+    <h2 class="title is-2">Projects</h2>
+    <h5 class="subtitle is-5">Web application and sites I have coded and designed.</h5>
+  </div>
   <div class="projects">
     <div class="project" v-for="item in projects" :key="item.node.id">
       <g-link :to="item.node.path" class="project-link">
-        <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail"/>
         <h3 class="project-title">{{ item.node.title }}</h3>
+        <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail"/>
       </g-link>
     </div>
+  </div>
   </div>
 </template>
 
@@ -34,7 +40,7 @@ export default {
   text-decoration: none;
 }
 .thumbnail {
-  height: 560px;
+  height: 500px;
   object-fit: cover;
   transition: all 0.15s ease;
   box-shadow: 0 0 40px -20px rgba(0, 0, 0, 0.25);
