@@ -70,7 +70,7 @@ h1 {
 }
 
 a {
-  color: black;
+  color: #26a69a!important;
 }
 
 img {
