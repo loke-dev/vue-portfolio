@@ -1,7 +1,7 @@
 <template>
   <Layout>
+    <Hero />
     <div class="container">
-      <Hero />
       <ProjectsGrid :projects="$page.projects.edges" />
       <skills />
     </div>
@@ -47,6 +47,20 @@ export default {
     Hero,
     ProjectsGrid,
     LatestJournals
-  }
+  },
+  methods: {
+    navHandler() {
+      const { innerHeight, scrollY } = window;
+      const isPrimary = this.$store.getters.isPrimary
+      const newValue = (scrollY + 45) < innerHeight
+
+      if (isPrimary !== newValue) {
+        this.$store.dispatch('primary', !isPrimary);
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.navHandler.bind(this));
+  },
 }
 </script>

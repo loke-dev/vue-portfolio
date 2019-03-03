@@ -9,21 +9,23 @@
 export default {
   data() {
     return {
-      settings: require("../../data/theme.json")
+      settings: require("../../data/theme.json"),
     }
-  }
+  },
 }
 </script>
 
 <style>
 .hero {
   text-align: center;
-  width: 700px;
+  width: 100vw!important;
   margin: 0 auto;
-  padding: 4rem 0 8rem 0;
+  margin-bottom: 50px;
+  padding: 16rem 0 8rem 0;
   position: relative;
   justify-content: inherit!important;
   height: 100vh;
+  background: linear-gradient(to right, #2f454e, #203A43, #11252d);
 }
 
 .hero-title {
@@ -40,13 +42,14 @@ export default {
 .hero-subtitle {
   font-size: 1.15em;
   font-weight: 400;
+  color: white;
   line-height: 1.68;
-  padding-top: 50px;
+  padding-top: 40px;
   opacity: 0.6;
 }
 .hero-image {
   padding-bottom: 30px;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 </style>

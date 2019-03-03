@@ -1,7 +1,7 @@
 <template>
   <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
     <Header />
-    <slot/>
+    <slot />
     <Footer />
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
   components: {
     Header,
     Footer
-  }
+  },
 }
 </script>
 
@@ -51,10 +51,6 @@ h1 {
 
 .layout {
   padding: 0;
-}
-
-.layout.sticky-header {
-  padding: 6rem 0 0 0;
 }
 
 .container {
