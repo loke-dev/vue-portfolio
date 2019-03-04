@@ -32,4 +32,4 @@ build:
   publish_command: gridsome build
   preview_output_directory: dist
   output_directory: dist
-  instant_preview_command: gridsome develop
+  instant_preview_command: yarn dev
