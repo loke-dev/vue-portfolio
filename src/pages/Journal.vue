@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 .container.journal {
-  max-width: 720px;
+  max-width: 960px;
 }
 .journal-hero {
   padding: 4rem 0;
