@@ -30,3 +30,5 @@ fields:
     - Loke Carlsson
   label: Author
   default: ''
+pages:
+- journal/what-is-gridsome.md
