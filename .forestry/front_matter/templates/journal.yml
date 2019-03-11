@@ -30,5 +30,3 @@ fields:
     - Loke Carlsson
   label: Author
   default: ''
-pages:
-- journal/123123123123.md
