@@ -1,7 +1,6 @@
 ---
 label: Journal
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -32,7 +31,4 @@ fields:
   label: Author
   default: ''
 pages:
-- journal/123123123123.md
-- journal/lorem-ipsum.md
-- journal/test-loke.md
-- journal/macos-development-environment.md
+- journal/what-is-gridsome.md
