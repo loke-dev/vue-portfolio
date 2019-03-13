@@ -30,6 +30,7 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
+- projects/code-snippets.md
 - projects/gitgud.md
 - projects/carleudd.md
 - projects/pwd.md
