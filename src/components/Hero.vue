@@ -44,12 +44,13 @@ export default {
   font-weight: 400;
   color: white;
   line-height: 1.68;
-  padding-top: 40px;
+  padding: 40px 20px;
   opacity: 0.6;
 }
 .hero-image {
   padding-bottom: 30px;
   max-width: 800px;
+  width: 90vw;
   margin: 0 auto;
 }
 </style>
