@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <span class="copyright" v-html="settings.footer"/>
-    <div class="social-icons">
+    <div class="icons">
       <a v-for="item in social" :key="item.id" :href="item.link" target="_blank" rel="noopener">
         <font-awesome class="icon" :icon="['fab', `${item.icon}`]"/>
       </a>
@@ -51,15 +51,13 @@ export default {
   font-size: 15px
   padding-bottom: 20px
 
-.social-icons
+.icons
   display: flex
+  a
+    margin: 0 10px
 
 .icon
   font-size: 24px
   color: inherit
 
-.social-icons
-  a
-    margin: 0 10px
-  
 </style>
