@@ -6,7 +6,7 @@
       </div>
       <nav class="nav right">
         <g-link class="nav__link" :to="{ name: 'about' }">About</g-link>
-        <g-link class="nav__link" :to="{ name: 'journal' }">Blog</g-link>
+        <g-link class="nav__link" :to="{ name: 'journal' }">Journal</g-link>
         <g-link class="nav__link" :to="{ name: 'contact' }">Contact</g-link>
       </nav>
     </div>
