@@ -55,7 +55,7 @@ export default {
   display: flex
 
 .icon
-  font-size: 50px
+  font-size: 24px
   color: inherit
-
+  margin: 0 10px
 </style>
