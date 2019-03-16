@@ -3,7 +3,7 @@
     <span class="copyright" v-html="settings.footer"/>
     <div class="icons">
       <a v-for="item in social" :key="item.id" :href="item.link" target="_blank" rel="noopener">
-        <font-awesome class="icon" :icon="['fab', `${item.icon}`]"/>
+        <font-awesome :alt="item.icon" class="icon" :icon="['fab', `${item.icon}`]"/>
       </a>
     </div>
   </footer>

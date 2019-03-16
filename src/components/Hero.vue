@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <img class="hero-image" src="../assets/img/logo.png" />
+    <img class="hero-image" alt="hero logo" src="../assets/img/logo.png" />
     <h2 class="hero-subtitle" v-html="settings.hero_subtitle" />
   </div>
 </template>
