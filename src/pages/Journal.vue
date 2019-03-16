@@ -1,6 +1,5 @@
 <template>
   <Layout>
-
     <div class="container">
       <div class="journal-hero">
         <h1 class="journal-header">
@@ -20,7 +19,6 @@
         <p class="journal-excerpt">{{ item.node.excerpt }}</p>
       </div>
     </g-link>
-      
   </Layout>
 </template>
 
@@ -48,15 +46,10 @@ export default {
 .container.journal {
   max-width: 960px;
 }
-.journal-hero {
-  padding: 4rem 0;
-  text-align: center;
-}
 .journal-header {
   font-size: 3rem;
-  font-weight: 700;
+  margin: 0 0 4rem 0;
   padding: 0;
-  margin: 0;
 }
 .journal-post {
   display: block;
