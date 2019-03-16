@@ -17,23 +17,23 @@
         <input type="hidden" name="form-name" value="contact" />
         <p hidden>
           <label>
-            Don’t fill this out: <input name="bot-field" onChange="handleChange" />
+            Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
         <div class="sender-info">
           <div>
-            <label for="name" class="label">Your name</label>
-            <input type="text" name="name">
+            <label for="name" class="label" >Your name</label>
+            <input type="text" name="name" v-model="formData.name" />
           </div>
           <div>
             <label for="email" class="label">Your email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" v-model="formData.email" />
           </div>
         </div>
 
         <div class="message-wrapper">
           <label for="message" class="label">Message</label>
-          <textarea name="message"></textarea>
+          <textarea name="message" v-model="formData.message"></textarea>
         </div>
 
         <button type="submit" class="submit-button">Submit form</button>
@@ -55,17 +55,13 @@ export default {
         .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
         .join('&')
     },
-    handleChange(e) {
-      this.formData[e.target.name] = e.target.value
-    },
     handleSubmit(e) {
       e.preventDefault()
-      const form = e.target
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          'form-name': form.getAttribute('name'),
+          'form-name': 'contact form',
           ...this.formData,
         }),
       })
