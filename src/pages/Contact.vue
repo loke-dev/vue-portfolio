@@ -47,7 +47,7 @@ export default {
   data() {
     return {
       formData: {},
-    };
+    }
   },
   methods: {
     encode(data) {
