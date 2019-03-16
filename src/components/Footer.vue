@@ -57,5 +57,9 @@ export default {
 .icon
   font-size: 24px
   color: inherit
-  margin: 0 10px
+
+.social-icons
+  a
+    margin: 0 10px
+  
 </style>
