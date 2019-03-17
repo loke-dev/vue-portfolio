@@ -27,7 +27,7 @@ export default {
 
 <style lang="sass" scoped>
 .title-section
-  padding-bottom: 30px
+  padding-bottom: 40px
   text-align: center
 
 .title
