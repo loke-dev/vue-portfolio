@@ -1,8 +1,8 @@
 <template>
   <Layout>
     <div class="container">
-      <div class="contact-header">
-        <h1 class="contact-title">Say hello!</h1>
+      <div class="header">
+        <h1 class="title">Say hello!</h1>
         <p>Looking for exiting development opportunties and friendly greets! 👋</p>
       </div>
 
@@ -73,13 +73,13 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-.contact-header
+.header
   padding: 2rem 0 4rem 0
-
-.contact-title
-  font-size: 3rem
-  margin: 0 0 4rem 0
-  padding: 0
+  
+  .title
+    font-size: 3rem
+    margin: 0 0 4rem 0
+    padding: 0
 
 .sender-info
   display: flex
