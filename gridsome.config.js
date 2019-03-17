@@ -7,7 +7,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-72659574-8',
+        id: process.env.ANALYTICS_ID,
       }
     },
     {
