@@ -36,6 +36,7 @@ yarn dev
 ``` bash
 # Build for production
 yarn build
+# Serve /dist
 ```
 
 ## Publishing
