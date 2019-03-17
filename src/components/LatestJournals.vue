@@ -16,12 +16,12 @@
 
 <script>
 export default {
-    props: {
-        journals: {
-            type: Array,
-            required: true
-        }
+  props: {
+    journals: {
+      type: Array,
+      required: true
     }
+  }
 }
 </script>
 

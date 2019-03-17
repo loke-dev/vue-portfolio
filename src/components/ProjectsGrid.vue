@@ -23,7 +23,7 @@ export default {
       required: true
     }
   }
-};
+}
 </script>
 
 <style lang="sass" scoped>

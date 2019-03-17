@@ -32,9 +32,9 @@ export default {
           link: "https://github.com/LokeCarlsson"
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="sass" scoped>

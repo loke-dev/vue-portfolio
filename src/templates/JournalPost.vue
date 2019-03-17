@@ -55,27 +55,27 @@ export default {
 }
 </script>
 
-<style scoped>
-.journal-container {
-  max-width: 840px;
-}
-.journal-header {
-  padding: 2rem 0 4rem 0;
-}
-.journal-title {
-  font-size: 4rem;
-  margin: 0 0 4rem 0;
-  padding: 0;
-}
-.journal-meta {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 0.8rem;
-}
-.journal-meta > div {
-  margin-right: 4rem;
-}
-.journal-meta > div:last-of-type {
-  margin: 0;
-}
+<style lang="sass" scoped>
+.journal-container
+  max-width: 840px
+
+.journal-header
+  padding: 2rem 0 4rem 0
+
+.journal-title
+  font-size: 4rem
+  margin: 0 0 4rem 0
+  padding: 0
+
+.journal-meta
+  display: flex
+  flex-wrap: wrap
+  font-size: 0.8rem
+
+.journal-meta > div 
+  margin-right: 4rem
+
+.journal-meta > div:last-of-type 
+  margin: 0
+
 </style>

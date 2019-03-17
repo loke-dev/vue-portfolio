@@ -30,11 +30,11 @@ export default {
   data() {
     return {
       skills,
-    };
+    }
   },
   components: {
   },
-};
+}
 </script>
 
 <style lang="sass" scoped>

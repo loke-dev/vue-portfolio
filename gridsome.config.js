@@ -40,4 +40,4 @@ module.exports = {
       plugins: ['@gridsome/remark-prismjs'],
     },
   },
-};
+}
