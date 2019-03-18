@@ -25,7 +25,7 @@ export default {
   position: relative
   justify-content: inherit !important
   height: 100vh
-  background-image: linear-gradient(to top, #12282b, #2f434a, #11252db0), url(/assets/img/desk.jpg)
+  background-image: linear-gradient(to top, #12282b, #2f434a, #11252db0), url(../assets/img/desk.jpg)
   background-position: top
   background-repeat: no-repeat
   background-size: cover
