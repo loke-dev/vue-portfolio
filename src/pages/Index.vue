@@ -52,7 +52,7 @@ export default {
     navHandler() {
       const { innerHeight, scrollY } = window;
       const isPrimary = this.$store.getters.isPrimary
-      const newValue = (scrollY + 45) < innerHeight
+      const newValue = (scrollY + 30) < innerHeight
 
       if (isPrimary !== newValue) {
         this.$store.dispatch('primary', !isPrimary);
