@@ -12,7 +12,7 @@
             </div>
             <div class="journal-date">
               <span class="label">Date</span>
-              <div v-text="$page.post.date"/>
+              <div v-text="new Date($page.post.date).toLocaleDateString()"/>
             </div>
             <div class="journal-time">
               <span class="label">Time</span>
@@ -33,7 +33,7 @@ query JournalPost ($path: String!) {
   post: journalPost (path: $path) {
     title
     author
-    date (format: "D. MMMM YYYY")
+    date
     timeToRead
     content
   }
