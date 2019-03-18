@@ -23,9 +23,12 @@ export default {
   margin-bottom: 50px
   padding: 16rem 0 8rem 0
   position: relative
-  justify-content: inherit!important
+  justify-content: inherit !important
   height: 100vh
-  background: linear-gradient(to right, #2f454e, #203A43, #11252d)
+  background-image: linear-gradient(to top, #12282b, #2f434a, #11252db0), url(/assets/img/desk.jpg)
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
 
 .hero-title 
   margin: 0
@@ -43,4 +46,6 @@ export default {
   width: 90vw
   margin: 0 auto
 
+.coffee-stain
+  opacity: 0.1
 </style>
