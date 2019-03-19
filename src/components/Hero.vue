@@ -21,7 +21,7 @@ export default {
   width: 100vw
   margin: 0 auto
   margin-bottom: 50px
-  padding: 16rem 0 8rem 0
+  padding: 19rem 0 8rem 0
   position: relative
   justify-content: inherit !important
   height: 100vh
@@ -29,6 +29,12 @@ export default {
   background-position: top
   background-repeat: no-repeat
   background-size: cover
+
+  @media (max-width: 560px)
+    padding: 17rem 0 8rem 0
+
+  @media (max-width: 430px)
+    padding: 15rem 0 8rem 0
 
 .hero-title 
   margin: 0
