@@ -6,9 +6,11 @@
         <p>dasdas</p>
       </div>
       <div class="content">
-        <img class="profile-image" src="../assets/img/profile.png" />
+        <img class="profile-image" src="../assets/img/profile.png">
         <div class="about-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perferendis in aut delectus ullam autem minima, laudantium quod eum! Perspiciatis fugiat reiciendis accusamus soluta, ad tenetur nisi alias. Unde, quasi.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Impedit perferendis in aut delectus ullam autem minima, laudantium quod eum!
+          Perspiciatis fugiat reiciendis accusamus soluta, ad tenetur nisi alias. Unde, quasi.
         </div>
       </div>
     </div>

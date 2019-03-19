@@ -1,17 +1,17 @@
 <template>
-<div>
-  <div class="title-section">
-    <h2 class="title">Projects</h2>
-    <h5 class="subtitle">Web application and sites I have coded and designed.</h5>
-  </div>
-  <div class="projects">
-    <div class="project" v-for="item in projects" :key="item.node.id">
-      <g-link :to="item.node.path" class="project-link">
-        <h3 class="project-title">{{ item.node.title }}</h3>
-        <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail"/>
-      </g-link>
+  <div>
+    <div class="title-section">
+      <h2 class="title">Projects</h2>
+      <h5 class="subtitle">Web application and sites I have coded and designed.</h5>
     </div>
-  </div>
+    <div class="projects">
+      <div class="project" v-for="item in projects" :key="item.node.id">
+        <g-link :to="item.node.path" class="project-link">
+          <h3 class="project-title">{{ item.node.title }}</h3>
+          <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail"/>
+        </g-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,9 +20,9 @@ export default {
   props: {
     projects: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 

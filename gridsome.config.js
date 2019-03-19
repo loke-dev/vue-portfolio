@@ -3,8 +3,7 @@ module.exports = {
   siteUrl: 'https://www.lokecarlsson.se',
   titleTemplate: '%s - Portfolio & Blog',
   siteDescription: 'Web developer',
-  plugins: [
-    {
+  plugins: [{
       use: '@gridsome/plugin-google-analytics',
       options: {
         id: process.env.ANALYTICS_ID,

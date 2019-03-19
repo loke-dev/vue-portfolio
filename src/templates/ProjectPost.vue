@@ -1,19 +1,16 @@
 <template>
   <Layout>
     <div class="project">
-
       <div class="container">
-
         <div class="project-header">
-          <h1 class="project-title" v-html="$page.post.title" />
+          <h1 class="project-title" v-html="$page.post.title"/>
           <div class="project-info">
-
             <div class="categories-container">
               <div class="categories">
                 <span class="label">Categories</span>
-                <span 
+                <span
                   class="category"
-                  v-for="(category, index) in $page.post.categories" 
+                  v-for="(category, index) in $page.post.categories"
                   :key="index"
                   v-text="category"
                 />
@@ -27,10 +24,8 @@
           </div>
         </div>
 
-        <div v-html="$page.post.content" class="content" />
-
+        <div v-html="$page.post.content" class="content"/>
       </div>
-
     </div>
   </Layout>
 </template>
@@ -50,14 +45,16 @@ query ProjectPost ($path: String!) {
 
 <script>
 export default {
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
       bodyAttrs: {
-        style: `background-color: ${this.$page.post.projectBgColor ? this.$page.post.projectBgColor : 'var(--color-base)'}; color: ${this.$page.post.projectFgColor ? this.$page.post.projectFgColor : 'var(--color-contrast)'}`
-      }
+        style: `background-color: ${
+          this.$page.post.projectBgColor ? this.$page.post.projectBgColor : 'var(--color-base)'
+        }; color: ${this.$page.post.projectFgColor ? this.$page.post.projectFgColor : 'var(--color-contrast)'}`,
+      },
     }
-  }
+  },
 }
 </script>
 

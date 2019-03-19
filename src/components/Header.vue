@@ -1,5 +1,8 @@
 <template>
-  <header class="header" :class="{sticky: $route.path === '/', 'is-primary': this.$store.getters.isPrimary && $route.path === '/'}">
+  <header
+    class="header"
+    :class="{sticky: $route.path === '/', 'is-primary': this.$store.getters.isPrimary && $route.path === '/'}"
+  >
     <div class="container">
       <div class="nav left">
         <g-link class="nav__link" :to="{ name: 'home' }">Home</g-link>
@@ -17,9 +20,9 @@
 export default {
   data() {
     return {
-      settings: require("../../data/theme.json"),
+      settings: require('../../data/theme.json'),
     }
-  }
+  },
 }
 </script>
 

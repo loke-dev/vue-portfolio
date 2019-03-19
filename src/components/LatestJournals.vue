@@ -6,9 +6,9 @@
     </div>
     <div class="latest-journals">
       <div class="container">
-          <g-link :to="item.node.path" class="journal" v-for="item in journals" :key="item.node.id">
-            <h3 class="journal-title">{{ item.node.title }}</h3>
-          </g-link>
+        <g-link :to="item.node.path" class="journal" v-for="item in journals" :key="item.node.id">
+          <h3 class="journal-title">{{ item.node.title }}</h3>
+        </g-link>
       </div>
     </div>
   </div>
@@ -19,9 +19,9 @@ export default {
   props: {
     journals: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 

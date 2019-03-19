@@ -5,16 +5,10 @@
       <h5 class="subtitle">Technologies I work in most frequently.</h5>
     </div>
     <div class="skills">
-      <div class="skill"
-        v-for="(skill, index) in skills"
-        :key="index">
-        <a class="image"
-          target="_blank"
-          rel="noopener"
-          :href="skill.url"
-          :title="skill.name">
-            <img :src="skill.image" :alt="skill.name">
-            <div class="preloader" slot="placeholder" />
+      <div class="skill" v-for="(skill, index) in skills" :key="index">
+        <a class="image" target="_blank" rel="noopener" :href="skill.url" :title="skill.name">
+          <img :src="skill.image" :alt="skill.name">
+          <div class="preloader" slot="placeholder"/>
         </a>
       </div>
     </div>
@@ -22,8 +16,7 @@
 </template>
 
 <script>
-
-import skills from './skills';
+import skills from './skills'
 
 export default {
   name: 'skills',
@@ -32,8 +25,7 @@ export default {
       skills,
     }
   },
-  components: {
-  },
+  components: {},
 }
 </script>
 

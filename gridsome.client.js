@@ -1,8 +1,10 @@
 import Vuex from 'vuex'
 
-export default function (Vue, options, { appOptions }) {
+export default function (Vue, options, {
+  appOptions
+}) {
   Vue.use(Vuex)
-  
+
   appOptions.store = new Vuex.Store({
     state: {
       isPrimary: true

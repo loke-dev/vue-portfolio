@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
-    <img class="hero-image" alt="hero logo" src="../assets/img/logo.png" />
-    <h2 class="hero-title" v-html="settings.hero_title" />
+    <img class="hero-image" alt="hero logo" src="../assets/img/logo.png">
+    <h2 class="hero-title" v-html="settings.hero_title"/>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      settings: require("../../data/theme.json"),
+      settings: require('../../data/theme.json'),
     }
   },
 }

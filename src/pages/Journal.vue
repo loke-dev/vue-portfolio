@@ -7,17 +7,17 @@
       </div>
     </div>
 
-      <g-link 
-        :to="item.node.path"
-        v-for="item in $page.posts.edges" 
-        :key="item.node.id"
-        class="journal-post"
-      >
-        <div class="journal">
-          <h2 class="journal-title">{{ item.node.title }}</h2>
-          <p class="journal-excerpt">{{ item.node.excerpt }}</p>
-        </div>
-      </g-link>
+    <g-link
+      :to="item.node.path"
+      v-for="item in $page.posts.edges"
+      :key="item.node.id"
+      class="journal-post"
+    >
+      <div class="journal">
+        <h2 class="journal-title">{{ item.node.title }}</h2>
+        <p class="journal-excerpt">{{ item.node.excerpt }}</p>
+      </div>
+    </g-link>
   </Layout>
 </template>
 
@@ -37,8 +37,7 @@ query Journal {
 </page-query>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style lang="sass" scoped>

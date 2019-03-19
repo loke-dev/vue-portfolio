@@ -2,7 +2,14 @@
   <footer class="footer">
     <span class="copyright" v-html="settings.footer"/>
     <div class="icons">
-      <a v-for="item in social" :aria-label="item.icon" :key="item.id" :href="item.link" target="_blank" rel="noopener">
+      <a
+        v-for="item in social"
+        :aria-label="item.icon"
+        :key="item.id"
+        :href="item.link"
+        target="_blank"
+        rel="noopener"
+      >
         <font-awesome class="icon" :icon="['fab', `${item.icon}`]"/>
       </a>
     </div>
@@ -13,27 +20,27 @@
 export default {
   data() {
     return {
-      settings: require("../../data/theme.json"),
+      settings: require('../../data/theme.json'),
       social: [
         {
-          icon: "facebook",
-          link: "https://www.facebook.com/carlssonloke"
+          icon: 'facebook',
+          link: 'https://www.facebook.com/carlssonloke',
         },
         {
-          icon: "linkedin",
-          link: "https://linkedin.com/in/lokecarlsson"
+          icon: 'linkedin',
+          link: 'https://linkedin.com/in/lokecarlsson',
         },
         {
-          icon: "twitter",
-          link: "https://twitter.com/carlssonloke"
+          icon: 'twitter',
+          link: 'https://twitter.com/carlssonloke',
         },
         {
-          icon: "github",
-          link: "https://github.com/LokeCarlsson"
-        }
-      ]
+          icon: 'github',
+          link: 'https://github.com/LokeCarlsson',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 
