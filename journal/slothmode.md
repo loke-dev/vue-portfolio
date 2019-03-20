@@ -8,13 +8,13 @@ author: Loke Carlsson
 ---
 ![](/uploads/sloth_space.jpg)
 
-[Slothmode](https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ "Slothmode") is the perfect Spotify playlist that will put you into a cosmic sloth mode!
+[Slothmode](https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=YgiHmNTTTEej2IjtzoypEA "Slothmode") is the perfect Spotify playlist that will put you into a cosmic sloth mode!
 
 > _Psychill, psybient, cosmic chill, spiritual downtempo, progressive minimal instrumental..._
 
 There are a lot of words that can try to describe this collection of wonder, but the only fair thing is for you to give it a real good listen and experience it for yourself.
 
-[https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ](https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ "https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ")
+[https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ](https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=YgiHmNTTTEej2IjtzoypEA "https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=YgiHmNTTTEej2IjtzoypEA")
 
 The Swedish band **Carbon Based Lifeforms** is the foundation for this playlist and is what would eventually turn into Slothmode. It was always CBL that has been a reference point when deciding on what music to add or not. I wanted to have very minimum to none vocals in this playlist to make it a good choice when it was time to focus on for example programming. The major exception to the vocal rule is the band **Younger Brother** that I feel uses vocals without disturbing the focus. Additionally I like how Younger Brother is introducing a little different touch to this playlist which is quite downtemp normally.
 
