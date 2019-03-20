@@ -31,4 +31,5 @@ fields:
   label: Author
   default: ''
 pages:
+- journal/slothmode.md
 - journal/what-is-gridsome.md
