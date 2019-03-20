@@ -8,7 +8,7 @@ author: Loke Carlsson
 ---
 ![](/uploads/sloth_space.jpg)
 
-[https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ](https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ "Slothmode") is the perfect Spotify playlist that will put you into a cosmic sloth mode!
+[Slothmode](https://open.spotify.com/user/lokeboy/playlist/3ZlJMUwxb05370KBjjWgz5?si=OhhcpA_tTUKL_1g-zIrLcQ "Slothmode") is the perfect Spotify playlist that will put you into a cosmic sloth mode!
 
 > _Psychill, psybient, cosmic chill, spiritual downtempo, progressive minimal instrumental..._
 
