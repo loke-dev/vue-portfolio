@@ -1,5 +1,6 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import settings from "../data/theme.json";
+import VueDisqus from 'vue-disqus'
 
 import "@/assets/code-highlight.css"
 
@@ -24,6 +25,7 @@ library.add(faGithub, faTwitter, faFacebook, faLinkedin, faEnvelope)
 export default function (Vue, {
   head
 }) {
+  Vue.use(VueDisqus)
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.component("Layout", DefaultLayout);
   head.bodyAttrs = {

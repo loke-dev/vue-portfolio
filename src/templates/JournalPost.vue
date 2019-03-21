@@ -21,6 +21,8 @@
         </div>
 
         <JournalContent :content="$page.post.content"/>
+
+        <vue-disqus class="disqus" shortname="lokedev" :identifier="$page.post.title"></vue-disqus>
       </div>
     </div>
   </Layout>
@@ -76,4 +78,6 @@ export default {
 .journal-meta > div:last-of-type 
   margin: 0
 
+.disqus
+  padding-top: 40px
 </style>
