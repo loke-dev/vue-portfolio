@@ -11,6 +11,8 @@ categories:
 - handlebars
 project_bg_color: ''
 project_fg_color: ''
+github: https://github.com/LokeCarlsson/snippets
+demo: ''
 
 ---
 ![](/uploads/snippet.png)
