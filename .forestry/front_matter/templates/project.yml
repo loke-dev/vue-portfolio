@@ -35,9 +35,9 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
+- projects/tcg.md
 - projects/quizmaster.md
 - projects/blog-api.md
-- projects/tcg.md
 - projects/code-snippets.md
 - projects/gitgud.md
 - projects/carleudd.md
