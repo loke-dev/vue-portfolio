@@ -11,11 +11,16 @@ fields:
   label: Title
   config:
     required: true
-- type: datetime
-  name: date
-  label: Date
+- type: text
+  name: github
+  label: github
+  description: Github repo link
   config:
     required: true
+- type: text
+  name: demo
+  label: Demo
+  description: Demo url
 - type: tag_list
   name: categories
   label: Categories
