@@ -116,5 +116,4 @@ export default {
     border-right: 0
     border-top: 1px solid var(--color-base-1)
     border-bottom: 1px solid var(--color-base-1)
-
 </style>
