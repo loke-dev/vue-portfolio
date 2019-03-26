@@ -7,6 +7,8 @@ categories:
 - css
 project_bg_color: ''
 project_fg_color: "#000000"
+github: https://github.com/LokeCarlsson/carleudd
+demo: https://carleudd.lokecarlsson.se
 
 ---
 ![](/uploads/carleudd.png)

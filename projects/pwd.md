@@ -11,6 +11,8 @@ categories:
 - HTML
 project_bg_color: ''
 project_fg_color: "#000000"
+github: https://github.com/LokeCarlsson/pwd
+demo: ''
 
 ---
 ![](/uploads/pwd.png)

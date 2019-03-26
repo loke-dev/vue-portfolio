@@ -9,6 +9,8 @@ categories:
 - express
 project_bg_color: ''
 project_fg_color: ''
+github: https://github.com/LokeCarlsson/gitgud
+demo: ''
 
 ---
 ![](/uploads/gitgud.png)
