@@ -17,10 +17,11 @@ import {
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 import {
-  faEnvelope
+  faEnvelope,
+  faPlayCircle,
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGithub, faTwitter, faFacebook, faLinkedin, faEnvelope)
+library.add(faGithub, faTwitter, faFacebook, faLinkedin, faEnvelope, faPlayCircle)
 
 export default function (Vue, {
   head
