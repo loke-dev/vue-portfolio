@@ -17,9 +17,17 @@
               </div>
             </div>
 
-            <div class="year-container">
-              <span class="label">Year</span>
-              <div v-html="$page.post.date"/>
+            <div class="github-container">
+              <span class="label">Github</span>
+              <a :href="$page.post.github" target="_blank" rel="noopener">
+                {{$page.post.github}}
+              </a>
+            </div>
+            <div class="demo-container">
+              <span v-if="$page.post.demo" class="label">Demo</span>
+              <a :href="$page.post.demo" target="_blank" rel="noopener">
+                {{$page.post.demo}}
+              </a>
             </div>
           </div>
         </div>
@@ -34,7 +42,8 @@
 query ProjectPost ($path: String!) {
   post: projectPost (path: $path) {
     title
-    date (format: "YYYY")
+    github
+    demo
     content
     categories
     projectBgColor
@@ -83,5 +92,8 @@ export default {
 
 .category:last-of-type:after 
   content: ''
+
+.link-container
+  display: flex
 
 </style>
