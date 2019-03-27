@@ -1,7 +1,9 @@
 <template>
   <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-    <Header/>
-    <slot/>
+    <div id="content-wrapper">
+      <Header/>
+      <slot/>
+    </div>
     <Footer/>
   </div>
 </template>
@@ -22,6 +24,17 @@ export default {
 <style lang="sass">
 *
   box-sizing: border-box
+
+body, html
+  height: 100%
+
+#app
+  display: flex
+  flex-direction: column
+  height: 100%
+
+#content-wrapper
+  flex: 1 0 auto
 
 body
   --color-base: rgb(255, 255, 255)
