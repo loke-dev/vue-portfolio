@@ -31,8 +31,10 @@
             </div>
           </div>
         </div>
-
-        <div v-html="$page.post.content" class="content"/>
+        <div class="content">
+          <g-image :src="$page.post.thumbnail" :alt="$page.post.thumbnail" class="thumbnail" />
+          <div v-html="$page.post.content" class=""/>
+        </div>
       </div>
     </div>
   </Layout>
@@ -48,6 +50,7 @@ query ProjectPost ($path: String!) {
     categories
     projectBgColor
     projectFgColor
+    thumbnail (quality: 100)
   }
 }
 </page-query>
@@ -93,6 +96,16 @@ export default {
 
 .category:last-of-type:after 
   content: ''
+
+.content
+  max-width: 780px
+  margin: auto
+  display: flex;
+  flex-flow: column;
+
+  img
+    max-height: 500px
+    align-self: center;
 
 .link-container
   display: flex
