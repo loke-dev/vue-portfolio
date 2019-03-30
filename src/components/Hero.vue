@@ -21,7 +21,7 @@ export default {
   width: 100vw
   margin: 0 auto
   margin-bottom: 50px
-  padding: 24rem 0 8rem 0
+  padding: 30vh 0 8rem 0
   position: relative
   justify-content: inherit !important
   height: 100vh
