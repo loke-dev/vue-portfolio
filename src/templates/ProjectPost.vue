@@ -72,7 +72,8 @@ export default {
   padding: 5vh 0 4rem 0
 
 .project-title 
-  font-size: 4rem
+  font-size: 3rem
+  font-weight: 400
   margin: 0 0 4rem 0
   padding: 0
 
