@@ -1,5 +1,5 @@
 ---
-thumbnail: "/uploads/js.jpg"
+thumbnail: "/uploads/photo-1517180102446-f3ece451e9d8.jpeg"
 title: Blog API
 github: https://github.com/LokeCarlsson/BlogAPI
 demo: ''
@@ -16,7 +16,7 @@ project_fg_color: ''
 date: 2019-03-26 20:22:45 +0000
 
 ---
-![](/uploads/js.jpg)
+![](/uploads/photo-1517180102446-f3ece451e9d8.jpeg)
 
 This is a blog API written in Node.js with Express, Mongoose and Passport for authentication.
 
