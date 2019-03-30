@@ -56,11 +56,6 @@ export default {}
   padding: 0 2rem
   text-align: center;
 
-.journal-header
-  font-size: 3rem
-  margin: 0 0 4rem 0
-  padding: 0
-
 .journal-post 
   display: block
   padding: 2rem 0
@@ -72,10 +67,6 @@ export default {}
 .journal-post:hover 
   border: 1px solid var(--color-theme)
 
-
-.journal-post:hover > * 
-  // transform: translateX(4rem)
-
 .journal-post h1,
 .journal-post h2 
   margin: 0
@@ -83,6 +74,7 @@ export default {}
 
 .journal-title 
   font-size: 2rem
+  font-weight: 400
   color: var(--color-contrast)
 
 .journal-excerpt 
