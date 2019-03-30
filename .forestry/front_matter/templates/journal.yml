@@ -31,5 +31,6 @@ fields:
   label: Author
   default: ''
 pages:
+- journal/finding-the-perfect-newtab-extension.md
 - journal/slothmode.md
 - journal/what-is-gridsome.md
