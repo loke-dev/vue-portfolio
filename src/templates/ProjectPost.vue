@@ -105,7 +105,8 @@ export default {
 
   img
     max-height: 500px
-    align-self: center;
+    align-self: center
+    margin-bottom: 2rem
 
 .link-container
   display: flex
