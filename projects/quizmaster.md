@@ -15,5 +15,3 @@ date: 2019-03-26 20:30:10 +0000
 QuizMaster is a web application that fetches questions from a server and asks the user questions.
 
 Was created using HTML, CSS and vanilla Javascript.
-
-![](/uploads/quiz.png)
