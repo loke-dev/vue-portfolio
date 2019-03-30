@@ -1,6 +1,7 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import settings from "../data/theme.json";
 import VueDisqus from 'vue-disqus'
+import VTooltip from 'v-tooltip'
 
 import "@/assets/code-highlight.css"
 
@@ -27,6 +28,7 @@ export default function (Vue, {
   head
 }) {
   Vue.use(VueDisqus)
+  Vue.use(VTooltip)
   Vue.component('font-awesome', FontAwesomeIcon)
   Vue.component("Layout", DefaultLayout);
   head.bodyAttrs = {

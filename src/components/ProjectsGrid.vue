@@ -7,8 +7,7 @@
     <div class="projects">
       <div class="project" v-for="item in projects" :key="item.node.id">
         <g-link :to="item.node.path" class="project-link">
-          <h3 class="project-title">{{ item.node.title }}</h3>
-          <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail"/>
+        <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail" v-tooltip="item.node.title"/>
         </g-link>
       </div>
     </div>
@@ -87,5 +86,4 @@ export default {
 @media (min-width: 920px)
   .project
     grid-column: auto / span 1
-  
 </style>
