@@ -15,6 +15,4 @@ github: https://github.com/LokeCarlsson/pwd
 demo: ''
 
 ---
-![](/uploads/pwd.png)
-
-PWD is a Personal Web Desktop which is built as a clone of macOS with HTML, CSS and vanilla Javascript using the constructor/prototype pattern.The chat application is connected to a server communicating with web sockets.  
+PWD is a Personal Web Desktop which is built as a clone of macOS with HTML, CSS and vanilla Javascript using the constructor/prototype pattern.The chat application is connected to a server communicating with web sockets.

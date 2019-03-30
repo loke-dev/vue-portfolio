@@ -15,6 +15,4 @@ github: https://github.com/LokeCarlsson/snippets
 demo: ''
 
 ---
-![](/uploads/snippet.png)
-
 A web application where you can create code snippets. With focus on CRUD and security.
