@@ -37,6 +37,7 @@ body, html
   flex: 1 0 auto
 
 body
+  --color-theme: #26a69a
   --color-base: rgb(255, 255, 255)
   --color-base-1: rgb(243, 243, 243)
   --color-contrast: rgb(0, 0, 0)

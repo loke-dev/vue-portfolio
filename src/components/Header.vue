@@ -75,6 +75,11 @@ export default {
   border-color: transparent
   transition: border 0.15s
 
+  @media (max-width: 400px)
+    margin-right: 1rem
+  @media (max-width: 300px)
+    margin-right: 0.5rem
+
 .nav > *:last-of-type
   margin: 0
 

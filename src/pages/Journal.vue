@@ -2,8 +2,7 @@
   <Layout>
     <div class="container">
       <div class="header">
-        <h1 class="title">Journal</h1>
-        <p>A wise person once said...</p>
+        <h1 class="title">The story goes... ✍️</h1>
       </div>
     </div>
 
@@ -43,9 +42,11 @@ export default {}
 <style lang="sass" scoped>
 .header
   padding: 2rem 0 1rem 0
+  text-align: center
 
   .title
     font-size: 3rem
+    font-weight: 400
     margin: 0 0 4rem 0
     padding: 0
 
@@ -53,6 +54,7 @@ export default {}
   max-width: 960px
   margin: 0 auto
   padding: 0 2rem
+  text-align: center;
 
 .journal-header
   font-size: 3rem
@@ -64,15 +66,15 @@ export default {}
   padding: 2rem 0
   text-decoration: none
   transition: background 0.5s ease
-
-.journal-post > * 
-  transition: transform 0.5s ease
+  border: 1px solid var(--color-base-1)
+  transition: border-color 0.5s;
 
 .journal-post:hover 
-  background-color: var(--color-base-1)
+  border: 1px solid var(--color-theme)
+
 
 .journal-post:hover > * 
-  transform: translateX(4rem)
+  // transform: translateX(4rem)
 
 .journal-post h1,
 .journal-post h2 

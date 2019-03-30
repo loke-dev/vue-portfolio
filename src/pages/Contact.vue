@@ -2,8 +2,7 @@
   <Layout>
     <div class="container">
       <div class="header">
-        <h1 class="title">Say hello!</h1>
-        <p>Looking for exiting development opportunties and friendly greets! 👋</p>
+        <h1 class="title">Looking for exiting development opportunties and friendly greets! 👋</h1>
       </div>
 
       <form
@@ -23,11 +22,11 @@
         </p>
         <div class="sender-info">
           <div>
-            <label for="name" class="label">Your name</label>
+            <label for="name" class="label">Name</label>
             <input type="text" name="name" v-model="formData.name">
           </div>
           <div>
-            <label for="email" class="label">Your email</label>
+            <label for="email" class="label">Email</label>
             <input type="email" name="email" v-model="formData.email">
           </div>
         </div>
@@ -76,9 +75,11 @@ export default {
 <style lang="sass" scoped>
 .header
   padding: 2rem 0 4rem 0
+  max-width: 780px
   
   .title
     font-size: 3rem
+    font-weight: 400
     margin: 0 0 4rem 0
     padding: 0
 
@@ -94,14 +95,17 @@ export default {
 .sender-info > div:last-of-type
   margin: 0
 
+.label
+  font-weight: 400
+
 input:focus,
 textarea:focus
-  border-color: var(--color-contrast-1)
+  border-color: var(--color-theme)
 
 input,
 textarea
   background: transparent
-  border: 1px solid var(--color-base-1)
+  border: 1px solid rgb(187, 187, 187)
   outline: none
   border-radius: 0.3rem
   padding: 0.8rem 1rem
@@ -114,23 +118,23 @@ textarea
   height: 140px
 
 .submit-button
-  color: var(--color-base)
-  background: var(--color-contrast)
-  outline: none
-  border: 0
-  font-size: 0.8rem
-  padding: 0.8rem 1.6rem
-  border-radius: 0.3rem
+  display: inline-block
+  font-size: 1em
+  padding: 0.8rem 1rem
   margin-top: 2rem
+  margin-bottom: 1rem
+  appearance: none
+  background-color: var(--color-theme)
+  color: #fff
+  border-radius: 0.3rem
+  border: none
   cursor: pointer
-  transition: opacity 0.25s ease
-  font-size: 500
-  letter-spacing: 0.035em
 
 .submit-button:hover
   opacity: 0.6
 
 .submit-button:focus
   border: 1px solid var(--color-base-1)
+  
 </style>
 

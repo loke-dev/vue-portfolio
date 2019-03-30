@@ -55,7 +55,6 @@ export default {
 .latest-journals
   max-width: 100%
   margin: 0 2rem
-  border: 1px solid var(--color-base-1)
 
 .latest-journals > .container
   display: flex
@@ -65,15 +64,12 @@ export default {
   flex: 0 0 100%
   display: block
   padding: 2rem
-  transition: background 0.25s ease
   text-decoration: none
-  border-bottom: 1px solid var(--color-base-1)
-
-.journal:last-of-type
-  border-bottom: 0
+  border: 1px solid var(--color-base-1)
+  transition: border-color 0.5s;
 
 .journal:hover
-  background: var(--color-base-1)
+  border: 1px solid var(--color-theme)
 
 .journal-title
   font-size: 1rem
@@ -83,37 +79,11 @@ export default {
   .journal
     flex: 0 0 50%
 
-  .journal:nth-child(1)
-    border-right: 1px solid var(--color-base-1)
-    border-bottom: 1px solid var(--color-base-1)
-
-  .journal:nth-child(2)
-    border-bottom: 1px solid var(--color-base-1)
-
-  .journal:nth-child(3)
-    border-right: 1px solid var(--color-base-1)
-    border-bottom: 0
-
 @media (min-width: 920px)
   .journal
-    flex: 0 0 25%
-
-  .journal:nth-child(1)
-    border: 0
-    border-right: 1px solid var(--color-base-1)
-
-  .journal:nth-child(2)
-    border: 0
-    border-right: 1px solid var(--color-base-1)
-
-  .journal:nth-child(3)
-    border: 0
-    border-right: 1px solid var(--color-base-1)
+    flex: 0 0 30%;
+    margin: 1rem;
 
   .latest-journals
     margin: 0
-    border-left: 0
-    border-right: 0
-    border-top: 1px solid var(--color-base-1)
-    border-bottom: 1px solid var(--color-base-1)
 </style>
