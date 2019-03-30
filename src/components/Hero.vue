@@ -25,7 +25,8 @@ export default {
   position: relative
   justify-content: inherit !important
   height: 100vh
-  background-image: url(../assets/img/poly-hero.svg)
+  background: var(--color-theme)
+  background: url(../assets/img/poly-hero.svg)
   background-position: top
   background-repeat: no-repeat
   background-size: cover

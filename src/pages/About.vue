@@ -10,7 +10,7 @@
           <p>
             As a frontend developer, I focus on solving problems. 
             Putting an emphasis on loyalty and honesty with clients and fellow team members. 
-            Passionate about the JAM stack, I strives for intuitiveness in all the work that I do, 
+            Passionate about the JAM stack, I strive for intuitiveness in all the work that I do, 
             doing everything that I can to make users' experiences smooth, easy, and comfortable.
           </p>
           <p>
