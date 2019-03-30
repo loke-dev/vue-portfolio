@@ -7,7 +7,7 @@
     <div class="projects">
       <div class="project" v-for="item in projects" :key="item.node.id">
         <g-link :to="item.node.path" class="project-link">
-        <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail" v-tooltip="item.node.title"/>
+        <g-image :src="item.node.thumbnail" :alt="item.node.title" class="thumbnail" v-tooltip="{content: item.node.title, offset: 5}"/>
         </g-link>
       </div>
     </div>
