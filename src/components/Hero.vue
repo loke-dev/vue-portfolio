@@ -25,7 +25,7 @@ export default {
   position: relative
   justify-content: inherit !important
   height: 100vh
-  background-image: linear-gradient(to top, #12282b, #2f434a, #11252db0), url(../assets/img/desk.jpg)
+  background-image: url(../assets/img/poly-hero.svg)
   background-position: top
   background-repeat: no-repeat
   background-size: cover
@@ -33,19 +33,18 @@ export default {
 .hero-title 
   margin: 0
   padding: 0
-  font-size: 1.5em
+  font-size: 2em
   font-weight: 200
   color: white
   line-height: 1.68
   padding: 40px 20px
-  opacity: 0.6
+  opacity: 0.8
 
 .hero-image
-  padding-bottom: 30px
+  margin-bottom: 30px 
   max-width: 800px
   width: 90vw
   margin: 0 auto
-
-.coffee-stain
-  opacity: 0.1
+  background-color: white
+  filter: grayscale(100%)
 </style>
