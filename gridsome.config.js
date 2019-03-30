@@ -33,6 +33,26 @@ module.exports = {
         },
       },
     },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000,
+        config: {
+          '/journal/*': {
+            changefreq: 'daily',
+            priority: 0.5
+          },
+          '/about': {
+            changefreq: 'weekly',
+            priority: 0.7
+          },
+          '/projects': {
+            changefreq: 'weekly',
+            priority: 0.9
+          }
+        }
+      }
+    },
   ],
   transformers: {
     remark: {
