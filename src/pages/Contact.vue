@@ -36,7 +36,7 @@
           <textarea name="message" v-model="formData.message"></textarea>
         </div>
 
-        <button type="submit" class="submit-button">Submit form</button>
+        <button type="submit" class="submit-button">Send</button>
       </form>
     </div>
   </Layout>
@@ -74,7 +74,7 @@ export default {
 
 <style lang="sass" scoped>
 .header
-  padding: 2rem 0 4rem 0
+  padding: 2rem 0 1rem 0
   max-width: 780px
   
   .title
