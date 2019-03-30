@@ -12,6 +12,7 @@
         action="/success/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        class="contact-form"
       >
         <input type="hidden" name="form-name" value="contact">
         <p hidden>
@@ -76,12 +77,18 @@ export default {
 .header
   padding: 2rem 0 1rem 0
   max-width: 780px
+  text-align: center
+  margin: auto
   
   .title
     font-size: 3rem
     font-weight: 400
     margin: 0 0 4rem 0
     padding: 0
+
+.contact-form
+  max-width: 780px;
+  margin: auto;
 
 .sender-info
   display: flex
