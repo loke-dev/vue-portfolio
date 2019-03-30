@@ -83,14 +83,13 @@ img
   margin-bottom: 0.5rem
 
 /** TOOLTIP **/
-
 .tooltip
   display: block !important
   z-index: 10000
 
   .tooltip-inner
-    background: black
-    color: white
+    background: #333
+    color: #fff
     border-radius: 4px
     padding: 10px 10px
 
@@ -100,7 +99,7 @@ img
     border-style: solid
     position: absolute
     margin: 5px
-    border-color: black
+    border-color: #333
     z-index: 1
 
   &[x-placement^="top"]
@@ -156,14 +155,14 @@ img
       margin-right: 0
 
   &.popover
-    $color: #f9f9f9
+    $color: #fff
 
     .popover-inner
       background: $color
-      color: black
+      color: #333
       padding: 24px
       border-radius: 4px
-      box-shadow: 0 5px 30px rgba(black, .1)
+      box-shadow: 0 5px 30px rgba(#333, .1)
 
     .popover-arrow
       border-color: $color
