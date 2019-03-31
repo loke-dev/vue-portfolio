@@ -53,6 +53,7 @@ export default {
   padding: 4rem
   margin: 75px 0 0
   background-color: var(--color-base-1)
+  min-height: 200px
 
 .copyright
   font-size: 15px
