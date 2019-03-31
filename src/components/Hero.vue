@@ -18,7 +18,7 @@ export default {
 <style lang="sass">
 .hero
   text-align: center
-  width: 100vw
+  width: 100%
   margin: 0 auto
   margin-bottom: 50px
   padding: 30vh 0 8rem 0
