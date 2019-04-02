@@ -1,6 +1,6 @@
 module.exports = {
   siteName: 'Loke Carlsson',
-  siteUrl: 'https://www.lokecarlsson.se',
+  siteUrl: 'https://loke.dev',
   titleTemplate: '%s - Portfolio & Blog',
   siteDescription: 'Web developer',
   plugins: [{
