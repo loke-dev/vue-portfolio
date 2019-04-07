@@ -61,8 +61,8 @@ export default {
   flex-wrap: wrap
 
 .journal
-  flex: 0 0 100%
   display: block
+  flex: 0 0 100%
   padding: 2rem
   text-decoration: none
   border: 1px solid var(--color-base-1)
@@ -75,13 +75,9 @@ export default {
   font-size: 1rem
   line-height: 1.35
 
-@media (min-width: 580px)
+@media (min-width: 721px)
   .journal
-    flex: 0 0 50%
-
-@media (min-width: 920px)
-  .journal
-    flex: 0 0 30%;
+    flex: 0 0 28%;
     margin: 1rem;
 
   .latest-journals
