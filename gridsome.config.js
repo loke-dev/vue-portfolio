@@ -2,7 +2,7 @@ module.exports = {
   siteName: 'Loke Carlsson',
   siteUrl: 'https://loke.dev',
   titleTemplate: '%s - Portfolio & Blog',
-  siteDescription: 'Web developer',
+  siteDescription: 'As a frontend developer, I focus on solving problems and creating beautiful user interfaces. You can read about stuff I\'m passionate of in my blog.',
   plugins: [{
       use: '@gridsome/plugin-google-analytics',
       options: {
