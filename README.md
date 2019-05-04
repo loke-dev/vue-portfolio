@@ -7,6 +7,10 @@
 <p align="center">A Vue.js Portfolio</p>
 <p align="center"><a href="https://vuejs.org" target="_blank"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
+## New site
+
+I have created [loke.dev](https://github.com/LokeCarlsson/loke.dev) to replace this site and also include my new blog. Check it out, it is built using some cool tech like Gridsome!
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
