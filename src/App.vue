@@ -7,6 +7,7 @@
     <skills></skills>
     <fork></fork>
     <contact></contact>
+    <new></new>
     <copyright></copyright>
   </div>
 </template>
@@ -19,6 +20,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Fork from './components/Fork';
+import New from './components/New';
 import Copyright from './components/Copyright';
 
 export default {
@@ -31,6 +33,7 @@ export default {
     Skills,
     Fork,
     Contact,
+    New,
     Copyright,
   },
 };
