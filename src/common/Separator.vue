@@ -10,7 +10,7 @@ export default {
   name: 'separator',
   props: {
     color: {
-      default: getComputedStyle(document.body).getPropertyValue('--separator-color') || 'white',
+      default: '#26A69A' || 'white',
       type: String,
     },
   },
