@@ -31,6 +31,7 @@ fields:
   label: Author
   default: ''
 pages:
+- journal/it-is-time-to-move-to-jamstack.md
 - journal/finding-the-perfect-newtab-extension.md
 - journal/slothmode.md
 - journal/what-is-gridsome.md
