@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "buefy": "^0.3.2",
-    "core-js": "^2.4.1",
+    "core-js": "^2.6.11",
     "moment": "^2.18.1",
     "scrollreveal": "^3.3.5",
     "vue": "^2.3.4",
