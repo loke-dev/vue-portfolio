@@ -11,7 +11,7 @@
   "dependencies": {
     "buefy": "^0.3.2",
     "core-js": "^2.4.1",
-    "moment": "^2.18.1",
+    "moment": "^2.27.0",
     "scrollreveal": "^3.3.5",
     "vue": "^2.3.4",
     "vue-clazy-load": "^0.4.2",
