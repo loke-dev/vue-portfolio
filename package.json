@@ -15,7 +15,7 @@
     "scrollreveal": "^3.3.5",
     "vue": "^2.3.4",
     "vue-clazy-load": "^0.4.2",
-    "vue-scrollto": "^2.6.8",
+    "vue-scrollto": "^2.18.1",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
