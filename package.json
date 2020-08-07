@@ -13,7 +13,7 @@
     "core-js": "^2.4.1",
     "moment": "^2.18.1",
     "scrollreveal": "^3.3.5",
-    "vue": "^2.3.4",
+    "vue": "^2.6.11",
     "vue-clazy-load": "^0.4.2",
     "vue-scrollto": "^2.6.8",
     "vuex": "^2.3.1"
