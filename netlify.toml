@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://lokecarlsson.se"
+  to = "https://vue-portfolio.loke.dev"
+  status = 301
+  force = true
